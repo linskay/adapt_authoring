@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-adapt-framework-version="5.51.2" data-adapt-authoring-version="0.11.5">
+  <head>
+    <title>Adapt authoring tool</title>
+    <link rel="icon" type="image/png" href="css/assets/favicon.png" />
+    <link rel="stylesheet" href="css/adapt.css" />
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="modernizr.js"></script>
+		<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.0/ckeditor5.css">
+      <script type="text/javascript" src="require.js"></script>
+      <script type="text/javascript" src="core/config.js"></script>
+      <script type="text/javascript" src="core/app.js"></script>
+    <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-store, no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  </head>
+  <body>
+    <div id="app" class="app container">
+      <div class="location-title">
+      </div>
+      <div class="app-inner">
+      </div>
+      <div class="loading">
+        <div class="loading-inner">
+          <div class="loading-logo">
+              <img src="css/assets/adapt-learning-logo-outline.png">
+          </div>
+          <div class="loading-anim">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="importmap">
+			{
+				"imports": {
+					"ckeditor5": "https://cdn.ckeditor.com/ckeditor5/42.0.0/ckeditor5.js",
+					"ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.0/"
+				}
+			}
+		</script>
+    <script type="module">
+      import {
+        ClassicEditor,
+        Alignment,
+        Autoformat,
+        AutoLink,
+        Autosave,
+        BalloonToolbar,
+        BlockQuote,
+        BlockToolbar,
+        Bold,
+        Clipboard,
+        Code,
+        Essentials,
+        FindAndReplace,
+        GeneralHtmlSupport,
+        Font,
+        Highlight,
+        Indent,
+        IndentBlock,
+        Italic,
+        Link,
+        List,
+        ListProperties,
+        Paragraph,
+        SelectAll,
+        ShowBlocks,
+        SourceEditing,
+        SpecialCharacters,
+        SpecialCharactersArrows,
+        SpecialCharactersCurrency,
+        SpecialCharactersEssentials,
+        SpecialCharactersLatin,
+        SpecialCharactersMathematical,
+        SpecialCharactersText,
+        Strikethrough,
+        Subscript,
+        Superscript,
+        Table,
+        TableCellProperties,
+        TableProperties,
+        TableToolbar,
+        TextTransformation,
+        Underline,
+        Undo
+      } from 'ckeditor5';
+      
+      window.CKEDITOR = ClassicEditor
+      window.CKEDITOR.pluginsConfig = [
+        Alignment,
+        Autoformat,
+        AutoLink,
+        Autosave,
+        BalloonToolbar,
+        BlockQuote,
+        BlockToolbar,
+        Bold,
+        Clipboard,
+        Code,
+        Essentials,
+        FindAndReplace,
+        GeneralHtmlSupport,
+        Font,
+        Highlight,
+        Indent,
+        IndentBlock,
+        Italic,
+        Link,
+        List,
+        ListProperties,
+        Paragraph,
+        SelectAll,
+        ShowBlocks,
+        SourceEditing,
+        SpecialCharacters,
+        SpecialCharactersArrows,
+        SpecialCharactersCurrency,
+        SpecialCharactersEssentials,
+        SpecialCharactersLatin,
+        SpecialCharactersMathematical,
+        SpecialCharactersText,
+        Strikethrough,
+        Subscript,
+        Superscript,
+        Table,
+        TableCellProperties,
+        TableProperties,
+        TableToolbar,
+        TextTransformation,
+        Underline,
+        Undo
+      ];
+    </script>
+  </body>
+</html>
+

@@ -19,7 +19,7 @@
 /plugins/content/theme/versions/
 /plugins/content/theme/extensioncache/
 /plugins/content/menu/versions/
-/plugins/content/bower/bowercache/
+# /plugins/content/bower/bowercache/ - commented out to track plugin schema translations
 
 /temp
 /test/.testcache

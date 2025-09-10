@@ -1,39 +1,117 @@
-# Adapt Authoring Tool
+# Adapt Authoring Tool - Конструктор курсов
 
-Adapt is a free and easy to use framework and authoring tool that creates fully responsive, multi-device, HTML5 e-learning content.
+**Adapt Authoring Tool** - это мощный конструктор интерактивных обучающих курсов с поддержкой SCORM и современным веб-интерфейсом.
 
-## What Does It Do?
+## 🎯 Основные возможности
 
-The Adapt authoring tool is a web-based user interface for the [Adapt Framework](https://github.com/adaptlearning/adapt_framework). Use it to create responsive, single-version HTML5 e-learning courses for delivery on a web server or SCORM-compliant learning management system.
+- **Визуальный редактор** - создание курсов без программирования
+- **SCORM совместимость** - интеграция с системами управления обучением (LMS)
+- **Адаптивный дизайн** - курсы работают на всех устройствах
+- **Многоязычность** - поддержка русского и других языков
+- **Интерактивные компоненты** - богатый набор элементов для обучения
 
-Interested? [See what Adapt can do.](https://community.adaptlearning.org/demo2/index.html)
+## 📦 Установленные плагины
 
-## Features
+### 🎨 Компоненты контента
 
-* Web application built on Node.js, Backbone.js, and MongoDB for creating, editing and publishing Adapt content
-* Supports all core extensions and components
-* Allows uploading and linking of course assets
+| Плагин | Описание |
+|--------|----------|
+| **Accordion** | Аккордеон - сворачиваемые панели с контентом |
+| **Blank** | Пустой компонент для кастомного контента |
+| **Graphic** | Графический компонент для изображений |
+| **Hot Graphic** | Интерактивные изображения с горячими точками |
+| **Media** | Медиа компонент для видео и аудио |
+| **Narrative** | Повествовательный компонент с навигацией |
+| **Text** | Текстовый компонент для статического контента |
 
-## Full Documentation
-[Visit the wiki](https://github.com/adaptlearning/adapt_authoring/wiki) for full documentation, including [installation](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-the-Authoring-Tool), course authoring, developer guides, and other information.
+### ❓ Компоненты вопросов
 
-## Communication
-+ [Twitter: @AdaptLearning](https://twitter.com/adaptlearning)
-+ [Gitter](https://gitter.im/orgs/adaptlearning/rooms)
-+ [Community Site](https://community.adaptlearning.org/)
-+ [Technical Forum](https://community.adaptlearning.org/mod/forum/view.php?id=4)
-+ [Bugs / Feature Requests](https://github.com/adaptlearning/adapt_authoring/issues)
-+ [Responsive e-Learning Forum](https://community.adaptlearning.org/mod/forum/view.php?id=56)
+| Плагин | Описание |
+|--------|----------|
+| **GMCQ** | Множественный выбор с графикой |
+| **MCQ** | Множественный выбор (обычный) |
+| **Matching** | Сопоставление элементов |
+| **Slider** | Слайдер для числовых значений |
+| **Text Input** | Поле ввода текста |
+| **Talk** | Диалоговый компонент с персонажами |
+| **Confidence Slider** | Шкала уверенности (оценка уверенности в ответе) |
+| **Game Frame** | Встраивание HTML5 игр в курсы |
+| **HTML** | Кастомный HTML контент с интерактивностью |
+| **Tabs** | Контент во вкладках (компактное размещение) |
+| **YouTube** | Встраивание YouTube видео |
+| **Background Scroll** | Фоновая прокрутка контента |
+| **Article Block Slider** | Слайдер для блоков статей |
+| **MCQi** | MCQ с оценкой элементов |
+| **Image Map** | Интерактивные карты изображений |
+| **Vertical Items** | Вертикальные элементы |
+| **Cards** | Карточки |
+| **Order** | Упорядочивание элементов |
+| **Teleporter** | Телепорт между страницами |
+| **Drag and Drop** | Задания с перетаскиванием |
 
-## Contributing to Adapt
+### 🧩 Расширения
 
-See [Contributing to the Adapt authoring tool](https://github.com/adaptlearning/adapt_authoring/blob/master/CONTRIBUTING.md).
+| Плагин | Описание |
+|--------|----------|
+| **Assessment** | Система оценивания и тестирования |
+| **Assessment Results** | Отображение результатов тестирования |
+| **Bookmarking** | Закладки для навигации по курсу |
+| **Language Picker** | Выбор языка интерфейса |
+| **Page Level Progress** | Индикатор прогресса по страницам |
+| **Resources** | Ресурсы и дополнительные материалы |
+| **Spoor (SCORM)** | SCORM трекинг для LMS |
+| **Trickle** | Поэтапное раскрытие контента |
+| **Tutor** | Система подсказок и помощи |
+| **Glossary** | Встроенный глоссарий/словарь терминов |
+| **Close** | Кнопка закрытия курса с промптами |
+| **Router Links** | Навигация по элементам курса |
+| **Go Top** | Кнопка "наверх" |
+| **Instruction Error** | Обработка ошибок инструкций |
+| **Body Styles** | Стили тела страницы |
+| **Double Accordion** | Двойной аккордеон |
+
+### 🎨 Темы и меню
+
+| Плагин | Описание |
+|--------|----------|
+| **Box Menu** | Меню в виде карточек |
+| **Tiles Menu** | Меню в виде плиток |
+| **Carousel Menu** | Карусельное меню с навигацией |
+| **Vanilla** | Базовая тема оформления |
+| **Kineo Theme** | Профессиональная тема от Kineo |
+| **NYBC Vanilla** | Тема NYBC Vanilla |
+| **Kentico Theme** | Тема Kentico |
+
+## 🚀 Быстрый старт
+
+1. **Установка**: Запустите `install.js` для первоначальной настройки
+2. **Запуск**: Выполните `npm start` для запуска сервера
+3. **Доступ**: Откройте http://localhost:5000 в браузере
+4. **Создание курса**: Используйте веб-интерфейс для создания курсов
+
+## ⚙️ Конфигурация по умолчанию
+
+- **Тенант**: master
+- **Отображаемое имя**: Master  
+- **Email администратора**: admin@example.com
+- **Пароль**: admin123
+- **Язык по умолчанию**: Русский
+
+## 📚 Документация
+
+- [Официальная документация Adapt](https://github.com/adaptlearning/adapt_framework/wiki)
+- [SCORM плагин Spoor](https://github.com/adaptlearning/adapt-contrib-spoor)
+- [Список всех плагинов](https://github.com/adaptlearning/adapt_framework/wiki/Core-Plug-ins-in-the-Adapt-Learning-Framework)
+
+## 🔧 Технические детали
+
+- **Фреймворк**: Adapt Framework
+- **Backend**: Node.js + Express
+- **Frontend**: Backbone.js + Handlebars
+- **База данных**: MongoDB
+- **SCORM**: Поддержка SCORM 1.2 и 2004
 
 
-## Troubleshooting, Bugs, and Feedback
-+ For help with troubleshooting, visit the [Technical Discussion Forum](https://community.adaptlearning.org/mod/forum/view.php?id=4).
-+ To report a bug, please [GitHub Issues](https://github.com/adaptlearning/adapt_authoring/issues).
-+ To provide feedback, please use the [GitHub Issues](https://github.com/adaptlearning/adapt_authoring/issues).
+## 📄 Лицензия
 
-## License
-<a href="https://community.adaptlearning.org/" target="_blank"><img src="https://github.com/adaptlearning/documentation/blob/master/04_wiki_assets/plug-ins/images/adapt-logo-mrgn-lft.jpg" alt="adapt learning logo" align="right"></a>  Adapt is licensed under the [GNU General Public License, Version 3](https://github.com/adaptlearning/adapt_authoring/blob/master/LICENSE).
+GPL-3.0 License

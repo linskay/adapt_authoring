@@ -1,0 +1,9 @@
+{
+  "app.scaffold": {
+    "general": "Общие",
+    "properties": "Свойства",
+    "settings": "Настройки",
+    "extensions": "Расширения",
+    "colourPickerCancel": "Отменить выбор"
+  }
+}

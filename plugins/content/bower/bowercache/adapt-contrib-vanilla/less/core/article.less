@@ -1,0 +1,42 @@
+.article {
+  position: relative;
+
+  &.has-bg-image > .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__header-inner {
+    .l-container-padding(@article-header-padding-ver, @article-header-padding-hoz);
+  }
+
+  &__title {
+    margin-bottom: @article-title-margin;
+    .article-title;
+    color: @heading-color;
+  }
+
+  &__body {
+    margin-bottom: @article-body-margin;
+  }
+
+  &__instruction {
+    margin-bottom: @article-instruction-margin;
+    .instruction-text;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+}

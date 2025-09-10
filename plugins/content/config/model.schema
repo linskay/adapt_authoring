@@ -25,7 +25,7 @@
       "type": "string",
       "required": true,
       "default": "en",
-      "title": "Default Language",
+      "title": "Язык по умолчанию",
       "inputType": "Text",
       "validators": ["required"]
     },
@@ -33,7 +33,7 @@
       "type": "string",
       "required": true,
       "default": "ltr",
-      "title": "Text Direction",
+      "title": "Направление текста",
       "validators": ["required"],
       "inputType": {
         "type": "Select",
@@ -45,7 +45,7 @@
     },
     "_accessibility": {
       "type": "object",
-      "title": "Accessibility",
+      "title": "Доступность",
       "properties" : {
         "_isEnabled": {
           "type": "boolean",
@@ -53,7 +53,7 @@
           "isSetting": false,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Enable accessibility features?"
+          "title": "Включить функции доступности?"
         },
         "_isEnabledOnTouchDevices": {
           "type": "boolean",
@@ -61,7 +61,7 @@
           "isSetting": false,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Enabled on touch devices?"
+          "title": "Включено на сенсорных устройствах?"
         },
         "_shouldSupportLegacyBrowsers": {
           "type": "boolean",
@@ -69,8 +69,8 @@
           "isSetting": false,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Support legacy browsers?",
-          "help": "Need accessibility support for Internet Explorer v8?"
+          "title": "Поддерживать устаревшие браузеры?",
+          "help": "Нужна поддержка доступности для Internet Explorer v8?"
         },
         "_isTextProcessorEnabled": {
           "type": "boolean",
@@ -78,8 +78,8 @@
           "isSetting": false,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Enable text reader support?",
-          "help": "Adds focusing to assist text reader software"
+          "title": "Включить поддержку скринридеров?",
+          "help": "Добавляет фокусировку для ПО чтения с экрана"
         },
         "_isSkipNavigationEnabled": {
           "type": "boolean",
@@ -87,41 +87,41 @@
           "isSetting": false,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Enable Skip Navigation link?",
-          "help": "Adds a link to the start of the page to allow assistive technology users to skip over the navigation and straight into to the page content."
+          "title": "Включить ссылку 'Пропустить навигацию'?",
+          "help": "Добавляет ссылку в начале страницы, позволяющую пользователям ассистивных технологий перейти сразу к контенту."
         }
       }
     },
     "screenSize": {
       "type": "object",
-      "title": "Screen Size",
+      "title": "Размер экрана",
       "properties": {
         "small": {
           "type": "number",
           "required": true,
           "default": 519,
-          "title": "Small",
+          "title": "Малый",
           "inputType": "Number",
           "validators": ["required", "number"],
-          "help": "Pixel width for the small breakpoint, e.g. cellphones"
+          "help": "Ширина в пикселях для малого брейкпоинта (телефоны)"
         },
         "medium": {
           "type": "number",
           "required": true,
           "default": 759,
-          "title": "Medium",
+          "title": "Средний",
           "inputType": "Number",
           "validators": ["required", "number"],
-          "help": "Pixel width for the medium breakpoint, e.g. tablet devices"
+          "help": "Ширина в пикселях для среднего брейкпоинта (планшеты)"
         },
         "large": {
           "type": "number",
           "required": true,
           "default": 1024,
-          "title": "Large",
+          "title": "Большой",
           "inputType": "Number",
           "validators": ["required", "number"],
-          "help": "Pixel width for the large breakpoint, e.g. laptop/desktop computers"
+          "help": "Ширина в пикселях для большого брейкпоинта (ноутбуки/настольные ПК)"
         }
       }
     },
@@ -130,7 +130,7 @@
       "required": true,
       "default": 1,
       "isSetting": true,
-      "title": "Question Weight",
+      "title": "Вес вопроса",
       "inputType": "Number",
       "validators": ["required", "number"]
     },
@@ -143,7 +143,7 @@
           "type": "string",
           "required": true,
           "default": "easeOutQuart",
-          "title": "Show Easing",
+          "title": "Появление — смягчение",
           "inputType": {
             "type": "Select",
             "options": [
@@ -185,7 +185,7 @@
           "type": "string",
           "required": true,
           "default": "easeInQuart",
-          "title": "Hide Easing",
+          "title": "Скрытие — смягчение",
           "inputType": {
             "type": "Select",
             "options": [
@@ -227,7 +227,7 @@
           "type": "number",
           "required": true,
           "default": 400,
-          "title": "Duration",
+          "title": "Длительность",
           "inputType": "Number",
           "validators": ["required", "number"]
         }
@@ -239,8 +239,8 @@
       "isSetting": true,
       "inputType": "Checkbox",
       "validators": [],
-      "title": "Generate sourcemaps?",
-      "help": "Allows the course JavaScript & CSS to be debugged via the browser's developer tools."
+      "title": "Генерировать sourcemaps?",
+      "help": "Позволяет отлаживать JS и CSS курса через инструменты разработчика браузера."
     },
     "_forceRouteLocking": {
       "type": "boolean",
@@ -248,12 +248,12 @@
       "isSetting": true,
       "inputType": "Checkbox",
       "validators": [],
-      "title": "Enforce route locking?",
-      "help": "If locking is enabled, this setting prevents navigating to locked routes"
+      "title": "Принудительно применять блокировку маршрутов?",
+      "help": "Если блокировка включена, предотвращает переход к заблокированным маршрутам"
     },
     "_logging": {
       "type": "object",
-      "title": "Logging",
+      "title": "Логирование",
       "properties": {
         "_isEnabled": {
           "type": "boolean",
@@ -261,13 +261,13 @@
           "required": true,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Enabled?"
+          "title": "Включено?"
         },
         "_level": {
           "type": "string",
           "required": true,
           "default" : "info",
-          "title" : "Log Level",
+          "title" : "Уровень логирования",
           "validators": [],
           "inputType": {
             "type": "Select",
@@ -285,7 +285,7 @@
           "default": true,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Log to browser console?"
+          "title": "Писать в консоль браузера?"
         }
       }
     },

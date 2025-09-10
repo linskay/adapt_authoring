@@ -38,7 +38,7 @@ installHelpers.checkPrimaryDependencies(function(error) {
           name: 'useJSON',
           message: 'Use existing config values?',
           type: 'confirm',
-          default: false
+          default: true
         }
       ],
       startInstall: [
@@ -242,21 +242,24 @@ installHelpers.checkPrimaryDependencies(function(error) {
           name: 'suEmail',
           type: 'input',
           message: 'Email address',
-          validate: installHelpers.inputHelpers.requiredValidator
+          validate: installHelpers.inputHelpers.requiredValidator,
+          default: 'admin@example.com'
         },
         {
           name: 'suPassword',
           type: 'password',
           message: 'Password',
           mask: installHelpers.inputHelpers.passwordReplace,
-          validate: installHelpers.inputHelpers.requiredValidator
+          validate: installHelpers.inputHelpers.requiredValidator,
+          default: 'admin123'
         },
         {
           name: 'suRetypePassword',
           type: 'password',
           message: 'Confirm Password',
           mask: installHelpers.inputHelpers.passwordReplace,
-          validate: installHelpers.inputHelpers.requiredValidator
+          validate: installHelpers.inputHelpers.requiredValidator,
+          default: 'admin123'
         }
       ]
     };
@@ -291,6 +294,8 @@ function generatePromptOverrides() {
   }
   const sessionSecret = USE_CONFIG && configData.sessionSecret || crypto.randomBytes(64).toString('hex');
   addConfig({ sessionSecret: sessionSecret });
+  // Ensure Russian is the default language unless overridden
+  addConfig({ defaultLanguage: 'ru' });
   // NOTE config.json < cmd args
   return Object.assign({}, configData, optimist.argv);
 }
