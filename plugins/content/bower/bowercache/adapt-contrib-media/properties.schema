@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Media player{{#any _transcript._inlineTranscript _transcript._externalTranscript}} and transcript{{/any}}.",
+      "default": "Медиаплеер{{#any _transcript._inlineTranscript _transcript._externalTranscript}} и транскрипт{{/any}}.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,7 +15,7 @@
     "skipToTranscript": {
       "type": "string",
       "required": true,
-      "default": "Skip to transcript",
+      "default": "Перейти к транскрипту",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -23,7 +23,7 @@
     "playText": {
       "type": "string",
       "required": true,
-      "default": "Play",
+      "default": "Воспроизвести",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -31,7 +31,7 @@
     "pauseText": {
       "type": "string",
       "required": true,
-      "default": "Pause",
+      "default": "Пауза",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -39,7 +39,7 @@
     "stopText": {
       "type": "string",
       "required": true,
-      "default": "Stop",
+      "default": "Стоп",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -47,7 +47,7 @@
     "audioPlayerText": {
       "type": "string",
       "required": true,
-      "default": "Audio Player",
+      "default": "Аудиоплеер",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -55,7 +55,7 @@
     "videoPlayerText": {
       "type": "string",
       "required": true,
-      "default": "Video Player",
+      "default": "Видеоплеер",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -63,7 +63,7 @@
     "tracksText": {
       "type": "string",
       "required": true,
-      "default": "Captions/Subtitles",
+      "default": "Титры/Субтитры",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -71,7 +71,7 @@
     "timeSliderText": {
       "type": "string",
       "required": true,
-      "default": "Time Slider",
+      "default": "Ползунок времени",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -79,7 +79,7 @@
     "muteText": {
       "type": "string",
       "required": true,
-      "default": "Mute Toggle",
+      "default": "Переключить звук",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -87,7 +87,7 @@
     "unmuteStatusText": {
       "type": "string",
       "required": true,
-      "default": "Unmute",
+      "default": "Включить звук",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -95,7 +95,7 @@
     "muteStatusText": {
       "type": "string",
       "required": true,
-      "default": "Mute",
+      "default": "Выключить звук",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -103,7 +103,7 @@
     "volumeSliderText": {
       "type": "string",
       "required": true,
-      "default": "Volume Slider",
+      "default": "Ползунок громкости",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -111,7 +111,7 @@
     "fullscreenText": {
       "type": "string",
       "required": true,
-      "default": "Fullscreen",
+      "default": "Полноэкранный режим",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -119,7 +119,7 @@
     "goFullscreenText": {
       "type": "string",
       "required": true,
-      "default": "Go Fullscreen",
+      "default": "Перейти в полноэкранный режим",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -127,7 +127,7 @@
     "turnOffFullscreenText": {
       "type": "string",
       "required": true,
-      "default": "Turn off Fullscreen",
+      "default": "Выключить полноэкранный режим",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -135,7 +135,7 @@
     "noneText": {
       "type": "string",
       "required": true,
-      "default": "None",
+      "default": "Нет",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -143,7 +143,7 @@
     "skipBackText": {
       "type": "string",
       "required": true,
-      "default": "Skip back %1 seconds",
+      "default": "Перемотать назад на %1 секунд",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -151,7 +151,7 @@
     "allyVolumeControlText": {
       "type": "string",
       "required": true,
-      "default": "Use Up/Down Arrow keys to increase or decrease volume.",
+      "default": "Используйте клавиши со стрелками вверх/вниз для увеличения или уменьшения громкости.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -159,7 +159,7 @@
     "progessHelpText": {
       "type": "string",
       "required": true,
-      "default": "Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.",
+      "default": "Используйте клавиши со стрелками влево/вправо для перехода на одну секунду, вверх/вниз для перехода на десять секунд.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -176,85 +176,85 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Select the play button to start the video.",
+      "default": "Нажмите кнопку воспроизведения, чтобы запустить видео.",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Это текст инструкции",
       "translatable": true
     },
     "_media": {
       "type": "object",
       "required": true,
-      "title": "Media",
+      "title": "Медиа",
       "properties": {
         "mp4": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "MP4 Link",
+          "title": "Ссылка на MP4",
           "inputType": "Asset:video",
           "validators": [],
-          "help": "Link to an MP4 video"
+          "help": "Ссылка на видео в формате MP4"
         },
         "ogv": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "OGV Link",
+          "title": "Ссылка на OGV",
           "inputType": "Asset:video",
           "validators": [],
-          "help": "Link to an OGV video"
+          "help": "Ссылка на видео в формате OGV"
         },
         "webm": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "WEBM Link",
+          "title": "Ссылка на WEBM",
           "inputType": "Asset:video",
           "validators": [],
-          "help": "Link to a WEBM video"
+          "help": "Ссылка на видео в формате WEBM"
         },
         "mp3": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "MP3 Link",
+          "title": "Ссылка на MP3",
           "inputType": "Asset:audio",
           "validators": [],
-          "help": "Link to an MP3 audio"
+          "help": "Ссылка на аудио в формате MP3"
         },
         "source": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Source URL",
+          "title": "URL-адрес источника",
           "inputType": "Text",
           "validators": [],
-          "help": "Enter an external link, such as a YouTube URL"
+          "help": "Введите внешнюю ссылку, например, URL-адрес YouTube"
         },
         "type": {
           "type": "string",
           "required": false,
           "enum": ["", "video/youtube", "video/vimeo"],
           "default": "",
-          "title": "Type",
+          "title": "Тип",
           "inputType": {"type": "Select", "options":["", "video/youtube", "video/vimeo"]},
           "validators": [],
-          "help": "Select the 'Source URL' type, for a YouTube link this would be 'video/youtube', and 'video/vimeo' for Vimeo."
+          "help": "Выберите тип 'URL-адреса источника', для ссылки на YouTube это будет 'video/youtube', а для Vimeo — 'video/vimeo'."
         },
         "poster": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Poster Link",
+          "title": "Ссылка на постер",
           "inputType": "Asset:image",
           "validators": [],
-          "help": "Image displayed before the video is played (except on Vimeo)"
+          "help": "Изображение, отображаемое перед воспроизведением видео (кроме Vimeo)"
         },
         "cc": {
           "type": "array",
           "required": false,
-          "title": "Closed Captions",
+          "title": "Скрытые субтитры",
           "items": {
             "type": "object",
             "required": false,
@@ -263,7 +263,7 @@
                 "type": "string",
                 "required": false,
                 "default": "",
-                "title": "Language Code",
+                "title": "Код языка",
                 "inputType": "Text",
                 "validators": ["required"]
               },
@@ -271,7 +271,7 @@
                 "type": "string",
                 "required": false,
                 "default": "",
-                "title": "Caption File",
+                "title": "Файл субтитров",
                 "inputType": "Asset:other",
                 "validators": ["required"]
               }
@@ -285,16 +285,16 @@
       "required": true,
       "enum": ["inview", "play", "ended"],
       "default": "play",
-      "title": "Completion trigger",
+      "title": "Триггер завершения",
       "inputType": {"type": "Select", "options":["inview", "play", "ended"]},
       "validators": ["required"],
-      "help": "Defines what media event should trigger completion of this component."
+      "help": "Определяет, какое медиа-событие должно вызывать завершение этого компонента."
     },
     "_useClosedCaptions": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Use Closed Captions",
+      "title": "Использовать скрытые субтитры",
       "inputType": "Checkbox",
       "validators": []
     },
@@ -302,35 +302,35 @@
       "type": "string",
       "required": false,
       "default": "en",
-      "title": "Initial Closed Captions language",
+      "title": "Исходный язык скрытых субтитров",
       "inputType": "Text",
       "validators": [],
-      "help": "Select which closed caption language to display by default. Only required when closed captions are enabled and there are multiple languages."
+      "help": "Выберите, какой язык скрытых субтитров отображать по умолчанию. Требуется только в том случае, если включены скрытые субтитры и имеется несколько языков."
     },
     "_showVolumeControl": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Show Volume Control (Not supported on mobile devices)",
+      "title": "Показывать регулятор громкости (не поддерживается на мобильных устройствах)",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "When enabled, the volume control will appear in the media player. On mobile devices the audio level is controlled the device's physical volume controls."
+      "help": "Если включено, регулятор громкости появится в медиаплеере. На мобильных устройствах уровень звука регулируется физическими кнопками громкости устройства."
     },
     "_startVolume": {
       "type": "string",
       "required":true,
       "enum": ["0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"],
       "default": "80%",
-      "title": "Default volume (Not supported on mobile devices)",
+      "title": "Громкость по умолчанию (не поддерживается на мобильных устройствах)",
       "inputType": {"type": "Select", "options":["0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]},
       "validators": ["required"],
-      "help": "Defines the default volume. On mobile devices the audio level is under the user's physical control"
+      "help": "Определяет громкость по умолчанию. На мобильных устройствах уровень звука находится под физическим контролем пользователя"
     },
     "_allowFullScreen": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Allow Full Screen",
+      "title": "Разрешить полноэкранный режим",
       "inputType": "Checkbox",
       "validators": []
     },
@@ -338,7 +338,7 @@
       "type": "string",
       "required": true,
       "default": "landscape",
-      "title": "Aspect ratio",
+      "title": "Соотношение сторон",
       "enum": ["landscape", "portrait", "square"],
       "inputType": {
         "type": "Select",
@@ -349,7 +349,7 @@
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Pause playback when video is no longer in view.",
+      "title": "Приостанавливать воспроизведение, когда видео больше не находится в поле зрения.",
       "inputType": "Checkbox",
       "validators": []
     },
@@ -357,48 +357,48 @@
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Play videos inline on iOS",
+      "title": "Воспроизводить видео встроенным образом на iOS",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, videos will play 'inline' on iPhones (the same way they do on iPads). Note that this feature is only available in iOS10 and above."
+      "help": "Если включено, видео будут воспроизводиться 'встроенным образом' на iPhone (так же, как на iPad). Обратите внимание, что эта функция доступна только в iOS10 и выше."
     },
     "_preventForwardScrubbing": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Attempt to prevent media scrubbing?",
+      "title": "Пытаться предотвратить перемотку медиа?",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, will attempt to prevent users from skipping ahead in audio/video."
+      "help": "Если включено, будет предпринята попытка предотвратить перемотку аудио/видео пользователями."
     },
     "_offsetMediaControls": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Offset media controls",
+      "title": "Сместить элементы управления медиа",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the media control bar will be respositioned below the media container to remove the standard overlap style."
+      "help": "Если включено, панель управления медиа будет перемещена под контейнер медиа, чтобы убрать стандартный стиль наложения."
     },
     "_transcript": {
       "type": "object",
       "required": false,
-      "title": "Transcript Options",
+      "title": "Параметры транскрипции",
       "properties": {
         "_setCompletionOnView": {
           "type": "boolean",
           "required": false,
           "default": true,
-          "title": "Trigger completion?",
+          "title": "Вызвать завершение?",
           "inputType": "Checkbox",
           "validators": [],
-          "help": "Whether to have this component mark as completed when the transcript is shown."
+          "help": "Помечать ли этот компонент как завершенный при показе транскрипции."
         },
         "_inlineTranscript": {
           "type": "boolean",
           "required": false,
           "default": false,
-          "title": "Show Inline",
+          "title": "Показывать встроенно",
           "inputType": "Checkbox",
           "validators": []
         },
@@ -406,7 +406,7 @@
           "type": "boolean",
           "required": false,
           "default": false,
-          "title": "Show Link",
+          "title": "Показать ссылку",
           "inputType": "Checkbox",
           "validators": []
         },
@@ -414,7 +414,7 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Inline Open Button",
+          "title": "Кнопка открытия встроенного",
           "inputType": "Text",
           "validators": [],
           "translatable": true
@@ -423,7 +423,7 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Inline Close Button",
+          "title": "Кнопка закрытия встроенного",
           "inputType": "Text",
           "validators": [],
           "translatable": true
@@ -432,17 +432,17 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Inline Transcript",
+          "title": "Встроенная транскрипция",
           "inputType": "TextArea",
           "validators": [],
-          "help": "Optional text appears below the video",
+          "help": "Необязательный текст появляется под видео",
           "translatable": true
         },
         "transcriptLinkButton": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Link Open Button",
+          "title": "Кнопка открытия ссылки",
           "inputType": "Text",
           "validators": [],
           "translatable": true
@@ -451,23 +451,23 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Transcript Link",
+          "title": "Ссылка на транскрипцию",
           "inputType": "Asset:other",
           "validators": [],
-          "help": "Select a file for the transcript link"
+          "help": "Выберите файл для ссылки на транскрипцию"
         }
       }
     },
     "_playerOptions": {
       "type": "object",
       "default": {},
-      "title": "Player Options",
+      "title": "Параметры плеера",
       "inputType": {
         "type": "CodeEditor",
         "mode": "json"
       },
       "validators": [],
-      "help": "Optional object that can be used to customize the player"
+      "help": "Необязательный объект, который можно использовать для настройки плеера"
     }
   }
 }

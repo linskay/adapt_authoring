@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Multiple choice question",
+      "default": "Вопрос с несколькими вариантами ответа",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,37 +15,37 @@
     "ariaCorrectAnswer": {
       "type": "string",
       "required": true,
-      "default": "The correct answer is {{{correctAnswer}}}",
+      "default": "Правильный ответ: {{{correctAnswer}}}",
       "inputType": "Text",
       "validators": [],
-      "help": "Text that will be announced by the screen reader when the learner selects the 'correct answer' button (and there is only one correct answer)",
+      "help": "Текст, который будет озвучен программой чтения с экрана, когда учащийся нажимает кнопку 'правильный ответ' (и есть только один правильный ответ)",
       "translatable": true
     },
     "ariaCorrectAnswers": {
       "type": "string",
       "required": true,
-      "default": "The correct answers are {{{correctAnswer}}}",
+      "default": "Правильные ответы: {{{correctAnswer}}}",
       "inputType": "Text",
       "validators": [],
-      "help": "Text that will be announced by the screen reader when the learner selects the 'correct answer' button (and there is more than one correct answer)",
+      "help": "Текст, который будет озвучен программой чтения с экрана, когда учащийся нажимает кнопку 'правильный ответ' (и есть более одного правильного ответа)",
       "translatable": true
     },
     "ariaUserAnswer": {
       "type": "string",
       "required": true,
-      "default": "The answer you chose was {{{userAnswer}}}",
+      "default": "Вы выбрали ответ: {{{userAnswer}}}",
       "inputType": "Text",
       "validators": [],
-      "help": "Text that will be announced by the screen reader when the learner selects the 'hide correct answer' button (and the learner only chose one answer)",
+      "help": "Текст, который будет озвучен программой чтения с экрана, когда учащийся нажимает кнопку 'скрыть правильный ответ' (и учащийся выбрал только один ответ)",
       "translatable": true
     },
     "ariaUserAnswers": {
       "type": "string",
       "required": true,
-      "default": "The answers you chose were {{{userAnswer}}}",
+      "default": "Вы выбрали ответы: {{{userAnswer}}}",
       "inputType": "Text",
       "validators": [],
-      "help": "Text that will be announced by the screen reader when the learner selects the 'hide correct answer' button (and the learner chose more than one answer)",
+      "help": "Текст, который будет озвучен программой чтения с экрана, когда учащийся нажимает кнопку 'скрыть правильный ответ' (и учащийся выбрал более одного ответа)",
       "translatable": true
     }
   },
@@ -60,10 +60,10 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Choose {{#if _isRadio}}one option{{else}}one or more options{{/if}} then select Submit.",
+      "default": "Выберите {{#if _isRadio}}один вариант{{else}}один или несколько вариантов{{/if}}, затем нажмите 'Отправить'.",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Это текст инструкции",
       "translatable": true
     },
     "ariaQuestion": {
@@ -72,13 +72,13 @@
       "default": "",
       "inputType": "Text",
       "validators": [],
-      "help": "This will be read out by screen readers instead of reading the 'Display title', 'Body' & 'Instruction' fields when focusing on the options. To be clear and concise, ensure the text encompasses only the question associated.",
+      "help": "Это будет зачитано программами чтения с экрана вместо чтения полей 'Заголовок', 'Основной текст' и 'Инструкция' при фокусировке на вариантах. Чтобы быть ясным и кратким, убедитесь, что текст включает только связанный вопрос.",
       "translatable": true
     },
     "_items": {
       "type": "array",
       "required": true,
-      "title": "Items",
+      "title": "Элементы",
       "items": {
         "type": "object",
         "required": true,
@@ -86,7 +86,7 @@
           "_graphic": {
             "type": "object",
             "required": true,
-            "title": "Graphic",
+            "title": "Графика",
             "properties": {
               "large": {
                 "type": "string",
@@ -94,7 +94,7 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [],
-                "help": "Large image for this item - used on desktop"
+                "help": "Большое изображение для этого элемента - используется на настольных компьютерах"
               },
               "small": {
                 "type": "string",
@@ -102,7 +102,7 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [],
-                "help": "Small image for this item - used on mobiles"
+                "help": "Маленькое изображение для этого элемента - используется на мобильных устройствах"
               },
               "alt": {
                 "type": "string",
@@ -110,7 +110,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. Avoid duplication if the item text already provides context and leave blank.",
+                "help": "Описание изображения; требуется, когда оно имеет значение, которое необходимо донести до учащегося. Избегайте дублирования, если текст элемента уже предоставляет контекст, и оставьте поле пустым.",
                 "translatable": true
               },
               "attribution": {
@@ -119,7 +119,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution",
+                "help": "Текст, который будет отображаться в качестве атрибуции",
                 "translatable": true
               }
             }
@@ -128,10 +128,10 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Item Text",
+            "title": "Текст элемента",
             "inputType": "Text",
             "validators": [],
-            "help": "Text that will be displayed with the image",
+            "help": "Текст, который будет отображаться с изображением",
             "translatable": true
           },
           "altText": {
@@ -140,14 +140,14 @@
             "default": "",
             "inputType": "Text",
             "validators": [],
-            "help": "This will be read out by screen readers instead of reading 'text'. Optional for providing alternative text, for example, to specify how a word should be pronounced.",
+            "help": "Это будет зачитано программами чтения с экрана вместо чтения 'текста'. Необязательно для предоставления альтернативного текста, например, для указания того, как следует произносить слово.",
             "translatable": true
           },
           "_shouldBeSelected": {
             "type": "boolean",
             "required": true,
             "default": false,
-            "title": "Correct answer?",
+            "title": "Правильный ответ?",
             "inputType": "Checkbox",
             "validators": []
           },
@@ -155,7 +155,7 @@
             "type": "boolean",
             "required": true,
             "default": false,
-            "title": "Is only partly correct?",
+            "title": "Частично правильный?",
             "inputType": "Checkbox",
             "validators": []
           },
@@ -163,20 +163,20 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Answer-specific feedback",
+            "title": "Обратная связь по конкретному ответу",
             "inputType": "Text",
             "validators": [],
-            "help": "When 'Selectable Items' is set to 1, this can be used to give the user feedback specific to the answer they selected - if incorrect.",
+            "help": "Когда для 'Выбираемых элементов' установлено значение 1, это можно использовать для предоставления пользователю обратной связи, специфичной для выбранного им ответа - если он неправильный.",
             "translatable": true
           },
           "_score": {
             "type": "number",
             "required": false,
             "default": 0,
-            "title": "Score",
+            "title": "Оценка",
             "inputType": "Number",
             "validators": ["required", "number"],
-            "help": "If item scoring is enabled, when selected, item scores are summed to give the question score."
+            "help": "Если включен подсчет очков по элементам, при выборе оценки по элементам суммируются, чтобы получить оценку за вопрос."
           }
         }
       }
@@ -185,41 +185,41 @@
       "type": "number",
       "required": true,
       "default": 1,
-      "title": "Attempts",
+      "title": "Попытки",
       "inputType": "Number",
       "validators": ["required", "number"],
-      "help": "How many attempts the learner is allowed"
+      "help": "Сколько попыток разрешено учащемуся"
     },
     "_canShowModelAnswer": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Display Model Answer",
+      "title": "Показать правильный ответ",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Allow the user to view the 'model answer' if they answer the question incorrectly?"
+      "help": "Разрешить пользователю просматривать 'правильный ответ', если он ответил на вопрос неправильно?"
     },
     "_canShowCorrectness": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Display item correctness",
+      "title": "Отображать правильность элемента",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, this replaces the associated 'model answer' toggle button and displays correctness directly on the component items."
+      "help": "Если включено, это заменяет соответствующую кнопку переключения 'правильного ответа' и отображает правильность непосредственно на элементах компонента."
     },
     "_canShowFeedback": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Display Feedback",
+      "title": "Показать обратную связь",
       "inputType": "Checkbox",
       "validators": []
     },
     "_canShowMarking": {
       "type": "boolean",
       "default": true,
-      "title": "Display Marking",
+      "title": "Показать оценку",
       "inputType": "Checkbox",
       "validators": []
     },
@@ -227,16 +227,16 @@
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Display Attempts",
+      "title": "Показать попытки",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Display the number of attempts remaining?"
+      "help": "Отображать количество оставшихся попыток?"
     },
     "_isRandom": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Randomise answers",
+      "title": "Перемешать ответы",
       "inputType": "Checkbox",
       "validators": []
     },
@@ -244,104 +244,104 @@
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Enable item scoring",
+      "title": "Включить подсчет очков по элементам",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "When disabled, this question scores 0 for incorrect and 'Question Weight' for correct. When enabled, this question scores by summing the scores of the selected options."
+      "help": "Если отключено, этот вопрос оценивается в 0 баллов за неправильный ответ и в 'Вес вопроса' за правильный. Если включено, этот вопрос оценивается путем суммирования оценок выбранных вариантов."
     },
     "_questionWeight": {
       "type": "number",
       "required": false,
       "default": 1,
-      "title": "Question Weight",
+      "title": "Вес вопроса",
       "inputType": "Number",
       "validators": ["number"],
-      "help": "When item scoring is disabled, this is the question score for a correct response."
+      "help": "Когда подсчет очков по элементам отключен, это оценка за правильный ответ на вопрос."
     },
     "_recordInteraction": {
       "type": "boolean",
       "required": false,
       "default": true,
-      "title": "Record interaction",
+      "title": "Записать взаимодействие",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If disabled, recording the user's answer(s) to this question to cmi.interactions on the LMS will be disabled for this component only."
+      "help": "Если отключено, запись ответа(ов) пользователя на этот вопрос в cmi.interactions в LMS будет отключена только для этого компонента."
     },
     "_columns": {
       "type": "number",
       "required": false,
       "default": 0,
-      "title": "Columns",
+      "title": "Столбцы",
       "inputType": "Number",
       "validators": ["number"],
-      "help": "Set the number of columns. If value is '0', component uses the default layout."
+      "help": "Установите количество столбцов. Если значение равно '0', компонент использует макет по умолчанию."
     },
     "_isRound": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Use circular item images",
+      "title": "Использовать круглые изображения элементов",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, a 50% border radius will be applied to the item images, making them round."
+      "help": "Если включено, к изображениям элементов будет применен радиус границы 50%, что сделает их круглыми."
     },
     "_selectable": {
       "type": "number",
       "required": true,
       "default": 1,
-      "title": "Selectable Items",
+      "title": "Выбираемые элементы",
       "inputType": "Number",
       "validators": ["number", "required"],
-      "help": "How many items are selectable"
+      "help": "Сколько элементов можно выбрать"
     },
     "_feedback": {
       "type": "object",
       "required": false,
-      "title": "Feedback",
+      "title": "Обратная связь",
       "properties": {
         "title": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Feedback Title",
+          "title": "Заголовок обратной связи",
           "inputType": "Text",
           "validators": [],
-          "help": "Leave blank to have the component's title shown instead.",
+          "help": "Оставьте поле пустым, чтобы вместо него отображался заголовок компонента.",
           "translatable": true
         },
         "correct": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Correct",
+          "title": "Правильно",
           "inputType": "TextArea",
           "validators": [],
-          "help": "Correct answer feedback for this question",
+          "help": "Обратная связь по правильному ответу на этот вопрос",
           "translatable": true
         },
         "_incorrect": {
           "type": "object",
           "required": false,
-          "title": "Incorrect Feedback",
+          "title": "Неправильная обратная связь",
           "properties": {
             "final": {
               "type": "string",
               "required": false,
               "default": "",
-              "title": "Incorrect Final",
+              "title": "Неправильный окончательный",
               "inputType": "TextArea",
               "validators": [],
-              "help": "Incorrect answer feedback for the final attempt",
+              "help": "Обратная связь по неправильному ответу для последней попытки",
               "translatable": true
             },
             "notFinal": {
               "type": "string",
               "required": false,
               "default": "",
-              "title": "Incorrect Not Final",
+              "title": "Неправильный не окончательный",
               "inputType": "TextArea",
               "validators": [],
-              "help": "Incorrect answer feedback for any attempt apart from the last attempt. If you leave this blank, the 'Incorrect Final' feedback will be used instead.",
+              "help": "Обратная связь по неправильному ответу для любой попытки, кроме последней. Если вы оставите это поле пустым, вместо него будет использоваться обратная связь 'Неправильный окончательный'.",
               "translatable": true
             }
           }
@@ -354,20 +354,20 @@
               "type": "string",
               "required": false,
               "default": "",
-              "title": "Partly Correct Final",
+              "title": "Частично правильный окончательный",
               "inputType": "TextArea",
               "validators": [],
-              "help": "Partly correct answer feedback for the final attempt. If you leave this blank, the 'Incorrect Final' feedback will be used instead.",
+              "help": "Обратная связь по частично правильному ответу для последней попытки. Если вы оставите это поле пустым, вместо него будет использоваться обратная связь 'Неправильный окончательный'.",
               "translatable": true
             },
             "notFinal": {
               "type": "string",
               "required": false,
               "default": "",
-              "title": "Partly Correct Not Final",
+              "title": "Частично правильный не окончательный",
               "inputType": "TextArea",
               "validators": [],
-              "help": "Partly correct answer feedback for any attempt apart from the last attempt. If you leave this blank, the 'Partly Correct Final' feedback will be used instead.",
+              "help": "Обратная связь по частично правильному ответу для любой попытки, кроме последней. Если вы оставите это поле пустым, вместо него будет использоваться обратная связь 'Частично правильный окончательный'.",
               "translatable": true
             }
           }
@@ -433,7 +433,7 @@
         },
         "_showCorrectAnswer": {
           "type": "object",
-          "title": "Show Correct Answer",
+          "title": "Показать правильный ответ",
           "properties": {
             "buttonText": {
               "type": "string",
@@ -442,7 +442,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Button label text to show the model answer",
+              "help": "Текст метки кнопки для показа правильного ответа",
               "translatable": true
             },
             "ariaLabel": {
@@ -452,14 +452,14 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Aria label for the show model answer button",
+              "help": "Aria-метка для кнопки показа правильного ответа",
               "translatable": true
             }
           }
         },
         "_hideCorrectAnswer": {
           "type": "object",
-          "title": "Hide Correct Answer",
+          "title": "Скрыть правильный ответ",
           "properties": {
             "buttonText": {
               "type": "string",
@@ -468,7 +468,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Button label text to hide the model answer",
+              "help": "Текст метки кнопки для скрытия правильного ответа",
               "translatable": true
             },
             "ariaLabel": {
@@ -478,14 +478,14 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Aria label for the hide model answer button",
+              "help": "Aria-метка для кнопки скрытия правильного ответа",
               "translatable": true
             }
           }
         },
         "_showFeedback": {
           "type": "object",
-          "title": "Show Feedback",
+          "title": "Показать обратную связь",
           "properties": {
             "buttonText": {
               "type": "string",
@@ -494,7 +494,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Button label text to show feedback",
+              "help": "Текст метки кнопки для показа обратной связи",
               "translatable": true
             },
             "ariaLabel": {
@@ -504,7 +504,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Aria label for the show feedback button",
+              "help": "Aria-метка для кнопки показа обратной связи",
               "translatable": true
             }
           }
@@ -513,20 +513,20 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Attempts Remaining Text",
+          "title": "Текст оставшихся попыток",
           "inputType": "QuestionButton",
           "validators": [],
-          "help": "Shown when there are multiple attempts left",
+          "help": "Отображается, когда осталось несколько попыток",
           "translatable": true
         },
         "remainingAttemptText": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Final Attempt Text",
+          "title": "Текст последней попытки",
           "inputType": "QuestionButton",
           "validators": [],
-          "help": "Shown when there is one attempt left",
+          "help": "Отображается, когда осталась одна попытка",
           "translatable": true
         }
       }

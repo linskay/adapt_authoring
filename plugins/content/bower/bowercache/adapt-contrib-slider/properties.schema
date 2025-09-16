@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Slider. Respond to the question by selecting a value on the scale and then submit.",
+      "default": "Слайдер. Ответьте на вопрос, выбрав значение на шкале, а затем нажмите «Отправить».",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,48 +15,48 @@
     "ariaCorrectAnswer": {
       "type": "string",
       "required": true,
-      "default": "The correct answer is {{{correctAnswer}}}",
+      "default": "Правильный ответ: {{{correctAnswer}}}",
       "inputType": "Text",
       "validators": [],
-      "help": "Text that will be announced by the screen reader when the learner selects the 'correct answer' button (and there is only one correct answer)",
+      "help": "Текст, который будет озвучен программой чтения с экрана, когда учащийся нажмет кнопку «Правильный ответ» (и есть только один правильный ответ)",
       "translatable": true
     },
     "ariaCorrectAnswerRange": {
       "type": "string",
       "required": true,
-      "default": "The correct answer is any value from {{{bottom}}} to {{{top}}}",
+      "default": "Правильный ответ — любое значение от {{{bottom}}} до {{{top}}}",
       "inputType": "Text",
       "validators": [],
-      "help": "Text that will be announced by the screen reader when the learner selects the 'correct answer' button (and there are a range of correct answers)",
+      "help": "Текст, который будет озвучен программой чтения с экрана, когда учащийся нажмет кнопку «Правильный ответ» (и есть диапазон правильных ответов)",
       "translatable": true
     },
     "ariaUserAnswer": {
       "type": "string",
       "required": true,
-      "default": "The answer you chose was {{{userAnswer}}}",
+      "default": "Вы выбрали ответ {{{userAnswer}}}",
       "inputType": "Text",
       "validators": [],
-      "help": "Text that will be announced by the screen reader when the learner selects the 'hide correct answer' button",
+      "help": "Текст, который будет озвучен программой чтения с экрана, когда учащийся нажмет кнопку «Скрыть правильный ответ»",
       "translatable": true
     },
     "labelStart": {
       "type": "string",
       "required": false,
-      "default": "Start of the scale",
-      "title": "Scale Label - start aria label",
+      "default": "Начало шкалы",
+      "title": "Метка шкалы - начальная метка aria",
       "inputType": "Text",
       "validators": [],
-      "help": "Aria label for the start of the slider scale",
+      "help": "Метка Aria для начала шкалы слайдера",
       "translatable": true
     },
     "labelEnd": {
       "type": "string",
       "required": false,
-      "default": "End of the scale",
-      "title": "Scale Label - end aria label",
+      "default": "Конец шкалы",
+      "title": "Метка шкалы - конечная метка aria",
       "inputType": "Text",
       "validators": [],
-      "help": "Aria label for the end of the slider scale",
+      "help": "Метка Aria для конца шкалы слайдера",
       "translatable": true
     }
   },
@@ -71,10 +71,10 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Drag the slider to make your choice and select Submit.",
+      "default": "Перетащите ползунок, чтобы сделать свой выбор, и нажмите «Отправить».",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Это текст инструкции",
       "translatable": true
     },
     "ariaQuestion": {
@@ -83,7 +83,7 @@
       "default": "",
       "inputType": "Text",
       "validators": [],
-      "help": "This will be read out by screen readers instead of reading the 'Display title', 'Body' & 'Instruction' fields when focusing on the when focusing on the group or radiogroup. To be clear and concise, ensure the text encompasses only the question associated.",
+      "help": "Это будет зачитано программами чтения с экрана вместо чтения полей 'Заголовок', 'Тело' и 'Инструкция' при фокусировке на группе или радиогруппе. Чтобы быть ясным и кратким, убедитесь, что текст охватывает только связанный вопрос.",
       "translatable": true
     },
     "ariaScaleName": {
@@ -92,48 +92,48 @@
       "default": "",
       "inputType": "Text",
       "validators": [],
-      "help": "This will be read out by screen readers when focusing on the scale input (slider handle). An appropriate name should give context to which the scale is a measurement of.",
+      "help": "Это будет зачитано программами чтения с экрана при фокусировке на вводе шкалы (ручке ползунка). Соответствующее имя должно давать контекст того, что измеряет шкала.",
       "translatable": true
     },
     "_attempts": {
       "type": "number",
       "required": true,
       "default": 1,
-      "title": "Attempts",
+      "title": "Попытки",
       "inputType": "Number",
       "validators": ["required", "number"],
-      "help": "How many attempts the learner is allowed"
+      "help": "Сколько попыток разрешено учащемуся"
     },
     "_canShowModelAnswer": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Display Model Answer",
+      "title": "Показать правильный ответ",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Allow the user to view the 'model answer' if they answer the question incorrectly?"
+      "help": "Разрешить пользователю просматривать 'правильный ответ', если он ответит на вопрос неправильно?"
     },
     "_canShowCorrectness": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Display correctness",
+      "title": "Показывать правильность",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, this replaces the associated 'model answer' toggle button and displays correctness directly on the component."
+      "help": "Если включено, это заменяет соответствующую кнопку-переключатель 'правильный ответ' и отображает правильность непосредственно на компоненте."
     },
     "_canShowFeedback": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Display Feedback",
+      "title": "Показывать обратную связь",
       "inputType": "Checkbox",
       "validators": []
     },
     "_canShowMarking": {
       "type": "boolean",
       "default": true,
-      "title": "Display Marking",
+      "title": "Показывать оценку",
       "inputType": "Checkbox",
       "validators": []
     },
@@ -141,103 +141,103 @@
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Display Attempts",
+      "title": "Показывать попытки",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Display the number of attempts remaining?"
+      "help": "Отображать количество оставшихся попыток?"
     },
     "_questionWeight": {
       "type": "number",
       "required": false,
       "default": 1,
-      "title": "Question Weight",
+      "title": "Вес вопроса",
       "inputType": "Number",
       "validators": ["number"],
-      "help": "How much this question is worth"
+      "help": "Насколько ценен этот вопрос"
     },
     "_recordInteraction": {
       "type": "boolean",
       "required": false,
       "default": true,
-      "title": "Record interaction",
+      "title": "Записывать взаимодействие",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If disabled, recording the user's answer(s) to this question to cmi.interactions on the LMS will be disabled for this component only."
+      "help": "Если отключено, запись ответа(ов) пользователя на этот вопрос в cmi.interactions в LMS будет отключена только для этого компонента."
     },
     "labelStart": {
       "type": "string",
       "required": false,
       "default": "",
-      "title": "Scale Label - Start",
+      "title": "Метка шкалы - Начало",
       "inputType": "Text",
       "validators": [],
-      "help": "Label for the start of the slider scale",
+      "help": "Метка для начала шкалы слайдера",
       "translatable": true
     },
     "labelEnd": {
       "type": "string",
       "required": false,
       "default": "",
-      "title": "Scale Label - End",
+      "title": "Метка шкалы - Конец",
       "inputType": "Text",
       "validators": [],
-      "help": "Label for the end of the slider scale",
+      "help": "Метка для конца шкалы слайдера",
       "translatable": true
     },
     "_scaleStart": {
       "type": "number",
       "required": true,
       "default": 1,
-      "title": "Scale Start",
+      "title": "Начало шкалы",
       "inputType": "Number",
       "validators": ["required", "number"],
-      "help": "What number the scale should start on"
+      "help": "С какого числа должна начинаться шкала"
     },
     "_scaleEnd": {
       "type": "number",
       "required": true,
       "default": 10,
-      "title": "Scale End",
+      "title": "Конец шкалы",
       "inputType": "Number",
       "validators": ["required", "number"],
-      "help": "What number the scale should end on"
+      "help": "На каком числе должна заканчиваться шкала"
     },
     "_scaleStep": {
       "type": "number",
       "required": false,
       "default": 1,
-      "title": "Scale Step",
+      "title": "Шаг шкалы",
       "inputType": "Number",
       "validators": ["number"],
-      "help": "The amount the scale should increment by"
+      "help": "На какую величину должна увеличиваться шкала"
     },
     "scaleStepPrefix": {
       "type": "string",
       "required": false,
       "default": "",
-      "title": "Prefix to add to each slider step",
+      "title": "Префикс для каждого шага ползунка",
       "inputType": "Text",
       "validators": [],
-      "help": "For instance, a '$' can be used as a prefix to indicate currency in dollars (ex. $100)",
+      "help": "Например, '$' можно использовать в качестве префикса для обозначения валюты в долларах (например, $100)",
       "translatable": true
     },
     "scaleStepSuffix": {
       "type": "string",
       "required": false,
       "default": "",
-      "title": "Suffix to add to each slider step",
+      "title": "Суффикс для каждого шага ползунка",
       "inputType": "Text",
       "validators": [],
-      "help": "For instance, a 'V' can be used as a suffix to indicate voltage (ex. 4V)",
+      "help": "Например, 'V' можно использовать в качестве суффикса для обозначения напряжения (например, 4V)",
       "translatable": true
     },
     "_correctAnswer": {
       "type": "string",
       "default": "",
-      "title": "Correct Answer",
+      "title": "Правильный ответ",
       "inputType": "Text",
       "validators": [],
-      "help": "Correct answer on the scale"
+      "help": "Правильный ответ на шкале"
     },
     "_correctRange": {
       "type": "object",
@@ -245,18 +245,18 @@
         "_bottom": {
           "type": "number",
           "default": 0,
-          "title": "Correct Range - Bottom",
+          "title": "Правильный диапазон - Низ",
           "inputType": "Number",
           "validators": ["number"],
-          "help": "Correct bottom range answer on the scale -- ignored when 'Correct Answer' is set"
+          "help": "Правильный нижний диапазон ответа на шкале -- игнорируется, когда установлен 'Правильный ответ'"
         },
         "_top": {
           "type": "number",
           "default": 0,
-          "title": "Correct Range - Top",
+          "title": "Правильный диапазон - Верх",
           "inputType": "Number",
           "validators": ["number"],
-          "help": "Correct top range answer on the scale -- ignored when 'Correct Answer' is set"
+          "help": "Правильный верхний диапазон ответа на шкале -- игнорируется, когда установлен 'Правильный ответ'"
         }
       }
     },
@@ -264,86 +264,86 @@
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Show position indicator",
+      "title": "Показывать индикатор положения",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Controls whether a position indicator on the scale should be shown or not"
+      "help": "Контролирует, должен ли отображаться индикатор положения на шкале"
     },
     "_showNumber": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Show number on indicator",
+      "title": "Показывать номер на индикаторе",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Controls whether the position number on the indicator should be shown or not"
+      "help": "Контролирует, должен ли отображаться номер положения на индикаторе"
     },
     "_showScale": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Show scale",
+      "title": "Показывать шкалу",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Controls whether to show the lines and numbers of the scale or not"
+      "help": "Контролирует, показывать ли линии и номера шкалы"
     },
     "_showScaleNumbers": {
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Show scale numbers",
+      "title": "Показывать номера на шкале",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Controls whether the numbers on the scale should be shown or not"
+      "help": "Контролирует, должны ли отображаться номера на шкале"
     },
     "_feedback": {
       "type": "object",
       "required": false,
-      "title": "Feedback",
+      "title": "Обратная связь",
       "properties": {
         "title": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Feedback Title",
+          "title": "Заголовок обратной связи",
           "inputType": "Text",
           "validators": [],
-          "help": "Leave blank to have the component's title shown instead.",
+          "help": "Оставьте пустым, чтобы вместо этого отображался заголовок компонента.",
           "translatable": true
         },
         "correct": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Correct",
+          "title": "Правильно",
           "inputType": "TextArea",
           "validators": [],
-          "help": "Correct answer feedback for this question",
+          "help": "Обратная связь на правильный ответ на этот вопрос",
           "translatable": true
         },
         "_incorrect": {
           "type": "object",
           "required": false,
-          "title": "Incorrect Feedback",
+          "title": "Неправильная обратная связь",
           "properties": {
             "final": {
               "type": "string",
               "required": false,
               "default": "",
-              "title": "Incorrect Final",
+              "title": "Неправильный окончательный",
               "inputType": "TextArea",
               "validators": [],
-              "help": "Incorrect answer feedback for the final attempt",
+              "help": "Обратная связь на неправильный ответ для последней попытки",
               "translatable": true
             },
             "notFinal": {
               "type": "string",
               "required": false,
               "default": "",
-              "title": "Incorrect Not Final",
+              "title": "Неправильный не окончательный",
               "inputType": "TextArea",
               "validators": [],
-              "help": "Incorrect answer feedback for any attempt apart from the last attempt. If you leave this blank, the 'Incorrect Final' feedback will be used instead.",
+              "help": "Обратная связь на неправильный ответ для любой попытки, кроме последней. Если вы оставите это поле пустым, будет использоваться обратная связь 'Неправильный окончательный'.",
               "translatable": true
             }
           }
@@ -409,7 +409,7 @@
         },
         "_showCorrectAnswer": {
           "type": "object",
-          "title": "Show Correct Answer",
+          "title": "Показать правильный ответ",
           "properties": {
             "buttonText": {
               "type": "string",
@@ -418,7 +418,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Button label text to show the model answer",
+              "help": "Текст метки кнопки для показа правильного ответа",
               "translatable": true
             },
             "ariaLabel": {
@@ -428,14 +428,14 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Aria label for the show model answer button",
+              "help": "Aria метка для кнопки показа правильного ответа",
               "translatable": true
             }
           }
         },
         "_hideCorrectAnswer": {
           "type": "object",
-          "title": "Hide Correct Answer",
+          "title": "Скрыть правильный ответ",
           "properties": {
             "buttonText": {
               "type": "string",
@@ -444,7 +444,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Button label text to hide the model answer",
+              "help": "Текст метки кнопки для скрытия правильного ответа",
               "translatable": true
             },
             "ariaLabel": {
@@ -454,14 +454,14 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Aria label for the hide model answer button",
+              "help": "Aria метка для кнопки скрытия правильного ответа",
               "translatable": true
             }
           }
         },
         "_showFeedback": {
           "type": "object",
-          "title": "Show Feedback",
+          "title": "Показать обратную связь",
           "properties": {
             "buttonText": {
               "type": "string",
@@ -470,7 +470,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Button label text to show feedback",
+              "help": "Текст метки кнопки для показа обратной связи",
               "translatable": true
             },
             "ariaLabel": {
@@ -480,7 +480,7 @@
               "title": "",
               "inputType": "QuestionButton",
               "validators": [],
-              "help": "Aria label for the show feedback button",
+              "help": "Aria метка для кнопки показа обратной связи",
               "translatable": true
             }
           }
@@ -489,20 +489,20 @@
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Attempts Remaining Text",
+          "title": "Текст оставшихся попыток",
           "inputType": "QuestionButton",
           "validators": [],
-          "help": "Shown when there are multiple attempts left",
+          "help": "Отображается, когда осталось несколько попыток",
           "translatable": true
         },
         "remainingAttemptText": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Final Attempt Text",
+          "title": "Текст последней попытки",
           "inputType": "QuestionButton",
           "validators": [],
-          "help": "Shown when there is one attempt left",
+          "help": "Отображается, когда осталась одна попытка",
           "translatable": true
         }
       }

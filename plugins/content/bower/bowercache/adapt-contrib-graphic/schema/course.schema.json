@@ -18,12 +18,12 @@
               "properties": {
                 "_graphic": {
                   "type": "object",
-                  "title": "Graphic",
+                  "title": "Графика",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
+                      "title": "Область ARIA",
                       "default": "",
                       "_adapt": {
                         "translatable": true

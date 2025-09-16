@@ -18,12 +18,12 @@
               "properties": {
                 "_text": {
                   "type": "object",
-                  "title": "Text",
+                  "title": "Текст",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
+                      "title": "Область ARIA",
                       "default": "",
                       "_adapt": {
                         "translatable": true

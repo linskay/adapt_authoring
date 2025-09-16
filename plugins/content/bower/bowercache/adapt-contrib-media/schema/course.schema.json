@@ -18,165 +18,165 @@
               "properties": {
                 "_media": {
                   "type": "object",
-                  "title": "Media",
+                  "title": "Медиа",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Media player{{#any _transcript._inlineTranscript _transcript._externalTranscript}} and transcript{{/any}}.",
+                      "title": "Область ARIA",
+                      "default": "Медиаплеер{{#any _transcript._inlineTranscript _transcript._externalTranscript}} и транскрипт{{/any}}.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "skipToTranscript": {
                       "type": "string",
-                      "title": "Skip to transcript",
-                      "default": "Skip to transcript",
+                      "title": "Перейти к транскрипту",
+                      "default": "Перейти к транскрипту",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "playText": {
                       "type": "string",
-                      "title": "Play",
-                      "default": "Play",
+                      "title": "Воспроизвести",
+                      "default": "Воспроизвести",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "pauseText": {
                       "type": "string",
-                      "title": "Pause",
-                      "default": "Pause",
+                      "title": "Пауза",
+                      "default": "Пауза",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "stopText": {
                       "type": "string",
-                      "title": "Stop",
-                      "default": "Stop",
+                      "title": "Стоп",
+                      "default": "Стоп",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "audioPlayerText": {
                       "type": "string",
-                      "title": "Audio Player",
-                      "default": "Audio Player",
+                      "title": "Аудиоплеер",
+                      "default": "Аудиоплеер",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "videoPlayerText": {
                       "type": "string",
-                      "title": "Video Player",
-                      "default": "Video Player",
+                      "title": "Видеоплеер",
+                      "default": "Видеоплеер",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "tracksText": {
                       "type": "string",
-                      "title": "Captions/Subtitles",
-                      "default": "Captions/Subtitles",
+                      "title": "Титры/Субтитры",
+                      "default": "Титры/Субтитры",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "timeSliderText": {
                       "type": "string",
-                      "title": "Time Slider",
-                      "default": "Time Slider",
+                      "title": "Ползунок времени",
+                      "default": "Ползунок времени",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "muteText": {
                       "type": "string",
-                      "title": "Mute Toggle",
-                      "default": "Mute Toggle",
+                      "title": "Переключить звук",
+                      "default": "Переключить звук",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "unmuteStatusText": {
                       "type": "string",
-                      "title": "Unmute",
-                      "default": "Unmute",
+                      "title": "Включить звук",
+                      "default": "Включить звук",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "muteStatusText": {
                       "type": "string",
-                      "title": "Mute",
-                      "default": "Mute",
+                      "title": "Выключить звук",
+                      "default": "Выключить звук",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "volumeSliderText": {
                       "type": "string",
-                      "title": "Volume Slider",
-                      "default": "Volume Slider",
+                      "title": "Ползунок громкости",
+                      "default": "Ползунок громкости",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "fullscreenText": {
                       "type": "string",
-                      "title": "Fullscreen",
-                      "default": "Fullscreen",
+                      "title": "Полноэкранный режим",
+                      "default": "Полноэкранный режим",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "goFullscreenText": {
                       "type": "string",
-                      "title": "Go Fullscreen",
-                      "default": "Go Fullscreen",
+                      "title": "Перейти в полноэкранный режим",
+                      "default": "Перейти в полноэкранный режим",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "turnOffFullscreenText": {
                       "type": "string",
-                      "title": "Turn off Fullscreen",
-                      "default": "Turn off Fullscreen",
+                      "title": "Выключить полноэкранный режим",
+                      "default": "Выключить полноэкранный режим",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "noneText": {
                       "type": "string",
-                      "title": "None",
-                      "default": "None",
+                      "title": "Нет",
+                      "default": "Нет",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "skipBackText": {
                       "type": "string",
-                      "title": "Skip back %1 seconds",
-                      "default": "Skip back %1 seconds",
+                      "title": "Перемотать назад на %1 секунд",
+                      "default": "Перемотать назад на %1 секунд",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "allyVolumeControlText": {
                       "type": "string",
-                      "title": "Use Up/Down Arrow keys to increase or decrease volume.",
-                      "default": "Use Up/Down Arrow keys to increase or decrease volume.",
+                      "title": "Используйте клавиши со стрелками вверх/вниз для увеличения или уменьшения громкости.",
+                      "default": "Используйте клавиши со стрелками вверх/вниз для увеличения или уменьшения громкости.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "progessHelpText": {
                       "type": "string",
-                      "title": "Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.",
-                      "default": "Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.",
+                      "title": "Используйте клавиши со стрелками влево/вправо для перехода на одну секунду, вверх/вниз для перехода на десять секунд.",
+                      "default": "Используйте клавиши со стрелками влево/вправо для перехода на одну секунду, вверх/вниз для перехода на десять секунд.",
                       "_adapt": {
                         "translatable": true
                       }

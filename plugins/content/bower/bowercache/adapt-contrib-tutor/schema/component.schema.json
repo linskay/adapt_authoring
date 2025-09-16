@@ -10,19 +10,19 @@
       "properties": {
         "_tutor": {
           "type": "object",
-          "title": "Tutor",
+          "title": "Тьютор",
           "default": {},
           "properties": {
             "_isInherited": {
               "type": "boolean",
-              "title": "Use course defaults",
-              "description": "If disabled, these settings will override the course defaults",
+              "title": "Использовать настройки курса по умолчанию",
+              "description": "Если отключено, эти настройки переопределят настройки курса по умолчанию",
               "default": true
             },
             "_type": {
               "type": "string",
-              "title": "Type",
-              "description": "Question feedback display type",
+              "title": "Тип",
+              "description": "Тип отображения обратной связи по вопросу",
               "default": "notify",
               "enum": [
                 "notify",
@@ -34,25 +34,25 @@
             },
             "_classes": {
               "type": "string",
-              "title": "Classes",
-              "description": "Question feedback classes",
+              "title": "Классы",
+              "description": "Классы обратной связи по вопросу",
               "default": ""
             },
             "_hasNotifyBottomButton": {
               "type": "boolean",
-              "title": "Enable notify bottom button",
-              "description": "If disabled and of type notify, the default close icon will be displayed",
+              "title": "Включить нижнюю кнопку уведомления",
+              "description": "Если отключено и тип - notify, будет отображаться значок закрытия по умолчанию",
               "default": false
             },
             "_button": {
               "type": "object",
-              "title": "Close button",
+              "title": "Кнопка закрытия",
               "default": {},
               "properties": {
                 "text": {
                   "type": "string",
-                  "title": "Text",
-                  "description": "For notify and inline feedback buttons. Overlay will always show a cross.",
+                  "title": "Текст",
+                  "description": "Для кнопок обратной связи notify и inline. Overlay всегда будет показывать крестик.",
                   "default": "{{_globals._extensions._tutor.hideFeedback}}",
                   "_adapt": {
                     "translatable": true
@@ -60,8 +60,8 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "Aria label",
-                  "description": "For the inline button and overlay close button. Notify will always read the Text.",
+                  "title": "Метка ARIA",
+                  "description": "Для кнопки inline и кнопки закрытия overlay. Notify всегда будет читать текст.",
                   "default": "{{_globals._extensions._tutor.hideFeedback}}",
                   "_adapt": {
                     "translatable": true

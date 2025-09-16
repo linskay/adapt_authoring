@@ -23,27 +23,27 @@
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Percentage based",
+                  "title": "В процентах",
                   "inputType": "Checkbox",
-                  "help": "Determines whether the values of the 'Pass mark' should be treated as a percentage (default) or as the raw score and correctness.",
+                  "help": "Определяет, следует ли рассматривать значения 'проходного балла' как проценты (по умолчанию) или как необработанные баллы и правильность.",
                   "validators": []
                 },
                 "_scoreToPass": {
                   "type": "number",
                   "required": false,
-                  "title": "Pass mark",
+                  "title": "Проходной балл",
                   "inputType": "Number",
                   "default": 60,
-                  "help": "The minimum score required by the learner to pass the assessment or the minimum percentage score if 'Percentage based'.",
+                  "help": "Минимальный балл, необходимый учащемуся для прохождения теста, или минимальный процентный балл, если выбрано 'В процентах'.",
                   "validators": ["number"]
                 },
                 "_correctToPass": {
                   "type": "number",
                   "required": false,
-                  "title": "Correct pass mark",
+                  "title": "Правильный проходной балл",
                   "inputType": "Number",
                   "default": 60,
-                  "help": "The minimum number of correct questions required by the learner to pass the assessment or the minimum percentage correct if 'Percentage based'.",
+                  "help": "Минимальное количество правильных ответов, необходимое учащемуся для прохождения теста, или минимальный процент правильных ответов, если выбрано 'В процентах'.",
                   "validators": ["number"]
                 }
               }
@@ -64,159 +64,159 @@
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
-                  "title": "Enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": []
                 },
                 "_id": {
                   "type": "string",
                   "required": true,
-                  "title": "Assessment Name",
+                  "title": "Название теста",
                   "default": "",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Unique name for the assessment. This is required by other plugins such as the 'Assessment Results' component to identify the assessment and display its variables."
+                  "help": "Уникальное название для теста. Требуется другими плагинами, такими как компонент 'Результаты теста', для идентификации теста и отображения его переменных."
                 },
                 "_attempts": {
                   "type": "number",
                   "required": false,
-                  "title": "Attempts Allowed",
+                  "title": "Допустимое количество попыток",
                   "inputType": "Number",
                   "default": -1,
                   "validators": ["number"],
-                  "help": "Controls the number of attempts the user is allowed to have on this assessment. Set to -1 (or 0) to allow infinite attempts."
+                  "help": "Контролирует количество попыток, разрешенных пользователю в этом тесте. Установите -1 (или 0), чтобы разрешить бесконечные попытки."
                 },
                 "_isPercentageBased": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Percentage based",
+                  "title": "В процентах",
                   "inputType": "Checkbox",
-                  "help": "Determines whether the pass mark values should be treated as percentages (default) or as the raw score and correctness.",
+                  "help": "Определяет, следует ли рассматривать значения проходного балла как проценты (по умолчанию) или как необработанные баллы и правильность.",
                   "validators": []
                 },
                 "_scoreToPass": {
                   "type": "number",
                   "required": false,
-                  "title": "Pass mark",
+                  "title": "Проходной балл",
                   "inputType": "Number",
                   "default": 60,
-                  "help": "The minimum score required by the learner to pass the assessment or the minimum percentage score if 'Percentage based'.",
+                  "help": "Минимальный балл, необходимый учащемуся для прохождения теста, или минимальный процентный балл, если выбрано 'В процентах'.",
                   "validators": ["number"]
                 },
                 "_correctToPass": {
                   "type": "number",
                   "required": false,
-                  "title": "Correct pass mark",
+                  "title": "Правильный проходной балл",
                   "inputType": "Number",
                   "default": 60,
-                  "help": "The minimum number of correct questions required by the learner to pass the assessment or the minimum percentage correct if 'Percentage based'.",
+                  "help": "Минимальное количество правильных ответов, необходимое учащемуся для прохождения теста, или минимальный процент правильных ответов, если выбрано 'В процентах'.",
                   "validators": ["number"]
                 },
                 "_includeInTotalScore": {
                   "type": "boolean",
                   "default": true,
-                  "title": "Include in Total Score",
+                  "title": "Включить в общий балл",
                   "inputType": "Checkbox",
-                  "help": "Determines if the score from this assessment should be sent to the LMS. The score sent is a percentage according to 'Assessment Weight'.",
+                  "help": "Определяет, следует ли отправлять балл за этот тест в LMS. Отправленный балл представляет собой процент в соответствии с 'Весом теста'.",
                   "validators": []
                 },
                 "_assessmentWeight": {
                   "type": "number",
                   "required": false,
-                  "title": "Assessment Weight",
+                  "title": "Вес теста",
                   "inputType": "Number",
                   "default": 1,
-                  "help": "If there are multiple assessments in the course, this value controls the proportion of the LMS score which is attributed to this assessment, i.e. 1 equals 100%, 0.5 is 50%, etc.",
+                  "help": "Если в курсе несколько тестов, это значение контролирует долю балла LMS, которая относится к этому тесту, т.е. 1 равно 100%, 0.5 - 50% и т.д.",
                   "validators": ["number"]
                 },
                 "_suppressMarking": {
                   "type": "boolean",
                   "required": true,
-                  "title": "Suppress Marking",
+                  "title": "Скрыть оценку",
                   "inputType": "Checkbox",
-                  "help": "Determines whether question marking should be delayed until completion of the assessment or until all attempts have been exhausted.",
+                  "help": "Определяет, следует ли откладывать оценку вопросов до завершения теста или до тех пор, пока не будут исчерпаны все попытки.",
                   "validators": []
                 },
                 "_isResetOnRevisit": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Reset on Revisit",
+                  "title": "Сбросить при повторном посещении",
                   "inputType": "Checkbox",
-                  "help": "Controls whether the assessment should be reset automatically (up to the number of available attempts) when a user revisits the page.",
+                  "help": "Контролирует, следует ли автоматически сбрасывать тест (до количества доступных попыток), когда пользователь повторно посещает страницу.",
                   "validators": []
                 },
                 "_allowResetIfPassed": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Allow retry once passed?",
+                  "title": "Разрешить повторную попытку после прохождения?",
                   "inputType": "Checkbox",
-                  "help": "Controls whether the assessment may be reset after it has been passed (whilst there are attempts remaining).",
+                  "help": "Контролирует, можно ли сбросить тест после его прохождения (пока остаются попытки).",
                   "validators": []
                 },
                 "_scrollToOnReset": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Scroll to on reset?",
+                  "title": "Прокрутить к началу при сбросе?",
                   "inputType": "Checkbox",
-                  "help": "Controls whether to scroll to the assessment after reset or to stay at the top of the assessment page.",
+                  "help": "Контролирует, следует ли прокручивать к тесту после сброса или оставаться в верхней части страницы теста.",
                   "validators": []
                 },
                 "_randomisation": {
                   "type": "object",
                   "required": false,
-                  "title": "Randomised Blocks",
+                  "title": "Случайные блоки",
                   "properties": {
                     "_isEnabled": {
                       "type": "boolean",
                       "required": false,
-                      "title": "Enabled",
+                      "title": "Включено",
                       "inputType": "Checkbox",
-                      "help": "If randomisation is enabled, a specified number of blocks will be displayed to the user in a random order.",
+                      "help": "Если включена рандомизация, указанное количество блоков будет отображаться пользователю в случайном порядке.",
                       "validators": []
                     },
                     "_blockCount": {
                       "type": "number",
                       "required": false,
                       "default": -1,
-                      "title": "Block Count",
+                      "title": "Количество блоков",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "The number of blocks to present to the learner. Set to -1 (or 0) to display all blocks."
+                      "help": "Количество блоков для представления учащемуся. Установите -1 (или 0), чтобы отобразить все блоки."
                     }
                   }
                 },
                 "_banks": {
                   "type": "object",
                   "required": false,
-                  "title": "Question Banks",
+                  "title": "Банки вопросов",
                   "properties": {
                     "_isEnabled": {
                       "type": "boolean",
                       "required": false,
-                      "title": "Enabled",
+                      "title": "Включено",
                       "inputType": "Checkbox",
-                      "help": "Enables associating blocks of question components with a 'bank', allowing questions to be grouped then rendered via the 'Split' property.",
+                      "help": "Позволяет связывать блоки компонентов вопросов с 'банком', позволяя группировать вопросы, а затем отображать их с помощью свойства 'Разделить'.",
                       "validators": []
                     },
                     "_split": {
                       "type": "string",
                       "required": true,
-                      "title": "Split",
+                      "title": "Разделить",
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "This is a comma-separated list of numbers corresponding to the number of questions to be drawn from each question bank. The position of the number in the list corresponds to the 'Bank ID' assigned, e.g. \"3,2\" would display three questions from Bank 1 and two from Bank 2."
+                      "help": "Это разделенный запятыми список чисел, соответствующий количеству вопросов, которые нужно взять из каждого банка вопросов. Позиция числа в списке соответствует назначенному 'ID банка', например, \"3,2\" отобразит три вопроса из Банка 1 и два из Банка 2."
                     },
                     "_randomisation": {
                       "type": "boolean",
                       "required": false,
-                      "title": "Randomise Question Banks",
+                      "title": "Перемешать банки вопросов",
                       "inputType": "Checkbox",
-                      "help": "Controls whether the questions will be displayed in a random order.",
+                      "help": "Контролирует, будут ли вопросы отображаться в случайном порядке.",
                       "validators": []
                     }
                   }
@@ -224,46 +224,46 @@
                 "_questions": {
                   "type": "object",
                   "required": false,
-                  "title": "Question Behaviour",
+                  "title": "Поведение вопросов",
                   "properties": {
                     "_resetType": {
                       "type": "string",
                       "required": false,
                       "enum": ["soft", "hard"],
                       "default": "hard",
-                      "title": "Reset Type",
+                      "title": "Тип сброса",
                       "inputType": {
                         "type": "Select",
                         "options": ["soft", "hard"]
                       },
                       "validators": [],
-                      "help": "Determines whether the question will register as completed when reset. When assigned a value of 'soft', the learner may continue to interact with it, but the complete attribute remains set to true. When assigned 'hard', complete is set to false, and the learner will be forced to complete it again if it is reset. For 'soft', when using trickle, please set the trickle Completion Attribute to `_isInteractionComplete'."
+                      "help": "Определяет, будет ли вопрос регистрироваться как завершенный при сбросе. При значении 'soft' учащийся может продолжать взаимодействовать с ним, но атрибут complete остается равным true. При значении 'hard' complete устанавливается в false, и учащийся будет вынужден выполнить его снова, если он будет сброшен. Для 'soft' при использовании trickle установите атрибут trickle Completion Attribute в `_isInteractionComplete'."
                     },
                     "_canShowFeedback": {
                       "type": "boolean",
                       "required": false,
-                      "title": "Show Feedback",
+                      "title": "Показать обратную связь",
                       "inputType": "Checkbox",
                       "default": false,
-                      "help": "Allows the user to view feedback on their answer.",
+                      "help": "Позволяет пользователю просматривать отзывы на свой ответ.",
                       "validators": []
                     },
                     "_canShowMarking": {
                       "type": "boolean",
                       "required": false,
-                      "title": "Show Marking",
+                      "title": "Показать оценку",
                       "inputType": "Checkbox",
                       "default": false,
-                      "help": "Displays ticks and crosses on question completion.",
+                      "help": "Отображает галочки и крестики по завершении вопроса.",
                       "validators": []
                     },
                     "_canShowModelAnswer": {
                       "type": "boolean",
                       "required": false,
-                      "title": "Show Model Answer",
+                      "title": "Показать правильный ответ",
                       "inputType": "Checkbox",
                       "default": false,
-                      "help": "Allows the user to view the 'model answer' should they answer the question incorrectly.",
+                      "help": "Позволяет пользователю просмотреть 'правильный ответ', если он ответит на вопрос неправильно.",
                       "validators": []
                     }
                   }
@@ -283,10 +283,10 @@
                 "_quizBankID": {
                   "type": "number",
                   "required": false,
-                  "title": "Bank ID",
+                  "title": "ID банка",
                   "inputType": "Number",
                   "default": 1,
-                  "help": "Used to group blocks of question components into associated banks. This works in conjunction with the 'Split' property when question banks are in use.",
+                  "help": "Используется для группировки блоков компонентов вопросов в связанные банки. Работает в сочетании со свойством 'Разделить' при использовании банков вопросов.",
                   "validators": ["number"],
                   "editorAttrs": {
                     "step": 1,

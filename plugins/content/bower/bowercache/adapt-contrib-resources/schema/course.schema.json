@@ -18,12 +18,12 @@
               "properties": {
                 "_resources": {
                   "type": "object",
-                  "title": "Resources",
+                  "title": "Ресурсы",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "Resources: ARIA region",
+                      "title": "Область ARIA",
                       "default": "",
                       "_adapt": {
                         "translatable": true
@@ -31,8 +31,8 @@
                     },
                     "resources": {
                       "type": "string",
-                      "title": "Resources",
-                      "default": "Additional resources.",
+                      "title": "Ресурсы",
+                      "default": "Дополнительные ресурсы.",
                       "_adapt": {
                         "translatable": true
                       }
@@ -45,7 +45,7 @@
         },
         "_resources": {
           "type": "object",
-          "title": "Resources",
+          "title": "Ресурсы",
           "default": {},
           "required": [
             "title"
@@ -53,180 +53,180 @@
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Add resource links to the drawer",
-              "description": "Controls whether the Resources extension is enabled or disabled",
+              "title": "Добавить ссылки на ресурсы в ящик",
+              "description": "Определяет, включено или отключено расширение 'Ресурсы'.",
               "default": true
             },
             "_drawerOrder": {
               "type": "number",
-              "title": "Index position in the drawer",
-              "description": "The order in which this extension should appear as a drawer item",
+              "title": "Позиция в ящике",
+              "description": "Порядок, в котором это расширение должно отображаться как элемент ящика",
               "default": 0
             },
             "title": {
               "type": "string",
-              "title": "Title",
-              "default": "Resources",
-              "description": "The title for the resources button which displays when more than one extension is using the drawer.",
+              "title": "Заголовок",
+              "default": "Ресурсы",
+              "description": "Заголовок для кнопки ресурсов, который отображается, когда более одного расширения использует ящик.",
               "_adapt": {
                 "translatable": true
               }
             },
             "description": {
               "type": "string",
-              "title": "Description",
-              "default": "Select here to view resources for this course",
-              "description": "The description text for the resources button which displays when more than one extension is using the drawer.",
+              "title": "Описание",
+              "default": "Выберите здесь, чтобы просмотреть ресурсы для этого курса",
+              "description": "Текст описания для кнопки ресурсов, который отображается, когда более одного расширения использует ящик.",
               "_adapt": {
                 "translatable": true
               }
             },
             "displayTitle": {
               "type": "string",
-              "title": "Display title",
+              "title": "Отображаемый заголовок",
               "default": "",
-              "description": "The title for the resources which displays at the top of the resources drawer.",
+              "description": "Заголовок для ресурсов, который отображается в верхней части ящика ресурсов.",
               "_adapt": {
                 "translatable": true
               }
             },
             "body": {
               "type": "string",
-              "title": "Body",
+              "title": "Основной текст",
               "default": "",
-              "description": "The body text for the resources which displays at the top of the resources drawer.",
+              "description": "Основной текст для ресурсов, который отображается в верхней части ящика ресурсов.",
               "_adapt": {
                 "translatable": true
               }
             },
             "instruction": {
               "type": "string",
-              "title": "Instruction",
+              "title": "Инструкция",
               "default": "",
-              "description": "The instruction text for the resources which displays at the top of the resources drawer.",
+              "description": "Текст инструкции для ресурсов, который отображается в верхней части ящика ресурсов.",
               "_adapt": {
                 "translatable": true
               }
             },
             "_enableFilters": {
               "type": "boolean",
-              "title": "Enable filter buttons",
+              "title": "Включить кнопки фильтра",
               "default": true,
-              "description": "Turns the filter buttons on and off. Note that the filter buttons will be automatically disabled if all resource items have the same Type value."
+              "description": "Включает и выключает кнопки фильтра. Обратите внимание, что кнопки фильтра будут автоматически отключены, если все элементы ресурсов имеют одинаковое значение типа."
             },
             "_filterButtons": {
               "type": "object",
-              "title": "Filter buttons",
+              "title": "Кнопки фильтра",
               "default": {},
               "properties": {
                 "all": {
                   "type": "string",
-                  "title": "All",
-                  "default": "All",
+                  "title": "Все",
+                  "default": "Все",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "document": {
                   "type": "string",
-                  "title": "Documents",
-                  "default": "Documents",
+                  "title": "Документы",
+                  "default": "Документы",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "media": {
                   "type": "string",
-                  "title": "Media",
-                  "default": "Media",
+                  "title": "Медиа",
+                  "default": "Медиа",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "link": {
                   "type": "string",
-                  "title": "Links",
-                  "default": "Links",
+                  "title": "Ссылки",
+                  "default": "Ссылки",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom1": {
                   "type": "string",
-                  "title": "Custom type 1",
-                  "default": "Custom type 1",
+                  "title": "Пользовательский тип 1",
+                  "default": "Пользовательский тип 1",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom2": {
                   "type": "string",
-                  "title": "Custom type 2",
-                  "default": "Custom type 2",
+                  "title": "Пользовательский тип 2",
+                  "default": "Пользовательский тип 2",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom3": {
                   "type": "string",
-                  "title": "Custom type 3",
-                  "default": "Custom type 3",
+                  "title": "Пользовательский тип 3",
+                  "default": "Пользовательский тип 3",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom4": {
                   "type": "string",
-                  "title": "Custom type 4",
-                  "default": "Custom type 4",
+                  "title": "Пользовательский тип 4",
+                  "default": "Пользовательский тип 4",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom5": {
                   "type": "string",
-                  "title": "Custom type 5",
-                  "default": "Custom type 5",
+                  "title": "Пользовательский тип 5",
+                  "default": "Пользовательский тип 5",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom6": {
                   "type": "string",
-                  "title": "Custom type 6",
-                  "default": "Custom type 6",
+                  "title": "Пользовательский тип 6",
+                  "default": "Пользовательский тип 6",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom7": {
                   "type": "string",
-                  "title": "Custom type 7",
-                  "default": "Custom type 7",
+                  "title": "Пользовательский тип 7",
+                  "default": "Пользовательский тип 7",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom8": {
                   "type": "string",
-                  "title": "Custom type 8",
-                  "default": "Custom type 8",
+                  "title": "Пользовательский тип 8",
+                  "default": "Пользовательский тип 8",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom9": {
                   "type": "string",
-                  "title": "Custom type 9",
-                  "default": "Custom type 9",
+                  "title": "Пользовательский тип 9",
+                  "default": "Пользовательский тип 9",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom10": {
                   "type": "string",
-                  "title": "Custom type 10",
-                  "default": "Custom type 10",
+                  "title": "Пользовательский тип 10",
+                  "default": "Пользовательский тип 10",
                   "_adapt": {
                     "translatable": true
                   }
@@ -235,117 +235,117 @@
             },
             "_filterAria": {
               "type": "object",
-              "title": "Filter ARIA labels",
+              "title": "Метки ARIA фильтра",
               "default": {},
               "properties": {
                 "allAria": {
                   "type": "string",
-                  "title": "All",
-                  "default": "View all resources",
+                  "title": "Все",
+                  "default": "Просмотреть все ресурсы",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "documentAria": {
                   "type": "string",
-                  "title": "Documents",
-                  "default": "View document resources",
+                  "title": "Документы",
+                  "default": "Просмотреть ресурсы документов",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "mediaAria": {
                   "type": "string",
-                  "title": "Media",
-                  "default": "View media resources",
+                  "title": "Медиа",
+                  "default": "Просмотреть медиаресурсы",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "linkAria": {
                   "type": "string",
-                  "title": "Links",
-                  "default": "View resource links",
+                  "title": "Ссылки",
+                  "default": "Просмотреть ссылки на ресурсы",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom1Aria": {
                   "type": "string",
-                  "title": "Custom type 1",
-                  "default": "View custom type 1 links",
+                  "title": "Пользовательский тип 1",
+                  "default": "Просмотреть ссылки пользовательского типа 1",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom2Aria": {
                   "type": "string",
-                  "title": "Custom type 2",
-                  "default": "View custom type 2 links",
+                  "title": "Пользовательский тип 2",
+                  "default": "Просмотреть ссылки пользовательского типа 2",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom3Aria": {
                   "type": "string",
-                  "title": "Custom type 3",
-                  "default": "View custom type 3 links",
+                  "title": "Пользовательский тип 3",
+                  "default": "Просмотреть ссылки пользовательского типа 3",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom4Aria": {
                   "type": "string",
-                  "title": "Custom type 4",
-                  "default": "View custom type 4 links",
+                  "title": "Пользовательский тип 4",
+                  "default": "Просмотреть ссылки пользовательского типа 4",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom5Aria": {
                   "type": "string",
-                  "title": "Custom type 5",
-                  "default": "View custom type 5 links",
+                  "title": "Пользовательский тип 5",
+                  "default": "Просмотреть ссылки пользовательского типа 5",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom6Aria": {
                   "type": "string",
-                  "title": "Custom type 6",
-                  "default": "View custom type 6 links",
+                  "title": "Пользовательский тип 6",
+                  "default": "Просмотреть ссылки пользовательского типа 6",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom7Aria": {
                   "type": "string",
-                  "title": "Custom type 7",
-                  "default": "View custom type 7 links",
+                  "title": "Пользовательский тип 7",
+                  "default": "Просмотреть ссылки пользовательского типа 7",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom8Aria": {
                   "type": "string",
-                  "title": "Custom type 8",
-                  "default": "View custom type 8 links",
+                  "title": "Пользовательский тип 8",
+                  "default": "Просмотреть ссылки пользовательского типа 8",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom9Aria": {
                   "type": "string",
-                  "title": "Custom type 9",
-                  "default": "View custom type 9 links",
+                  "title": "Пользовательский тип 9",
+                  "default": "Просмотреть ссылки пользовательского типа 9",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "custom10Aria": {
                   "type": "string",
-                  "title": "Custom type 10",
-                  "default": "View custom type 10 links",
+                  "title": "Пользовательский тип 10",
+                  "default": "Просмотреть ссылки пользовательского типа 10",
                   "_adapt": {
                     "translatable": true
                   }
@@ -354,13 +354,13 @@
             },
             "_resourcesItems": {
               "type": "array",
-              "title": "Items",
+              "title": "Элементы",
               "items": {
                 "type": "object",
                 "properties": {
                   "_type": {
                     "type": "string",
-                    "title": "Type",
+                    "title": "Тип",
                     "enum": [
                       "document",
                       "media",
@@ -380,21 +380,21 @@
                   },
                   "_forceDownload": {
                     "type": "boolean",
-                    "title": "Force download",
-                    "description": "Forces the resource to be downloaded rather than opened in the browser. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL",
+                    "title": "Принудительная загрузка",
+                    "description": "Принудительно загружает ресурс, а не открывает его в браузере. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе.",
                     "default": false
                   },
                   "title": {
                     "type": "string",
-                    "title": "Title",
+                    "title": "Заголовок",
                     "_adapt": {
                       "translatable": true
                     }
                   },
                   "filename": {
                     "type": "string",
-                    "title": "Filename",
-                    "description": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to",
+                    "title": "Имя файла",
+                    "description": "Используется для установки имени загружаемого файла, отличного от имени исходного файла. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе. Принудительно загружает файл независимо от того, что установлено для 'Принудительной загрузки'.",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -402,7 +402,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "title": "Description",
+                    "title": "Описание",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -410,12 +410,12 @@
                   },
                   "_link": {
                     "type": "string",
-                    "title": "Source",
+                    "title": "Источник",
                     "_backboneForms": "Asset"
                   },
                   "_isGlobal": {
                     "type": "boolean",
-                    "title": "Is displayed on every page",
+                    "title": "Отображается на каждой странице",
                     "default": true
                   }
                 }

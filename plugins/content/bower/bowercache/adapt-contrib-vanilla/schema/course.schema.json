@@ -21,7 +21,7 @@
                 "_src": {
                   "type": "string",
                   "title": "Изображение",
-                  "description": "Select a favicon to improve user experience and enforce brand consistency. This will be displayed in places like your browser's address bar, page tabs and bookmarks menu. Usually, a favicon is 16 x 16 pixels in size and stored in the GIF, PNG, or ICO file format.",
+                  "description": "Выберите favicon для улучшения пользовательского опыта и обеспечения согласованности бренда. Он будет отображаться в таких местах, как адресная строка вашего браузера, вкладки страниц и меню закладок. Обычно favicon имеет размер 16 x 16 пикселей и хранится в формате GIF, PNG или ICO.",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"

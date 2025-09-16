@@ -13,7 +13,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Поддерживаемый макет",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -26,49 +26,49 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Select the next and back arrows to find out more.",
+          "title": "Инструкция",
+          "default": "Выберите стрелки 'вперед' и 'назад', чтобы узнать больше.",
           "_adapt": {
             "translatable": true
           }
         },
         "mobileInstruction": {
           "type": "string",
-          "title": "Mobile instruction",
-          "description": "This is the mobile only instruction text",
-          "default": "Select the plus icon followed by the next arrow to find out more.",
+          "title": "Инструкция для мобильных устройств",
+          "description": "Это текст инструкции только для мобильных устройств",
+          "default": "Выберите значок «плюс», а затем стрелку «далее», чтобы узнать больше.",
           "_adapt": {
             "translatable": true
           }
         },
         "_isTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image",
-          "description": "If enabled, the text area drops below the image instead of being beside it",
+          "title": "Переместить текстовую область под изображение",
+          "description": "Если включено, текстовая область опускается под изображение, а не располагается рядом с ним",
           "default": false
         },
         "_isMobileTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image on mobile",
-          "description": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button",
+          "title": "Переместить текстовую область под изображение на мобильном устройстве",
+          "description": "Если включено, на мобильном устройстве текстовая область опускается под изображение, а не находится за кнопкой слогана",
           "default": false
         },
         "_isStackedOnMobile": {
           "type": "boolean",
-          "title": "Stack images and text on mobile",
-          "description": "If enabled, on mobile, text and images will be stacked vertically. No interaction will be required to view all items as the user will simply scroll down.",
+          "title": "Расположить изображения и текст стопкой на мобильных устройствах",
+          "description": "Если включено, на мобильных устройствах текст и изображения будут расположены вертикально. Для просмотра всех элементов не потребуется никакого взаимодействия, так как пользователь будет просто прокручивать вниз.",
           "default": false
         },
         "_hasNavigationInTextArea": {
           "type": "boolean",
-          "title": "Move navigation to text area",
-          "description": "If enabled, all navigation elements will be moved to the text area",
+          "title": "Переместить навигацию в текстовую область",
+          "description": "Если включено, все элементы навигации будут перемещены в текстовую область",
           "default": false
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the narrative items - or just having viewed the component",
+          "title": "Критерии завершения",
+          "description": "Завершение зависит от того, просмотрел ли учащийся все элементы повествования или только просмотрел компонент",
           "default": "allItems",
           "enum": [
             "inview",
@@ -78,13 +78,13 @@
         },
         "_items": {
           "type": "array",
-          "title": "Items",
+          "title": "Элементы",
           "items": {
             "type": "object",
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
+                "title": "Заголовок",
                 "description": "",
                 "default": "",
                 "_adapt": {
@@ -93,7 +93,7 @@
               },
               "body": {
                 "type": "string",
-                "title": "Body",
+                "title": "Основной текст",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -102,7 +102,7 @@
               },
               "_graphic": {
                 "type": "object",
-                "title": "Graphic",
+                "title": "Графика",
                 "default": {},
                 "required": [
                   "src"
@@ -110,7 +110,7 @@
                 "properties": {
                   "src": {
                     "type": "string",
-                    "title": "Source",
+                    "title": "Источник",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -118,8 +118,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Альтернативный текст",
+                    "description": "Описание изображения; требуется, когда оно имеет значение, которое необходимо донести до учащегося. Для «декоративных» изображений оставьте это поле пустым",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -127,8 +127,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution",
+                    "title": "Атрибуция",
+                    "description": "Текст, который будет отображаться в качестве атрибуции",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -138,8 +138,8 @@
               },
               "strapline": {
                 "type": "string",
-                "title": "Strapline",
-                "description": "Optional if a succinct title is required for the strapline mobile layout. Leave empty to default to title text",
+                "title": "Слоган",
+                "description": "Необязательно, если для мобильного макета слогана требуется краткий заголовок. Оставьте пустым, чтобы по умолчанию использовать текст заголовка",
                 "default": "",
                 "_adapt": {
                   "translatable": true

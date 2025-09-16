@@ -18,47 +18,47 @@
               "properties": {
                 "_narrative": {
                   "type": "object",
-                  "title": "Narrative",
+                  "title": "Повествование",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Slide show. Select the next button to progress.",
+                      "title": "Область ARIA",
+                      "default": "Слайд-шоу. Нажмите кнопку 'далее', чтобы продолжить.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "previous": {
                       "type": "string",
-                      "title": "Previous",
-                      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Back to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+                      "title": "Предыдущий",
+                      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Назад к {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (элемент {{itemNumber}} из {{totalItems}}){{/if}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "next": {
                       "type": "string",
-                      "title": "Next",
-                      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Forward to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+                      "title": "Следующий",
+                      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Вперед к {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (элемент {{itemNumber}} из {{totalItems}}){{/if}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "titleDialog": {
                       "type": "string",
-                      "title": "Dialog default title",
-                      "help": "Default fallback title to use for dialog popups when not set on an item",
-                      "default": "Item {{itemNumber}} of {{totalItems}}",
+                      "title": "Заголовок диалогового окна по умолчанию",
+                      "help": "Резервный заголовок по умолчанию для всплывающих диалоговых окон, если он не установлен для элемента",
+                      "default": "Элемент {{itemNumber}} из {{totalItems}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "titleStrapline": {
                       "type": "string",
-                      "title": "Strapline default title",
-                      "help": "Default fallback title to use for strapline buttons when not set on an item",
-                      "default": "Find out more",
+                      "title": "Заголовок слогана по умолчанию",
+                      "help": "Резервный заголовок по умолчанию для кнопок слогана, если он не установлен для элемента",
+                      "default": "Узнать больше",
                       "_adapt": {
                         "translatable": true
                       }

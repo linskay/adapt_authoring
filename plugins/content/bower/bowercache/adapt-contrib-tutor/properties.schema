@@ -5,8 +5,8 @@
   "globals": {
     "hideFeedback": {
       "type": "string",
-      "default": "Hide feedback",
-      "title": "Hide feedback",
+      "default": "Скрыть обратную связь",
+      "title": "Скрыть обратную связь",
       "inputType": "Text",
       "translatable": true
     }
@@ -20,12 +20,12 @@
           "properties": {
             "_tutor": {
               "type": "object",
-              "legend": "Tutor",
+              "legend": "Тьютор",
               "properties": {
                 "_type": {
                   "type": "string",
                   "default": "notify",
-                  "title": "Type",
+                  "title": "Тип",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -35,41 +35,41 @@
                       "none"
                     ]
                   },
-                  "help": "Question feedback display type"
+                  "help": "Тип отображения обратной связи по вопросу"
                 },
                 "_classes": {
                   "type": "string",
                   "default": "",
-                  "title": "Classes",
-                  "help": "Question feedback classes",
+                  "title": "Классы",
+                  "help": "Классы обратной связи по вопросу",
                   "inputType": "Text"
                 },
                 "_hasNotifyBottomButton": {
                   "type": "boolean",
                   "default": false,
-                  "title": "Enable notify bottom button",
+                  "title": "Включить нижнюю кнопку уведомления",
                   "inputType": "Checkbox",
-                  "help": "If disabled and of type notify, the default close icon will be displayed"
+                  "help": "Если отключено и тип - notify, будет отображаться значок закрытия по умолчанию"
                 },
                 "_button": {
                   "type": "object",
-                  "title": "Close button",
+                  "title": "Кнопка закрытия",
                   "properties": {
                     "text": {
                       "type": "string",
                       "default": "{{_globals._extensions._tutor.hideFeedback}}",
-                      "title": "Text",
+                      "title": "Текст",
                       "inputType": "Text",
                       "translatable": true,
-                      "help": "For notify and inline feedback buttons. Overlay will always show a cross."
+                      "help": "Для кнопок обратной связи notify и inline. Overlay всегда будет показывать крестик."
                     },
                     "ariaLabel": {
                       "type": "string",
                       "default": "{{_globals._extensions._tutor.hideFeedback}}",
-                      "title": "Aria label",
+                      "title": "Метка ARIA",
                       "inputType": "Text",
                       "translatable": true,
-                      "help": "For the inline button and overlay close button. Notify will always read the Text."
+                      "help": "Для кнопки inline и кнопки закрытия overlay. Notify всегда будет читать текст."
                     }
                   }
                 }
@@ -82,19 +82,19 @@
           "properties": {
             "_tutor": {
               "type": "object",
-              "legend": "Tutor",
+              "legend": "Тьютор",
               "properties": {
                 "_isInherited": {
                   "type": "boolean",
                   "default": true,
-                  "title": "Use course defaults",
+                  "title": "Использовать настройки курса по умолчанию",
                   "inputType": "Checkbox",
-                  "help": "If disabled, these settings will override the course defaults"
+                  "help": "Если отключено, эти настройки переопределят настройки курса по умолчанию"
                 },
                 "_type": {
                   "type": "string",
                   "default": "notify",
-                  "title": "Type",
+                  "title": "Тип",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -104,41 +104,41 @@
                       "none"
                     ]
                   },
-                  "help": "Question feedback display type"
+                  "help": "Тип отображения обратной связи по вопросу"
                 },
                 "_classes": {
                   "type": "string",
                   "default": "",
-                  "title": "Classes",
-                  "help": "Question feedback classes",
+                  "title": "Классы",
+                  "help": "Классы обратной связи по вопросу",
                   "inputType": "Text"
                 },
                 "_hasNotifyBottomButton": {
                   "type": "boolean",
                   "default": false,
-                  "title": "Enable notify bottom button",
+                  "title": "Включить нижнюю кнопку уведомления",
                   "inputType": "Checkbox",
-                  "help": "If disabled and of type notify, the default close icon will be displayed"
+                  "help": "Если отключено и тип - notify, будет отображаться значок закрытия по умолчанию"
                 },
                 "_button": {
                   "type": "object",
-                  "title": "Close button",
+                  "title": "Кнопка закрытия",
                   "properties": {
                     "text": {
                       "type": "string",
                       "default": "{{_globals._extensions._tutor.hideFeedback}}",
-                      "title": "Text",
+                      "title": "Текст",
                       "inputType": "Text",
                       "translatable": true,
-                      "help": "For notify and inline feedback buttons. Overlay will always show a cross."
+                      "help": "Для кнопок обратной связи notify и inline. Overlay всегда будет показывать крестик."
                     },
                     "ariaLabel": {
                       "type": "string",
                       "default": "{{_globals._extensions._tutor.hideFeedback}}",
-                      "title": "Aria label",
+                      "title": "Метка ARIA",
                       "inputType": "Text",
                       "translatable": true,
-                      "help": "For the inline button and overlay close button. Notify will always read the Text."
+                      "help": "Для кнопки inline и кнопки закрытия overlay. Notify всегда будет читать текст."
                     }
                   }
                 }

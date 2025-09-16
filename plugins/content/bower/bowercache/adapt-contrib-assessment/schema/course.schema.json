@@ -10,25 +10,25 @@
       "properties": {
         "_assessment": {
           "type": "object",
-          "title": "Assessment",
+          "title": "Тест",
           "default": {},
           "properties": {
             "_isPercentageBased": {
               "type": "boolean",
-              "title": "Set pass mark as percentage",
-              "description": "Determines whether the pass mark values should be treated as percentages (default) or as the raw score and correctness",
+              "title": "Установить проходной балл в процентах",
+              "description": "Определяет, следует ли рассматривать значения проходного балла как проценты (по умолчанию) или как необработанные баллы и правильность",
               "default": true
             },
             "_scoreToPass": {
               "type": "number",
-              "title": "Pass mark",
-              "description": "The minimum score required by the learner to pass the assessment or the minimum percentage score if percentage-based",
+              "title": "Проходной балл",
+              "description": "Минимальный балл, необходимый учащемуся для прохождения теста, или минимальный процентный балл, если выбрано процентное соотношение",
               "default": 60
             },
             "_correctToPass": {
               "type": "number",
-              "title": "Correct pass mark",
-              "description": "The minimum number of correct questions required by the learner to pass the assessment or the minimum percentage correct if percentage-based",
+              "title": "Правильный проходной балл",
+              "description": "Минимальное количество правильных ответов, необходимое учащемуся для прохождения теста, или минимальный процент правильных ответов, если выбрано процентное соотношение",
               "default": 60
             }
           }

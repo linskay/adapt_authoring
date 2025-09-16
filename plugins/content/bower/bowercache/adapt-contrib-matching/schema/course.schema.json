@@ -18,31 +18,31 @@
               "properties": {
                 "_matching": {
                   "type": "object",
-                  "title": "Matching",
+                  "title": "Сопоставление",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Matching. Select from lists and then submit.",
+                      "title": "Область ARIA",
+                      "default": "Сопоставление. Выберите из списков, а затем отправьте.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "correctAnswerPrefix": {
                       "type": "string",
-                      "title": "ARIA prefix for correct answer",
-                      "description": "If _canShowCorrectness is enabled, this text provides a prefix for the correct option displayed below the submitted question item",
-                      "default": "The correct answer is",
+                      "title": "Префикс ARIA для правильного ответа",
+                      "description": "Если включено _canShowCorrectness, этот текст представляет собой префикс для правильного варианта, отображаемого под отправленным элементом вопроса.",
+                      "default": "Правильный ответ:",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "correctAnswersPrefix": {
                       "type": "string",
-                      "title": "ARIA prefix for correct answers",
-                      "description": "If _canShowCorrectness is enabled, this text provides a prefix for the comma separated list of correct options displayed below the submitted question item",
-                      "default": "The correct answers are",
+                      "title": "Префикс ARIA для правильных ответов",
+                      "description": "Если включено _canShowCorrectness, этот текст представляет собой префикс для списка правильных вариантов, разделенных запятыми, отображаемого под отправленным элементом вопроса.",
+                      "default": "Правильные ответы:",
                       "_adapt": {
                         "translatable": true
                       }

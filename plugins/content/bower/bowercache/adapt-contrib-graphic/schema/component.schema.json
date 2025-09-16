@@ -10,7 +10,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Поддерживаемый макет",
           "default": "both",
           "enum": [
             "full-width",
@@ -23,7 +23,7 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
+          "title": "Инструкция",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -31,13 +31,13 @@
         },
         "_graphic": {
           "type": "object",
-          "title": "Graphic",
+          "title": "Графика",
           "default": {},
           "properties": {
             "alt": {
               "type": "string",
-              "title": "Alternative text",
-              "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+              "title": "Альтернативный текст",
+              "description": "Описание изображения; требуется, когда оно имеет значение, которое необходимо донести до учащегося. Для «декоративных» изображений оставьте это поле пустым",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -45,8 +45,8 @@
             },
             "longdescription": {
               "type": "string",
-              "title": "Long image description",
-              "help": "A long description of the image. This text appear below the image.",
+              "title": "Длинное описание изображения",
+              "help": "Длинное описание изображения. Этот текст появится под изображением.",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -54,8 +54,8 @@
             },
             "large": {
               "type": "string",
-              "title": "Large",
-              "description": "The large sized image for desktop devices",
+              "title": "Большой",
+              "description": "Изображение большого размера для настольных устройств",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "image"
@@ -63,8 +63,8 @@
             },
             "small": {
               "type": "string",
-              "title": "Small",
-              "description": "The small sized image for mobile devices",
+              "title": "Маленький",
+              "description": "Изображение малого размера для мобильных устройств",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "image"
@@ -72,8 +72,8 @@
             },
             "attribution": {
               "type": "string",
-              "title": "Attribution",
-              "description": "Text to be displayed as an attribution",
+              "title": "Атрибуция",
+              "description": "Текст, который будет отображаться в качестве атрибуции",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -82,13 +82,13 @@
             "_url": {
               "type": "string",
               "title": "URL",
-              "description": "When the graphic is selected this is the url it will follow.",
+              "description": "Когда графика выбрана, это URL-адрес, по которому она будет следовать.",
               "default": ""
             },
             "_target": {
               "type": "string",
-              "title": "Target attribute",
-              "description": "This targets where to open the link. Acceptable values are '_blank' (opens the linked document in a new window or tab), '_parent' (opens the linked document in the parent frame), '_top' (opens the linked document in the full body of the window) or '_self' (opens the linked document in the same frame as it was selected. If no value is set, the default is '_blank'.",
+              "title": "Атрибут target",
+              "description": "Это определяет, где открывать ссылку. Допустимые значения: '_blank' (открывает связанный документ в новом окне или вкладке), '_parent' (открывает связанный документ в родительском фрейме), '_top' (открывает связанный документ в полном теле окна) или '_self' (открывает связанный документ в том же фрейме, в котором он был выбран. Если значение не установлено, по умолчанию используется '_blank'.",
               "enum": [
                 "",
                 "_blank",
@@ -102,14 +102,14 @@
         },
         "_isScrollable": {
           "type": "boolean",
-          "title": "Enable horizontal scrolling",
-          "description": "Allow the user to view the 'model answer' if they answer the question incorrectly",
+          "title": "Включить горизонтальную прокрутку",
+          "description": "Разрешить пользователю просматривать 'правильный ответ', если он ответил на вопрос неправильно?",
           "default": false
         },
         "_defaultScrollPercent": {
           "type": "number",
-          "title": "Scroll percent",
-          "description": "0 is left most, 50 is in the middle, 100 is right most.",
+          "title": "Процент прокрутки",
+          "description": "0 — крайнее левое положение, 50 — середина, 100 — крайнее правое.",
           "default": 0
         }
       }

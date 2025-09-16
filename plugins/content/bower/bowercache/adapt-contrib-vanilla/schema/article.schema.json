@@ -15,13 +15,13 @@
           "properties": {
             "_textAlignment": {
               "type": "object",
-              "title": "Text alignment",
+              "title": "Выравнивание текста",
               "default": {},
               "properties": {
                 "_title": {
                   "type": "string",
-                  "title": "Title alignment",
-                  "description": "Set the alignment of the article title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "title": "Выравнивание заголовка",
+                  "description": "Установите выравнивание заголовка статьи. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -33,8 +33,8 @@
                 },
                 "_body": {
                   "type": "string",
-                  "title": "Body alignment",
-                  "description": "Set the alignment of the article body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "title": "Выравнивание основного текста",
+                  "description": "Установите выравнивание основного текста статьи. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -46,8 +46,8 @@
                 },
                 "_instruction": {
                   "type": "string",
-                  "title": "Instruction alignment",
-                  "description": "Set the alignment of the article instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "title": "Выравнивание инструкции",
+                  "description": "Установите выравнивание инструкции статьи. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -61,13 +61,13 @@
             },
             "_backgroundImage": {
               "type": "object",
-              "title": "Background image",
+              "title": "Фоновое изображение",
               "default": {},
               "properties": {
                 "_xlarge": {
                   "type": "string",
-                  "title": "Extra Large",
-                  "description": "Extra large background image, e.g. hd laptop/desktop computers",
+                  "title": "Очень большое",
+                  "description": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -75,8 +75,8 @@
                 },
                 "_large": {
                   "type": "string",
-                  "title": "Large",
-                  "description": "Large background image, e.g. laptop/desktop computers",
+                  "title": "Большое",
+                  "description": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -84,8 +84,8 @@
                 },
                 "_medium": {
                   "type": "string",
-                  "title": "Medium",
-                  "description": "Medium background image, e.g. tablet devices",
+                  "title": "Среднее",
+                  "description": "Среднее фоновое изображение, например, для планшетных устройств",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -93,8 +93,8 @@
                 },
                 "_small": {
                   "type": "string",
-                  "title": "Small",
-                  "description": "Small background image, e.g. mobile / cellphones",
+                  "title": "Маленькое",
+                  "description": "Маленькое фоновое изображение, например, для мобильных телефонов",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -104,13 +104,13 @@
             },
             "_backgroundStyles": {
               "type": "object",
-              "title": "Background image styles",
+              "title": "Стили фонового изображения",
               "default": {},
               "properties": {
                 "_backgroundRepeat": {
                   "type": "string",
-                  "title": "Repeat",
-                  "description": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically",
+                  "title": "Повторять",
+                  "description": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали",
                   "default": "no-repeat",
                   "enum": [
                     "repeat",
@@ -122,8 +122,8 @@
                 },
                 "_backgroundSize": {
                   "type": "string",
-                  "title": "Size",
-                  "description": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container",
+                  "title": "Размер",
+                  "description": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно. 100% 100%: изменить размер фонового изображения, чтобы он соответствовал размерам контейнера",
                   "default": "cover",
                   "enum": [
                     "auto",
@@ -135,8 +135,8 @@
                 },
                 "_backgroundPosition": {
                   "type": "string",
-                  "title": "Position",
-                  "description": "The first value is the horizontal position and the second value is the vertical",
+                  "title": "Позиция",
+                  "description": "Первое значение — это горизонтальное положение, а второе — вертикальное",
                   "default": "center top",
                   "enum": [
                     "left top",
@@ -155,31 +155,31 @@
             },
             "_responsiveClasses": {
               "type": "object",
-              "title": "Responsive classes",
+              "title": "Адаптивные классы",
               "default": {},
               "properties": {
                 "_xlarge": {
                   "type": "string",
-                  "title": "Extra large",
-                  "description": "Extra large CSS class, e.g. hd laptop/desktop computers",
+                  "title": "Очень большой",
+                  "description": "Очень большой класс CSS, например, для ноутбуков/настольных компьютеров hd",
                   "default": ""
                 },
                 "_large": {
                   "type": "string",
-                  "title": "Large",
-                  "description": "Large CSS class, e.g. laptop/desktop computers",
+                  "title": "Большой",
+                  "description": "Большой класс CSS, например, для ноутбуков/настольных компьютеров",
                   "default": ""
                 },
                 "_medium": {
                   "type": "string",
-                  "title": "Medium",
-                  "description": "Medium CSS class, e.g. tablet devices",
+                  "title": "Средний",
+                  "description": "Средний класс CSS, например, для планшетных устройств",
                   "default": ""
                 },
                 "_small": {
                   "type": "string",
-                  "title": "Small",
-                  "description": "Small CSS class, e.g. mobile / cellphones",
+                  "title": "Маленький",
+                  "description": "Маленький класс CSS, например, для мобильных телефонов",
                   "default": ""
                 }
               }

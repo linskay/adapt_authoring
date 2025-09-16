@@ -15,7 +15,7 @@
     "resources": {
       "type": "string",
       "required": true,
-      "default": "Additional resources.",
+      "default": "Дополнительные ресурсы.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -35,44 +35,44 @@
             "_resources": {
               "type": "object",
               "required": false,
-              "legend": "Resources",
+              "legend": "Ресурсы",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required":true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Resources extension is enabled or disabled."
+                  "help": "Определяет, включено или отключено расширение 'Ресурсы'."
                 },
                 "_drawerOrder": {
                   "type": "number",
                   "required": false,
-                  "title": "Drawer order",
+                  "title": "Порядок в ящике",
                   "inputType": "Number",
                   "default": 0,
-                  "help": "The order in which this extension should appear as a drawer item",
+                  "help": "Порядок, в котором это расширение должно отображаться как элемент ящика",
                   "validators": ["number"]
                 },
                 "title": {
                   "type": "string",
-                  "default": "Resources",
+                  "default": "Ресурсы",
                   "required": true,
                   "title": "",
                   "inputType": "Text",
                   "validators": ["required"],
-                  "help": "The title for the resources button which displays when more than one extension is using the drawer.",
+                  "help": "Заголовок для кнопки ресурсов, который отображается, когда более одного расширения использует ящик.",
                   "translatable": true
                 },
                 "description": {
                   "type": "string",
-                  "default": "Select here to view resources for this course",
+                  "default": "Выберите здесь, чтобы просмотреть ресурсы для этого курса",
                   "required": false,
                   "title": "",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "The description text for the resources button which displays when more than one extension is using the drawer.",
+                  "help": "Текст описания для кнопки ресурсов, который отображается, когда более одного расширения использует ящик.",
                   "translatable": true
                 },
                 "displayTitle": {
@@ -82,7 +82,7 @@
                   "title": "",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "The title for the resources which displays at the top of the resources drawer.",
+                  "help": "Заголовок для ресурсов, который отображается в верхней части ящика ресурсов.",
                   "translatable": true
                 },
                 "body": {
@@ -92,7 +92,7 @@
                   "title": "",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "The body text for the resources which displays at the top of the resources drawer.",
+                  "help": "Основной текст для ресурсов, который отображается в верхней части ящика ресурсов.",
                   "translatable": true
                 },
                 "instruction": {
@@ -102,25 +102,25 @@
                   "title": "",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "The instruction text for the resources which displays at the top of the resources drawer.",
+                  "help": "Текст инструкции для ресурсов, который отображается в верхней части ящика ресурсов.",
                   "translatable": true
                 },
                 "_enableFilters": {
                   "type": "boolean",
                   "required":true,
                   "default": true,
-                  "title": "Enable filter buttons",
+                  "title": "Включить кнопки фильтра",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Turns the filter buttons on and off. Note that the filter buttons will be automatically disabled if all resource items have the same Type value."
+                  "help": "Включает и выключает кнопки фильтра. Обратите внимание, что кнопки фильтра будут автоматически отключены, если все элементы ресурсов имеют одинаковое значение типа."
                 },
                 "_filterButtons": {
                   "type": "object",
-                  "title": "Filter Buttons",
+                  "title": "Кнопки фильтра",
                   "properties": {
                     "all": {
                       "type": "string",
-                      "default": "All",
+                      "default": "Все",
                       "title": "",
                       "inputType": "Text",
                       "validators": [],
@@ -128,7 +128,7 @@
                     },
                     "document": {
                       "type": "string",
-                      "default": "Documents",
+                      "default": "Документы",
                       "title": "",
                       "inputType": "Text",
                       "validators": [],
@@ -136,7 +136,7 @@
                     },
                     "media": {
                       "type": "string",
-                      "default": "Media",
+                      "default": "Медиа",
                       "title": "",
                       "inputType": "Text",
                       "validators": [],
@@ -144,7 +144,7 @@
                     },
                     "link": {
                       "type": "string",
-                      "default": "Links",
+                      "default": "Ссылки",
                       "title": "",
                       "inputType": "Text",
                       "validators": [],
@@ -152,80 +152,80 @@
                     },
                     "custom1": {
                       "type": "string",
-                      "default": "Custom type 1",
-                      "title": "Custom type 1",
+                      "default": "Пользовательский тип 1",
+                      "title": "Пользовательский тип 1",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom2": {
                       "type": "string",
-                      "default": "Custom type 2",
-                      "title": "Custom type 2",
+                      "default": "Пользовательский тип 2",
+                      "title": "Пользовательский тип 2",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom3": {
                       "type": "string",
-                      "default": "Custom type 3",
-                      "title": "Custom type 3",
+                      "default": "Пользовательский тип 3",
+                      "title": "Пользовательский тип 3",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom4": {
                       "type": "string",
-                      "default": "Custom type 4",
-                      "title": "Custom type 4",
+                      "default": "Пользовательский тип 4",
+                      "title": "Пользовательский тип 4",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom5": {
                       "type": "string",
-                      "default": "Custom type 5",
-                      "title": "Custom type 5",
+                      "default": "Пользовательский тип 5",
+                      "title": "Пользовательский тип 5",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom6": {
                       "type": "string",
-                      "default": "Custom type 6",
-                      "title": "Custom type 6",
+                      "default": "Пользовательский тип 6",
+                      "title": "Пользовательский тип 6",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom7": {
                       "type": "string",
-                      "default": "Custom type 7",
-                      "title": "Custom type 7",
+                      "default": "Пользовательский тип 7",
+                      "title": "Пользовательский тип 7",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom8": {
                       "type": "string",
-                      "default": "Custom type 8",
-                      "title": "Custom type 8",
+                      "default": "Пользовательский тип 8",
+                      "title": "Пользовательский тип 8",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom9": {
                       "type": "string",
-                      "default": "Custom type 9",
-                      "title": "Custom type 9",
+                      "default": "Пользовательский тип 9",
+                      "title": "Пользовательский тип 9",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom10": {
                       "type": "string",
-                      "default": "Custom type 10",
-                      "title": "Custom type 10",
+                      "default": "Пользовательский тип 10",
+                      "title": "Пользовательский тип 10",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
@@ -234,116 +234,116 @@
                 },
                 "_filterAria": {
                   "type": "object",
-                  "title": "Aria Labels",
+                  "title": "Метки Aria",
                   "properties": {
                     "allAria": {
                       "type": "string",
-                      "default": "View all resources",
-                      "title": "All",
+                      "default": "Просмотреть все ресурсы",
+                      "title": "Все",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "documentAria": {
                       "type": "string",
-                      "default": "View document resources",
-                      "title": "Documents",
+                      "default": "Просмотреть ресурсы документов",
+                      "title": "Документы",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "mediaAria": {
                       "type": "string",
-                      "default": "View media resources",
-                      "title": "Media",
+                      "default": "Просмотреть медиаресурсы",
+                      "title": "Медиа",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "linkAria": {
                       "type": "string",
-                      "default": "View resource links",
-                      "title": "Links",
+                      "default": "Просмотреть ссылки на ресурсы",
+                      "title": "Ссылки",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom1Aria": {
                       "type": "string",
-                      "default": "View custom type 1 links",
-                      "title": "Custom type 1",
+                      "default": "Просмотреть ссылки пользовательского типа 1",
+                      "title": "Пользовательский тип 1",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom2Aria": {
                       "type": "string",
-                      "default": "View custom type 2 links",
-                      "title": "Custom type 2",
+                      "default": "Просмотреть ссылки пользовательского типа 2",
+                      "title": "Пользовательский тип 2",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom3Aria": {
                       "type": "string",
-                      "default": "View custom type 3 links",
-                      "title": "Custom type 3",
+                      "default": "Просмотреть ссылки пользовательского типа 3",
+                      "title": "Пользовательский тип 3",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom4Aria": {
                       "type": "string",
-                      "default": "View custom type 4 links",
-                      "title": "Custom type 4",
+                      "default": "Просмотреть ссылки пользовательского типа 4",
+                      "title": "Пользовательский тип 4",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom5Aria": {
                       "type": "string",
-                      "default": "View custom type 5 links",
-                      "title": "Custom type 5",
+                      "default": "Просмотреть ссылки пользовательского типа 5",
+                      "title": "Пользовательский тип 5",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom6Aria": {
                       "type": "string",
-                      "default": "View custom type 6 links",
-                      "title": "Custom type 6",
+                      "default": "Просмотреть ссылки пользовательского типа 6",
+                      "title": "Пользовательский тип 6",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom7Aria": {
                       "type": "string",
-                      "default": "View custom type 7 links",
-                      "title": "Custom type 7",
+                      "default": "Просмотреть ссылки пользовательского типа 7",
+                      "title": "Пользовательский тип 7",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom8Aria": {
                       "type": "string",
-                      "default": "View custom type 8 links",
-                      "title": "Custom type 8",
+                      "default": "Просмотреть ссылки пользовательского типа 8",
+                      "title": "Пользовательский тип 8",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom9Aria": {
                       "type": "string",
-                      "default": "View custom type 9 links",
-                      "title": "Custom type 9",
+                      "default": "Просмотреть ссылки пользовательского типа 9",
+                      "title": "Пользовательский тип 9",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
                     },
                     "custom10Aria": {
                       "type": "string",
-                      "default": "View custom type 10 links",
-                      "title": "Custom type 10",
+                      "default": "Просмотреть ссылки пользовательского типа 10",
+                      "title": "Пользовательский тип 10",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
@@ -353,31 +353,31 @@
                 "_resourcesItems": {
                   "type": "array",
                   "required": false,
-                  "title": "Resources Items",
+                  "title": "Элементы ресурсов",
                   "items": {
                     "type": "object",
                     "required": false,
-                    "title": "Items",
+                    "title": "Элементы",
                     "properties": {
                       "_type": {
                         "type": "string",
                         "required": true,
-                        "title": "Type",
+                        "title": "Тип",
                         "inputType": { "type": "Select", "options": ["document", "media", "link", "custom1", "custom2", "custom3", "custom4", "custom5", "custom6", "custom7", "custom8", "custom9", "custom10"]},
                         "validators": ["required"]
                       },
                       "_forceDownload": {
                         "type": "boolean",
                         "default": false,
-                        "title": "Force download",
+                        "title": "Принудительная загрузка",
                         "inputType": "Checkbox",
                         "validators": [],
-                        "help": "Forces the resource to be downloaded rather than opened in the browser. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL."
+                        "help": "Принудительно загружает ресурс, а не открывает его в браузере. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе."
                       },
                       "title": {
                         "type": "string",
                         "required": true,
-                        "title": "Title",
+                        "title": "Заголовок",
                         "inputType": "Text",
                         "validators": ["required"],
                         "translatable": true
@@ -385,15 +385,15 @@
                       "filename": {
                         "type": "string",
                         "required": false,
-                        "title": "Filename",
+                        "title": "Имя файла",
                         "inputType": "Text",
                         "translatable": true,
-                        "help": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to."
+                        "help": "Используется для установки имени загружаемого файла, отличного от имени исходного файла. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе. Принудительно загружает файл независимо от того, что установлено для 'Принудительной загрузки'."
                       },
                       "description": {
                         "type": "string",
                         "required": false,
-                        "title": "Description",
+                        "title": "Описание",
                         "inputType": "Text",
                         "validators": [],
                         "translatable": true
@@ -401,7 +401,7 @@
                       "_link": {
                         "type": "string",
                         "required": true,
-                        "title": "Link",
+                        "title": "Ссылка",
                         "inputType": "Asset",
                         "validators": ["required"]
                       },
@@ -409,7 +409,7 @@
                         "type": "boolean",
                         "required":true,
                         "default": true,
-                        "title": "Is displayed on every page?",
+                        "title": "Отображается на каждой странице?",
                         "inputType": "Checkbox",
                         "validators": []
                       }
@@ -426,45 +426,45 @@
             "_resources": {
               "type": "object",
               "required": false,
-              "legend": "Resources",
+              "legend": "Ресурсы",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required":true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Resources extension is enabled or disabled."
+                  "help": "Определяет, включено или отключено расширение 'Ресурсы'."
                 },
                 "_resourcesItems": {
                   "type": "array",
                   "required": false,
-                  "title": "Resources Items",
+                  "title": "Элементы ресурсов",
                   "items": {
                     "type": "object",
                     "required": false,
-                    "title": "Items",
+                    "title": "Элементы",
                     "properties": {
                       "_type": {
                         "type": "string",
                         "required": true,
-                        "title": "Type",
+                        "title": "Тип",
                         "inputType": { "type": "Select", "options": ["document", "media", "link"]},
                         "validators": ["required"]
                       },
                       "_forceDownload": {
                         "type": "boolean",
                         "default": false,
-                        "title": "Force download",
+                        "title": "Принудительная загрузка",
                         "inputType": "Checkbox",
                         "validators": [],
-                        "help": "Forces the resource to be downloaded rather than opened in the browser. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL."
+                        "help": "Принудительно загружает ресурс, а не открывает его в браузере. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе."
                       },
                       "title": {
                         "type": "string",
                         "required": true,
-                        "title": "Title",
+                        "title": "Заголовок",
                         "inputType": "Text",
                         "validators": ["required"],
                         "translatable": true
@@ -472,15 +472,15 @@
                       "filename": {
                         "type": "string",
                         "required": false,
-                        "title": "Filename",
+                        "title": "Имя файла",
                         "inputType": "Text",
                         "translatable": true,
-                        "help": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to."
+                        "help": "Используется для установки имени загружаемого файла, отличного от имени исходного файла. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе. Принудительно загружает файл независимо от того, что установлено для 'Принудительной загрузки'."
                       },
                       "description": {
                         "type": "string",
                         "required": false,
-                        "title": "Description",
+                        "title": "Описание",
                         "inputType": "Text",
                         "validators": [],
                         "translatable": true
@@ -488,7 +488,7 @@
                       "_link": {
                         "type": "string",
                         "required": true,
-                        "title": "Link",
+                        "title": "Ссылка",
                         "inputType": "Asset",
                         "validators": ["required"]
                       }

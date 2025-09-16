@@ -14,7 +14,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Поддерживаемый макет",
           "default": "both",
           "enum": [
             "full-width",
@@ -27,20 +27,20 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Select the play button to start the video.",
+          "title": "Инструкция",
+          "default": "Нажмите кнопку воспроизведения, чтобы запустить видео.",
           "_adapt": {
             "translatable": true
           }
         },
         "_media": {
           "type": "object",
-          "title": "Media",
+          "title": "Медиа",
           "default": {},
           "properties": {
             "mp4": {
               "type": "string",
-              "title": "MP4 source",
+              "title": "Источник MP4",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "video"
@@ -48,7 +48,7 @@
             },
             "ogv": {
               "type": "string",
-              "title": "OGV source",
+              "title": "Источник OGV",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "video"
@@ -56,7 +56,7 @@
             },
             "webm": {
               "type": "string",
-              "title": "WebM source",
+              "title": "Источник WebM",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "video"
@@ -64,7 +64,7 @@
             },
             "mp3": {
               "type": "string",
-              "title": "MP3 source",
+              "title": "Источник MP3",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "audio"
@@ -72,14 +72,14 @@
             },
             "source": {
               "type": "string",
-              "title": "External source",
-              "description": "Enter an external link, such as a YouTube URL",
+              "title": "Внешний источник",
+              "description": "Введите внешнюю ссылку, например, URL-адрес YouTube",
               "default": ""
             },
             "type": {
               "type": "string",
-              "title": "External source type",
-              "description": "Select the external source type, for a YouTube link this would be 'video/youtube', and 'video/vimeo' for Vimeo",
+              "title": "Тип внешнего источника",
+              "description": "Выберите тип внешнего источника, для ссылки на YouTube это будет 'video/youtube', а для Vimeo — 'video/vimeo'",
               "default": "",
               "enum": [
                 "",
@@ -90,8 +90,8 @@
             },
             "poster": {
               "type": "string",
-              "title": "Poster frame",
-              "description": "Image displayed before the video is played (except on Vimeo)",
+              "title": "Кадр-постер",
+              "description": "Изображение, отображаемое перед воспроизведением видео (кроме Vimeo)",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "image"
@@ -99,19 +99,19 @@
             },
             "cc": {
               "type": "array",
-              "title": "Closed captions",
+              "title": "Скрытые субтитры",
               "items": {
                 "type": "object",
                 "properties": {
                   "srclang": {
                     "type": "string",
-                    "title": "Language code",
+                    "title": "Код языка",
                     "default": ""
                   },
                   "src": {
                     "type": "string",
 
-                    "title": "WebVTT source",
+                    "title": "Источник WebVTT",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "text"
@@ -124,8 +124,8 @@
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion trigger",
-          "description": "Defines what media event should trigger completion of this component",
+          "title": "Триггер завершения",
+          "description": "Определяет, какое медиа-событие должно вызывать завершение этого компонента",
           "default": "play",
           "enum": [
             "inview",
@@ -136,25 +136,25 @@
         },
         "_useClosedCaptions": {
           "type": "boolean",
-          "title": "Enable closed captions",
+          "title": "Включить скрытые субтитры",
           "default": false
         },
         "_startLanguage": {
           "type": "string",
-          "title": "Initial closed captions language",
-          "description": "Select which closed caption language to display by default. Only required when closed captions are enabled and there are multiple languages",
+          "title": "Исходный язык скрытых субтитров",
+          "description": "Выберите, какой язык скрытых субтитров отображать по умолчанию. Требуется только в том случае, если включены скрытые субтитры и имеется несколько языков",
           "default": "en"
         },
         "_showVolumeControl": {
           "type": "boolean",
-          "title": "Show volume control (not supported on mobile)",
-          "description": "When enabled, the volume control will appear in the media player. On mobile devices the audio level is controlled the device's physical volume controls",
+          "title": "Показывать регулятор громкости (не поддерживается на мобильных устройствах)",
+          "description": "Если включено, регулятор громкости появится в медиаплеере. На мобильных устройствах уровень звука регулируется физическими кнопками громкости устройства.",
           "default": false
         },
         "_startVolume": {
           "type": "string",
-          "title": "Default volume (not supported on mobile)",
-          "description": "Defines the default volume. On mobile devices the audio level is under the user's physical control",
+          "title": "Громкость по умолчанию (не поддерживается на мобильных устройствах)",
+          "description": "Определяет громкость по умолчанию. На мобильных устройствах уровень звука находится под физическим контролем пользователя",
           "default": "80%",
           "enum": [
             "0%",
@@ -173,12 +173,12 @@
         },
         "_allowFullScreen": {
           "type": "boolean",
-          "title": "Allow full screen",
+          "title": "Разрешить полноэкранный режим",
           "default": false
         },
         "_aspectRatio": {
           "type": "string",
-          "title": "Aspect ratio",
+          "title": "Соотношение сторон",
           "default": "landscape",
           "enum": [
             "landscape",
@@ -189,50 +189,50 @@
         },
         "_pauseWhenOffScreen": {
           "type": "boolean",
-          "title": "Pause playback when no longer in view",
+          "title": "Приостанавливать воспроизведение, когда больше не в поле зрения",
           "default": false
         },
         "_playsinline": {
           "type": "boolean",
-          "title": "Play videos inline on iOS",
-          "description": "If enabled, videos will play 'inline' on iPhones (the same way they do on iPads). Note that this feature is only available in iOS10 and above",
+          "title": "Воспроизводить видео встроенным образом на iOS",
+          "description": "Если включено, видео будут воспроизводиться 'встроенным образом' на iPhone (так же, как на iPad). Обратите внимание, что эта функция доступна только в iOS10 и выше.",
           "default": false
         },
         "_preventForwardScrubbing": {
           "type": "boolean",
-          "title": "Attempt to prevent media scrubbing",
-          "description": "If enabled, will attempt to prevent users from skipping ahead in audio/video",
+          "title": "Пытаться предотвратить перемотку медиа",
+          "description": "Если включено, будет предпринята попытка предотвратить перемотку аудио/видео пользователями",
           "default": false
         },
         "_offsetMediaControls": {
           "type": "boolean",
-          "title": "Offset media controls",
-          "description": "If enabled, the media control bar will be respositioned below the media container to remove the standard overlap style.",
+          "title": "Сместить элементы управления медиа",
+          "description": "Если включено, панель управления медиа будет перемещена под контейнер медиа, чтобы убрать стандартный стиль наложения.",
           "default": false
         },
         "_transcript": {
           "type": "object",
-          "title": "Transcript",
+          "title": "Транскрипт",
           "default": {},
           "properties": {
             "_setCompletionOnView": {
               "type": "boolean",
-              "title": "Mark this component as complete when transcript is shown",
+              "title": "Помечать этот компонент как завершенный при показе транскрипта",
               "default": true
             },
             "_inlineTranscript": {
               "type": "boolean",
-              "title": "Enable inline transcript",
+              "title": "Включить встроенную транскрипцию",
               "default": false
             },
             "_externalTranscript": {
               "type": "boolean",
-              "title": "Enable linked transcript file",
+              "title": "Включить связанный файл транскрипции",
               "default": false
             },
             "inlineTranscriptButton": {
               "type": "string",
-              "title": "Inline transcript open button label",
+              "title": "Метка кнопки открытия встроенной транскрипции",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -240,7 +240,7 @@
             },
             "inlineTranscriptCloseButton": {
               "type": "string",
-              "title": "Inline transcript close button label",
+              "title": "Метка кнопки закрытия встроенной транскрипции",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -248,7 +248,7 @@
             },
             "inlineTranscriptBody": {
               "type": "string",
-              "title": "Inline transcript",
+              "title": "Встроенная транскрипция",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -257,7 +257,7 @@
             },
             "transcriptLinkButton": {
               "type": "string",
-              "title": "Linked transcript file button label",
+              "title": "Метка кнопки связанного файла транскрипции",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -265,7 +265,7 @@
             },
             "transcriptLink": {
               "type": "string",
-              "title": "Linked transcript file source",
+              "title": "Источник связанного файла транскрипции",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "other"
@@ -275,8 +275,8 @@
         },
         "_playerOptions": {
           "type": "object",
-          "title": "Player options",
-          "description": "Optional object that can be used to customize the player",
+          "title": "Параметры плеера",
+          "description": "Необязательный объект, который можно использовать для настройки плеера",
           "default": {},
           "_backboneForms": {
             "type": "CodeEditor",

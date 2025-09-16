@@ -27,7 +27,7 @@
       "default": "",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Это текст инструкции",
       "translatable": true
     }
   }

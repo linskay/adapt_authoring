@@ -10,7 +10,7 @@
       "properties": {
         "_trickle": {
           "type": "object",
-          "title": "Trickle",
+          "title": "Постепенная подача",
           "default": {},
           "required": [
             "_scrollDuration"
@@ -18,36 +18,36 @@
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Trickle",
+              "title": "Включить постепенную подачу",
               "default": false
             },
             "_autoScroll": {
               "type": "boolean",
-              "title": "Scroll automatically",
+              "title": "Прокручивать автоматически",
               "default": false
             },
             "_scrollDuration": {
               "type": "number",
-              "title": "Scroll duration",
-              "description": "Duration of the scroll animation in milliseconds",
+              "title": "Продолжительность прокрутки",
+              "description": "Продолжительность анимации прокрутки в миллисекундах",
               "default": 500
             },
             "_onChildren": {
               "type": "boolean",
-              "title": "Enable on child blocks",
-              "description": "Set to false on the article to use trickle at article level",
+              "title": "Включить на дочерних блоках",
+              "description": "Установите значение false для статьи, чтобы использовать постепенную подачу на уровне статьи",
               "default": false
             },
             "_scrollTo": {
               "type": "string",
-              "title": "Scroll target",
-              "description": "Set how trickle scrolls",
+              "title": "Цель прокрутки",
+              "description": "Установите, как прокручивается постепенная подача",
               "default": "@block +1"
             },
             "_completionAttribute": {
               "type": "string",
-              "title": "Completion attribute",
-              "description": "Set which attribute is used to determine completion",
+              "title": "Атрибут завершения",
+              "description": "Установите, какой атрибут используется для определения завершения",
               "default": "_isComplete",
               "enum": [
                 "_isInteractionComplete",
@@ -57,7 +57,7 @@
             },
             "_button": {
               "type": "object",
-              "title": "Button",
+              "title": "Кнопка",
               "default": {},
               "required": [
                 "_styleBeforeCompletion",
@@ -66,12 +66,12 @@
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
-                  "title": "Add Trickle button",
+                  "title": "Добавить кнопку постепенной подачи",
                   "default": false
                 },
                 "_styleBeforeCompletion": {
                   "type": "string",
-                  "title": "Visibility before completion",
+                  "title": "Видимость до завершения",
                   "default": "hidden",
                   "enum": [
                     "hidden",
@@ -82,7 +82,7 @@
                 },
                 "_styleAfterClick": {
                   "type": "string",
-                  "title": "Visibility after completion",
+                  "title": "Видимость после завершения",
                   "default": "hidden",
                   "enum": [
                     "hidden",
@@ -93,126 +93,126 @@
                 },
                 "_isFullWidth": {
                   "type": "boolean",
-                  "title": "Make full width",
+                  "title": "Сделать полной ширины",
                   "default": true
                 },
                 "_autoHide": {
                   "type": "boolean",
-                  "title": "Hide button when no longer in view",
-                  "description": "Hides the button when it scrolls from view; not recommended for use in courses that need to be screenreader compatible",
+                  "title": "Скрывать кнопку, когда она больше не видна",
+                  "description": "Скрывает кнопку, когда она прокручивается из вида; не рекомендуется для использования в курсах, которые должны быть совместимы с программами чтения с экрана",
                   "default": false
                 },
                 "_showEndOfPage": {
                   "type": "boolean",
-                  "title": "Show end of page button",
+                  "title": "Показывать кнопку в конце страницы",
                   "default": true
                 },
                 "_className": {
                   "type": "string",
-                  "title": "Custom classes",
+                  "title": "Пользовательские классы",
                   "default": ""
                 },
                 "_hasIcon": {
                   "type": "boolean",
-                  "title": "Enable icon",
-                  "description": "Displays an icon alongside, or in place of, the Trickle button text. Default icon is a small downwards arrow",
+                  "title": "Включить иконку",
+                  "description": "Отображает значок рядом с текстом кнопки Постепенная подача или вместо него. Значок по умолчанию - маленькая стрелка вниз",
                   "default": false
                 },
                 "text": {
                   "type": "string",
-                  "title": "Default button text",
-                  "default": "Continue",
+                  "title": "Текст кнопки по умолчанию",
+                  "default": "Продолжить",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "Default button ARIA label",
-                  "default": "Continue",
+                  "title": "Метка ARIA кнопки по умолчанию",
+                  "default": "Продолжить",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "disabledText": {
                   "type": "string",
-                  "title": "Button text when disabled",
+                  "title": "Текст кнопки в отключенном состоянии",
                   "default": "",
-                  "description": "This text can be shown while the button is disabled",
+                  "description": "Этот текст может отображаться, когда кнопка отключена",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "disabledAriaLabel": {
                   "type": "string",
-                  "title": "Button ARIA label when disabled",
+                  "title": "Метка ARIA кнопки в отключенном состоянии",
                   "default": "",
-                  "description": "The aria label when 'Button text when disabled' is set",
+                  "description": "Метка aria, когда установлен «Текст кнопки в отключенном состоянии»",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "startText": {
                   "type": "string",
-                  "title": "First button text",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Begin",
+                  "title": "Текст первой кнопки",
+                  "description": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
+                  "default": "Начать",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "startAriaLabel": {
                   "type": "string",
-                  "title": "First button ARIA label",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Begin",
+                  "title": "Метка ARIA первой кнопки",
+                  "description": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
+                  "default": "Начать",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "finalText": {
                   "type": "string",
-                  "title": "Final button text",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Finish",
+                  "title": "Текст последней кнопки",
+                  "description": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
+                  "default": "Завершить",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "finalAriaLabel": {
                   "type": "string",
-                  "title": "Final button ARIA label",
-                  "description": "Only on articles when 'Enable on child blocks' set to true",
-                  "default": "Finish",
+                  "title": "Метка ARIA последней кнопки",
+                  "description": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
+                  "default": "Завершить",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "_component": {
                   "type": "string",
-                  "title": "Trickle plugin",
+                  "title": "Плагин постепенной подачи",
                   "default": "trickle-button"
                 }
               }
             },
             "_stepLocking": {
               "type": "object",
-              "title": "Step locking",
+              "title": "Блокировка шага",
               "default": {},
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
-                  "title": "Hide subsequent content",
+                  "title": "Скрыть последующий контент",
                   "default": true
                 },
                 "_isCompletionRequired": {
                   "type": "boolean",
-                  "title": "Require content to be completed",
+                  "title": "Требовать завершения контента",
                   "default": true
                 },
                 "_isLockedOnRevisit": {
                   "type": "boolean",
-                  "title": "Reset state on revisit",
+                  "title": "Сбрасывать состояние при повторном посещении",
                   "default": false
                 }
               }

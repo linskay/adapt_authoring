@@ -20,208 +20,208 @@
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is Enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "If enabled, the plugin will try to find and track to a SCORM conformant LMS. Uncheck to switch off SCORM tracking."
+                  "help": "Если включено, плагин попытается найти и отслеживать в SCORM-совместимой LMS. Снимите флажок, чтобы отключить отслеживание SCORM."
                 },
                 "_tracking": {
                   "type": "object",
                   "required": false,
-                  "title": "Tracking",
+                  "title": "Отслеживание",
                   "properties": {
                     "_shouldStoreResponses": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Store question state",
+                      "title": "Сохранять состояние вопроса",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, the user's responses to questions will be saved and restored in each session. Note: this setting should be enabled in the majority of cases."
+                      "help": "Если включено, ответы пользователя на вопросы будут сохраняться и восстанавливаться в каждой сессии. Примечание: в большинстве случаев этот параметр должен быть включен."
                     },
                     "_shouldStoreAttempts": {
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Store question attempt states",
+                      "title": "Сохранять состояния попыток ответа на вопрос",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, a history of the user's responses to questions will be saved and restored in each session. Note: this setting should be disabled in the majority of cases."
+                      "help": "Если включено, история ответов пользователя на вопросы будет сохраняться и восстанавливаться в каждой сессии. Примечание: в большинстве случаев этот параметр должен быть отключен."
                     },
                     "_shouldRecordInteractions": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Record interactions",
+                      "title": "Записывать взаимодействия",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, the course will record the user's responses to questions to the cmi.interactions SCORM data fields."
+                      "help": "Если включено, курс будет записывать ответы пользователя на вопросы в поля данных SCORM cmi.interactions."
                     },
                     "_shouldRecordObjectives": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Record objectives",
+                      "title": "Записывать цели",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, the course will be able to record the status and scores of the course objectives to the cmi.objectives SCORM data fields."
+                      "help": "Если включено, курс сможет записывать статус и оценки целей курса в поля данных SCORM cmi.objectives."
                     },
                     "_shouldCompress": {
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Should compress data",
+                      "title": "Следует ли сжимать данные",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, the data stored at the lms will be further compressed."
+                      "help": "Если включено, данные, хранящиеся в LMS, будут дополнительно сжаты."
                     }
                   }
                 },
                 "_reporting": {
                   "type": "object",
                   "required": true,
-                  "title": "Reporting",
+                  "title": "Отчетность",
                   "properties": {
                     "_onTrackingCriteriaMet": {
                       "type":"string",
                       "required":true,
                       "default": "completed",
-                      "title":"Tracking success status",
+                      "title":"Статус успешного отслеживания",
                       "enum": ["completed", "passed", "failed", "incomplete"],
                       "inputType": {
                         "type": "Select",
                         "options": ["completed", "passed", "failed", "incomplete"]
                       },
                       "validators": [],
-                      "help": "What status to report back to the LMS when the tracking criteria are met."
+                      "help": "Какой статус сообщать в LMS при выполнении критериев отслеживания."
                     },
                     "_onAssessmentFailure": {
                       "type": "string",
                       "required": false,
                       "default": "incomplete",
-                      "title": "Assessment failure status",
+                      "title": "Статус неудачи оценки",
                       "enum": ["completed", "failed", "incomplete"],
                       "inputType": {
                         "type": "Select",
                         "options": ["completed", "failed", "incomplete"]
                       },
                       "validators": [],
-                      "help": "What status to report back to the LMS when the assessment is failed."
+                      "help": "Какой статус сообщать в LMS при неудачной оценке."
                     },
                     "_resetStatusOnLanguageChange": {
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Reset status when language changed?",
+                      "title": "Сбросить статус при смене языка?",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, the the course status will be reset to 'incomplete' when the user changes the course language."
+                      "help": "Если включено, статус курса будет сброшен на 'незавершенный' при смене пользователем языка курса."
                     }
                   }
                 },
                 "_advancedSettings": {
                   "type": "object",
                   "required": false,
-                  "title": "Advanced Settings",
+                  "title": "Расширенные настройки",
                   "properties": {
                     "_scormVersion": {
                       "type": "string",
                       "required": false,
                       "default": "1.2",
-                      "title": "SCORM version",
+                      "title": "Версия SCORM",
                       "enum": ["1.2", "2004"],
                       "inputType": {
                         "type": "Select",
                         "options": ["1.2", "2004"]
                       },
                       "validators": [],
-                      "help": "What SCORM standard to use - SCORM 1.2 or SCORM 2004 4th Edition."
+                      "help": "Какой стандарт SCORM использовать - SCORM 1.2 или SCORM 2004 4th Edition."
                     },
                     "_showDebugWindow": {
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "SCORM debug window",
+                      "title": "Окно отладки SCORM",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, a popup window will be shown on course launch that gives detailed information about what SCORM calls are being made. This can be very useful for debugging SCORM issues. Note that this popup window will appear automatically if the SCORM code encounters an error, even if this is set to false."
+                      "help": "Если включено, при запуске курса будет показано всплывающее окно с подробной информацией о том, какие вызовы SCORM выполняются. Это может быть очень полезно для отладки проблем SCORM. Обратите внимание, что это всплывающее окно появится автоматически, если код SCORM обнаружит ошибку, даже если этот параметр отключен."
                     },
                     "_commitOnStatusChange": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Commit data on status change",
+                      "title": "Фиксировать данные при изменении статуса",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, a 'commit' call will be made any time the lesson_status is changed."
+                      "help": "Если включено, вызов 'commit' будет выполняться каждый раз при изменении lesson_status."
                     },
                     "_commitOnAnyChange": {
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Commit data on any change",
+                      "title": "Фиксировать данные при любом изменении",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, a 'commit' (save all data) call will be made any time a value is changed. Note that enabling this setting may have a detrimental impact on the server and should only be used if absolutely necessary and only after careful load testing. Consider trying a lower value for 'Frequency of automatic commits' before changing this setting."
+                      "help": "Если включено, вызов 'commit' (сохранить все данные) будет выполняться каждый раз при изменении значения. Обратите внимание, что включение этого параметра может отрицательно сказаться на сервере и должно использоваться только в случае крайней необходимости и только после тщательного нагрузочного тестирования. Прежде чем изменять этот параметр, рассмотрите возможность использования более низкого значения для 'Частота автоматических фиксаций'."
                     },
                     "_timedCommitFrequency": {
                       "type": "number",
                       "required": false,
                       "default": "10",
-                      "title": "Frequency (mins) of automatic commits",
+                      "title": "Частота (мин) автоматических фиксаций",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "The frequency (in minutes) at which a 'commit' call should be made automatically. Set to 0 to disable automatic commits altogether."
+                      "help": "Частота (в минутах), с которой должен автоматически выполняться вызов 'commit'. Установите значение 0, чтобы полностью отключить автоматические фиксации."
                     },
                     "_maxCommitRetries": {
                       "type": "number",
                       "required": false,
                       "default": "5",
-                      "title": "Maximum number of commit retries",
+                      "title": "Максимальное количество повторных попыток фиксации",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "If a 'commit' call fails, this setting controls how many times it should be retried before giving up and throwing an error."
+                      "help": "Если вызов 'commit' завершается сбоем, этот параметр определяет, сколько раз его следует повторить, прежде чем сдаться и выдать ошибку."
                     },
                     "_commitRetryDelay": {
                       "type": "number",
                       "required": false,
                       "default": "2000",
-                      "title": "Commit retry delay",
+                      "title": "Задержка повторной попытки фиксации",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "How much of a delay (in milliseconds) to leave between commit retries."
+                      "help": "Какую задержку (в миллисекундах) оставлять между повторными попытками фиксации."
                     },
                     "_suppressErrors": {
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Supress LMS errors",
+                      "title": "Подавлять ошибки LMS",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, error messages will not be displayed when SCORM tracking problems occur."
+                      "help": "Если включено, сообщения об ошибках не будут отображаться при возникновении проблем с отслеживанием SCORM."
                     },
                     "_commitOnVisibilityChangeHidden": {
                       "type": "boolean",
                       "default": true,
-                      "title": "Commit on visibility change hidden",
+                      "title": "Фиксировать при скрытии видимости",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, a 'commit' call will be made whenever the course window is hidden/minimised. Requires a browser that supports the 'visibilitychange' event."
+                      "help": "Если включено, вызов 'commit' будет выполняться всякий раз, когда окно курса скрывается/сворачивается. Требуется браузер, поддерживающий событие 'visibilitychange'."
                     },
                     "_manifestIdentifier": {
                       "type": "string",
                       "required": true,
                       "default": "adapt_manifest",
-                      "title": "Manifest identifier",
+                      "title": "Идентификатор манифеста",
                       "inputType": "Text",
                       "validators": ["required"],
-                      "help": "Sets the 'identifier' attribute in the imsmanifest.xml"
+                      "help": "Устанавливает атрибут 'identifier' в imsmanifest.xml"
                     },
                     "_exitStateIfIncomplete": {
                       "type": "string",
                       "required": false,
                       "default": "auto",
-                      "title": "Exit state if incomplete",
+                      "title": "Состояние выхода, если не завершено",
                       "enum": ["auto", "suspend", "normal", ""],
                       "inputType": {
                         "type": "Select",
@@ -231,18 +231,18 @@
                           "normal",
                           {
                             "val": "",
-                            "label": "'' (empty string)"
+                            "label": "'' (пустая строка)"
                           }
                         ]
                       },
                       "validators": [],
-                      "help": "What exit status to use if the course is incomplete."
+                      "help": "Какой статус выхода использовать, если курс не завершен."
                     },
                     "_exitStateIfComplete": {
                       "type": "string",
                       "required": false,
                       "default": "auto",
-                      "title": "Exit state if complete",
+                      "title": "Состояние выхода, если завершено",
                       "enum": ["auto", "suspend", "normal", ""],
                       "inputType": {
                         "type": "Select",
@@ -252,69 +252,69 @@
                           "normal",
                           {
                             "val": "",
-                            "label": "'' (empty string)"
+                            "label": "'' (пустая строка)"
                           }
                         ]
                       },
                       "validators": [],
-                      "help": "What exit status to use if the course is complete."
+                      "help": "Какой статус выхода использовать, если курс завершен."
                     },
                     "_setCompletedWhenFailed": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Completed when failed",
+                      "title": "Завершено при неудаче",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, `cmi.completion_status` will be set to \"completed\" if the assessment is \"failed\". Only valid for SCORM 2004, where the logic for completion and success is separate."
+                      "help": "Если включено, `cmi.completion_status` будет установлено в \"completed\", если оценка \"failed\". Действительно только для SCORM 2004, где логика завершения и успеха разделена."
                     },
                     "_maxCharLimitOverride": {
                       "type": "number",
                       "required": false,
                       "default": "0",
-                      "title": "Override value for maximum character limit on fill-in type answers",
+                      "title": "Переопределить значение максимального ограничения символов для ответов типа 'заполнение'",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "If your LMS allows it, you may set a value to override the default character limit for fill-in answers (250 for SCORM2004, 255 for SCORM1.2)."
+                      "help": "Если ваша LMS это позволяет, вы можете установить значение для переопределения ограничения символов по умолчанию для ответов с заполнением (250 для SCORM2004, 255 для SCORM1.2)."
                     },
                     "_connectionTest": {
                       "type": "object",
                       "required": true,
-                      "title": "Connection Test",
+                      "title": "Тест соединения",
                       "properties": {
                         "_isEnabled": {
                           "type": "boolean",
                           "default": true,
-                          "title": "Is Enabled",
+                          "title": "Включено",
                           "inputType": "Checkbox",
                           "validators": [],
-                          "help": "Determines whether the connection should be tested."
+                          "help": "Определяет, следует ли тестировать соединение."
                         },
                         "_testOnSetValue": {
                           "type": "boolean",
                           "default": true,
-                          "title": "Test on set value",
+                          "title": "Тестировать при установке значения",
                           "inputType": "Checkbox",
                           "validators": [],
-                          "help": "Determines whether the connection should be tested for each call to set data on the LMS."
+                          "help": "Определяет, следует ли тестировать соединение для каждого вызова для установки данных в LMS."
                         },
                         "_silentRetryLimit": {
                           "type": "number",
                           "required": false,
                           "default": "2",
-                          "title": "Silent Retry Limit",
+                          "title": "Лимит молчаливых повторных попыток",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "The limit for silent retry attempts to establish a connection before raising an error."
+                          "help": "Лимит для молчаливых повторных попыток установить соединение перед выдачей ошибки."
                         },
                         "_silentRetryDelay": {
                           "type": "number",
                           "required": false,
                           "default": "1000",
-                          "title": "Silent Retry Delay",
+                          "title": "Задержка молчаливой повторной попытки",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "The interval in milliseconds between silent connection retries."
+                          "help": "Интервал в миллисекундах между молчаливыми повторными попытками соединения."
                         }
                       }
                     },
@@ -322,10 +322,10 @@
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Unique Interaction Ids",
+                      "title": "Уникальные идентификаторы взаимодействия",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "If enabled, `cmi.interactions.n.id` will be prepended with an index, making the id unique. Some LMSes require unique ids, this will inhibit the grouping of interactions by id on the server-side."
+                      "help": "Если включено, к `cmi.interactions.n.id` будет добавлен префикс с индексом, что сделает идентификатор уникальным. Некоторые LMS требуют уникальные идентификаторы, это будет препятствовать группировке взаимодействий по идентификатору на стороне сервера."
                     }
                   }
                 },
@@ -333,19 +333,19 @@
                   "type": "boolean",
                   "required": false,
                   "default": false,
-                  "title": "Show reset button (scorm_test_harness.html only)",
+                  "title": "Показать кнопку сброса (только scorm_test_harness.html)",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "If enabled, a reset button will be available to relaunch the course and optionally clear tracking data (scorm_test_harness.html only)."
+                  "help": "Если включено, будет доступна кнопка сброса для перезапуска курса и необязательной очистки данных отслеживания (только scorm_test_harness.html)."
                 },
                 "_shouldPersistCookieLMSData": {
                   "type": "boolean",
                   "required": false,
                   "default": true,
-                  "title": "Persist cookie data (scorm_test_harness.html only)",
+                  "title": "Сохранять данные cookie (только scorm_test_harness.html)",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "If enabled, the course data will persist over browser sessions (scorm_test_harness.html only)."
+                  "help": "Если включено, данные курса будут сохраняться между сеансами браузера (только scorm_test_harness.html)."
                 }
               }
             }
@@ -362,13 +362,13 @@
                 "_messages": {
                   "type": "object",
                   "default": {},
-                  "title": "Error messages",
+                  "title": "Сообщения об ошибках",
                   "inputType": {
                     "type": "CodeEditor",
                     "mode": "json"
                   },
                   "validators": [],
-                  "help": "Optional object that can be used to amend/translate the error messages shown by the spoor extension"
+                  "help": "Необязательный объект, который можно использовать для изменения/перевода сообщений об ошибках, отображаемых расширением spoor"
                 }
               }
             }

@@ -10,25 +10,25 @@
       "properties": {
         "_trickle": {
           "type": "object",
-          "title": "Trickle",
+          "title": "Постепенная подача",
           "default": {},
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Trickle globally",
-              "description": "Controls whether the Trickle extension is enabled or disabled globally.",
+              "title": "Включить постепенную подачу глобально",
+              "description": "Контролирует, включено или отключено расширение Постепенная подача глобально.",
               "default": true
             },
             "_logState": {
               "type": "boolean",
-              "title": "Log state",
+              "title": "Состояние журнала",
               "default": false,
-              "description": "Controls whether the Trickle extension logs its state to the browser console."
+              "description": "Контролирует, регистрирует ли расширение Постепенная подача свое состояние в консоли браузера."
             },
             "_completionAttribute": {
               "type": "string",
-              "title": "Completion attribute",
-              "description": "Set which attribute is used to determine completion",
+              "title": "Атрибут завершения",
+              "description": "Установите, какой атрибут используется для определения завершения",
               "default": "_isComplete",
               "enum": [
                 "_isInteractionComplete",
