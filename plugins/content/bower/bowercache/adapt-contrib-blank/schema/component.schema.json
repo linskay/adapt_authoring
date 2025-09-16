@@ -14,12 +14,12 @@
           "isSetting": true,
           "inputType": "Checkbox",
           "validators": [],
-          "title": "Is this optional?",
-          "help": "An optional component does not have to be completed by the user."
+          "title": "Это необязательно?",
+          "help": "Необязательный компонент не должен быть завершен пользователем."
         },
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Поддерживаемый макет",
           "default": "both",
           "enum": [
             "full-width",
@@ -32,8 +32,8 @@
         },
         "displayTitle": {
           "type": "string",
-          "title": "Display title",
-          "description": "When viewing an element - this is the title that will be displayed on the page",
+          "title": "Отображаемый заголовок",
+          "description": "При просмотре элемента - это заголовок, который будет отображаться на странице",
           "default": "",
           "_adapt": {
             "translatable": false
@@ -45,7 +45,7 @@
         },
         "body": {
           "type": "string",
-          "title": "Body",
+          "title": "Тело",
           "default": "",
           "_adapt": {
             "translatable": false
@@ -57,7 +57,7 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
+          "title": "Инструкция",
           "default": "",
           "_adapt": {
             "translatable": true

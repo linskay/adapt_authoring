@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "List of expandable sections. Select each button to expand the content.",
+      "default": "Список расширяемых разделов. Нажмите каждую кнопку, чтобы развернуть содержимое.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -24,29 +24,29 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Select the headings to find out more.",
+      "default": "Выберите заголовки, чтобы узнать больше.",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Это текст инструкции",
       "translatable": true
     },
     "_setCompletionOn": {
       "type": "string",
       "required": false,
       "default": "allItems",
-      "title": "Set completion on:",
+      "title": "Установить завершение по:",
       "enum": ["inview", "allItems"],
       "inputType": {
         "type": "Select",
         "options": ["inview", "allItems"]
       },
       "validators": [],
-      "help": "Whether completion is based on the learner having viewed all the accordion items - or just having viewed the component"
+      "help": "Завершение зависит от того, просмотрел ли учащийся все элементы аккордеона или только просмотрел компонент"
     },
     "_items": {
       "type": "array",
       "required": true,
-      "title": "Items",
+      "title": "Элементы",
       "items": {
         "type": "object",
         "required": true,
@@ -55,43 +55,43 @@
             "type": "string",
             "required": true,
             "inputType": "Text",
-            "title": "Item Title",
+            "title": "Заголовок элемента",
             "default": "",
             "validators": ["required"],
-            "help": "This is the item title",
+            "help": "Это заголовок элемента",
             "translatable": true
           },
           "body": {
             "type": "string",
             "required": true,
             "inputType": "TextArea",
-            "title": "Item Body",
+            "title": "Тело элемента",
             "default": "",
             "validators": ["required"],
-            "help": "This is the item body text that is hidden until the item title is clicked on",
+            "help": "Это основной текст элемента, который скрыт до тех пор, пока не будет нажат заголовок элемента",
             "translatable": true
           },
           "_titleIcon": {
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Title icon",
+            "title": "Иконка заголовка",
             "inputType": "Text",
             "validators": [],
-            "help": "CSS class name to be applied to the accordion title icon."
+            "help": "Имя класса CSS, которое будет применяться к значку заголовка аккордеона."
           },
           "_imageAlignment": {
             "type": "string",
             "required": false,
             "default": "full",
             "inputType": {"type":"Select", "options":["full","left","right"]},
-            "title": "Image alignment",
-            "help": "Defines the alignment of the item image. Full: Image spans the entire width of the container below the text area. Left: Image aligned to the left of the text area. Right: Image aligned to the right of the text area. The default alignment is `full`. For smaller screens the alignment defaults to `full`."
+            "title": "Выравнивание изображения",
+            "help": "Определяет выравнивание изображения элемента. Полное: изображение занимает всю ширину контейнера под текстовой областью. Слева: изображение выровнено по левому краю текстовой области. Справа: изображение выровнено по правому краю текстовой области. Выравнивание по умолчанию — `полное`. Для небольших экранов выравнивание по умолчанию — `полное`."
           },
           "_graphic": {
             "type": "object",
             "required": false,
-            "title": "Graphic",
+            "title": "Графика",
             "properties": {
               "alt": {
                 "type": "string",
@@ -99,7 +99,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "Описание изображения; требуется, когда оно имеет значение, которое необходимо донести до учащегося. Для «декоративных» изображений оставьте это поле пустым.",
                 "translatable": true
               },
               "src": {
@@ -108,7 +108,7 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [],
-                "help": "Optional image which will be rendered with the item body text"
+                "help": "Необязательное изображение, которое будет отображаться с основным текстом элемента"
               },
               "attribution": {
                 "type":"string",
@@ -116,7 +116,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution",
+                "help": "Текст, который будет отображаться в качестве атрибуции",
                 "translatable": true
               }
             }
@@ -125,10 +125,10 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Classes",
+            "title": "Классы",
             "inputType": "Text",
             "validators": [],
-            "help": "Custom classes that are applied to the accordion item. Supported classes 'align-image-left' and 'align-image-right' are available to align item image to the left or right in desktop view. On smaller screens the item image defaults underneath the item body text. Additional classes can be used but they must be predefined in one of the Less files. Separate multiple classes with a space."
+            "help": "Пользовательские классы, применяемые к элементу аккордеона. Поддерживаемые классы 'align-image-left' и 'align-image-right' доступны для выравнивания изображения элемента влево или вправо в настольном представлении. На небольших экранах изображение элемента по умолчанию располагается под основным текстом элемента. Можно использовать дополнительные классы, но они должны быть предварительно определены в одном из файлов Less. Разделяйте несколько классов пробелом."
           }
         }
       }
@@ -137,28 +137,28 @@
       "type": "boolean",
       "required": false,
       "default": true,
-      "title": "Items should auto-collapse",
+      "title": "Элементы должны автоматически сворачиваться",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If disabled, upon expansion of an accordion item, any previously expanded items will not be collapsed"
+      "help": "Если отключено, при раскрытии элемента аккордеона все ранее раскрытые элементы не будут свернуты"
     },
     "_shouldExpandFirstItem": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "First item should be expanded",
+      "title": "Первый элемент должен быть развернут",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the first item will be expanded by default"
+      "help": "Если включено, первый элемент будет развернут по умолчанию"
     },
     "_isCenterAligned": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Enable item button vertical layout",
+      "title": "Включить вертикальное расположение кнопок элементов",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the layout of the item button child elements will be stacked on top of one another centrally."
+      "help": "Если включено, дочерние элементы кнопки элемента будут расположены друг над другом по центру."
     }
   }
 }

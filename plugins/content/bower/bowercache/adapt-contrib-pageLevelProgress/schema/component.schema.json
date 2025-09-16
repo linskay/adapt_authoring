@@ -10,17 +10,17 @@
       "properties": {
         "_pageLevelProgress": {
           "type": "object",
-          "title": "Page Level Progress",
+          "title": "Прогресс на уровне страницы",
           "default": {},
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Page Level Progress",
+              "title": "Включить прогресс на уровне страницы",
               "default": true
             },
             "_isCompletionIndicatorEnabled": {
               "type": "boolean",
-              "title": "Show inline completion indicator",
+              "title": "Показывать встроенный индикатор завершения",
               "default": false
             }
           }

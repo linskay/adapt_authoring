@@ -7,7 +7,7 @@
     "languageSelector": {
       "type": "string",
       "required": true,
-      "default": "Language selector",
+      "default": "Выбор языка",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,28 +15,28 @@
     "_navOrder": {
       "type": "number",
       "required": true,
-      "title": "Navigation bar order",
-      "help": "Determines the order in which the button is displayed in the navigation bar. Negative numbers (e.g. -100) are left-aligned. Positive numbers (e.g. 100) are right-aligned.",
+      "title": "Порядок навигационной панели",
+      "help": "Определяет порядок, в котором кнопка отображается на панели навигации. Отрицательные числа (например, -100) выравниваются по левому краю. Положительные числа (например, 100) выравниваются по правому краю.",
       "default": 0,
       "inputType": "Text",
       "validators": []
     },
     "_navTooltip": {
       "type": "object",
-      "title": "Navigation tooltip",
+      "title": "Подсказка навигации",
       "properties": {
         "_isEnabled": {
           "type": "boolean",
           "default": true,
-          "title": "Enable tooltip for navigation button",
+          "title": "Включить подсказку для кнопки навигации",
           "inputType": "Checkbox",
           "validators": []
         },
         "text": {
           "type": "string",
           "title": "",
-          "default": "Select course language",
-          "help": "The tooltip text to display on hover.",
+          "default": "Выберите язык курса",
+          "help": "Текст подсказки, отображаемый при наведении.",
           "inputType": "Text",
           "validators": [],
           "translatable": true
@@ -47,16 +47,16 @@
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Enable navigation button label",
+      "title": "Включить метку кнопки навигации",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Determines whether a label is shown on the navigation bar button."
+      "help": "Определяет, отображается ли метка на кнопке навигационной панели."
     },
     "navigationBarLabel": {
       "type": "string",
       "required": true,
-      "default": "Select course language",
-      "title": "Navigation bar button label",
+      "default": "Выберите язык курса",
+      "title": "Метка кнопки навигационной панели",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -65,8 +65,8 @@
       "type": "string",
       "required": true,
       "default": "auto",
-      "title": "Drawer position",
-      "help": "Determines the starting position of the drawer to open.",
+      "title": "Положение ящика",
+      "help": "Определяет начальное положение ящика для открытия.",
       "inputType": {
         "type": "Select",
         "options": [
@@ -79,11 +79,11 @@
     },
     "_navTooltip": {
       "type": "object",
-      "title": "Navigation tooltip",
+      "title": "Подсказка навигации",
       "properties": {
         "_isEnabled": {
           "type": " boolean",
-          "title": "Enable tooltip for Language selector button",
+          "title": "Включить подсказку для кнопки выбора языка",
           "default": true,
           "inputType": "Checkbox",
           "validators": [],
@@ -91,8 +91,8 @@
         },
         "text": {
           "type": "string",
-          "title": "Tooltip text",
-          "default": "Language selector",
+          "title": "Текст подсказки",
+          "default": "Выбор языка",
           "inputType": "Text",
           "required": true
         }
@@ -110,76 +110,76 @@
             "_languagePicker": {
               "type": "object",
               "required": false,
-              "legend": "Language Picker",
+              "legend": "Выбор языка",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Is enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Language Picker extension is enabled or disabled."
+                  "help": "Контролирует, включено или отключено расширение выбора языка."
                 },
                 "title": {
                   "type": "string",
                   "required": false,
                   "default": "",
-                  "title": "Browser Window Title",
+                  "title": "Заголовок окна браузера",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Text to be shown in the browser's title bar when the language picker is displayed."
+                  "help": "Текст, который будет отображаться в заголовке браузера при отображении выбора языка."
                 },
                 "displayTitle": {
                   "type": "string",
                   "required": false,
                   "default": "",
-                  "title": "Language Picker Title",
+                  "title": "Заголовок выбора языка",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Header text for the Language Picker"
+                  "help": "Текст заголовка для выбора языка"
                 },
                 "body": {
                   "type": "string",
                   "required": false,
                   "default": "",
-                  "title": "Language Picker Body text",
+                  "title": "Основной текст выбора языка",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Introductory or explanatory text for the Language Picker"
+                  "help": "Вступительный или пояснительный текст для выбора языка"
                 },
                 "_showOnCourseLoad": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show on course load",
+                  "title": "Показывать при загрузке курса",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Language Picker should be displayed on course load or not."
+                  "help": "Контролирует, должен ли отображаться выбор языка при загрузке курса."
                 },
                 "_languagePickerIconClass": {
                   "type": "string",
                   "required": false,
                   "default": "icon-language-2",
-                  "title": "Class to customise Language Picker icon in the navbar.",
+                  "title": "Класс для настройки иконки выбора языка на панели навигации.",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Your default options here are: icon-globe, icon-language-1, icon-language-2"
+                  "help": "Ваши варианты по умолчанию здесь: icon-globe, icon-language-1, icon-language-2"
                 },
                 "_restoreStateOnLanguageChange": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Restore course state on language change",
+                  "title": "Восстанавливать состояние курса при смене языка",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Determines whether or not the language picker will try to restore the 'state' of the course when the user changes language. It is advised that you only enable this setting if all course languages have exactly the same structure; if they do not, some loss of tracking data will occur. If this setting is disabled, tracking data will be cleared when the user switches language - the 'Confirm Message' should be used to warn the user of this."
+                  "help": "Определяет, будет ли выбор языка пытаться восстановить 'состояние' курса при смене языка пользователем. Рекомендуется включать этот параметр, только если все языки курса имеют одинаковую структуру; в противном случае произойдет некоторая потеря данных отслеживания. Если этот параметр отключен, данные отслеживания будут очищены при переключении языка пользователем - для предупреждения пользователя следует использовать 'Подтверждающее сообщение'."
                 },
                 "_classes": {
                   "type": "string",
                   "required": false,
                   "default": "",
-                  "title": "Classes",
+                  "title": "Классы",
                   "inputType": "Text",
                   "validators": [],
                   "help": ""
@@ -187,26 +187,26 @@
                 "_languages": {
                   "type": "array",
                   "required": true,
-                  "title": "Languages",
+                  "title": "Языки",
                   "items": {
                     "type": "object",
                     "required": true,
-                    "title": "Language",
+                    "title": "Язык",
                     "properties": {
                       "_language": {
                         "type": "string",
                         "required": true,
                         "default": "",
-                        "title": "Language Code",
+                        "title": "Код языка",
                         "inputType": "Text",
                         "validators": ["required"],
-                        "help": "This text must match the name of the language-specific folder located in the course root, e.g. en, fr, es"
+                        "help": "Этот текст должен совпадать с названием папки для конкретного языка, расположенной в корне курса, например, en, fr, es"
                       },
                       "_direction": {
                         "type": "string",
                         "required": true,
                         "default": "ltr",
-                        "title": "Text direction",
+                        "title": "Направление текста",
                         "inputType": {"type": "Select", "options": ["ltr", "rtl"]},
                         "validators": ["required"],
                         "help": ""
@@ -215,60 +215,60 @@
                         "type": "boolean",
                         "required": true,
                         "default": false,
-                        "title": "Is disabled",
+                        "title": "Отключено",
                         "inputType": "Checkbox",
                         "validators": [],
-                        "help": "Allows you to disable selection of this language. This can be useful in situations where localisation into a particular language has not yet been completed."
+                        "help": "Позволяет отключить выбор этого языка. Это может быть полезно в ситуациях, когда локализация на определенный язык еще не завершена."
                       },
                       "displayName": {
                         "type": "string",
                         "required": true,
                         "default": "",
-                        "title": "Language Name",
+                        "title": "Название языка",
                         "inputType": "Text",
                         "validators": ["required"],
-                        "help": "A user friendly name for the language, e.g. English, Français, Español"
+                        "help": "Понятное для пользователя название языка, например, English, Français, Español"
                       },
                       "warningTitle": {
                         "type": "string",
                         "required": true,
                         "default": "",
-                        "title": "Confirm Title",
+                        "title": "Подтвердить заголовок",
                         "inputType": "Text",
                         "validators": ["required"],
-                        "help": "This text appears as the header of the dialog confirming the learner's intent to change languages."
+                        "help": "Этот текст появляется в качестве заголовка диалогового окна, подтверждающего намерение учащегося сменить язык."
                       },
                       "warningMessage": {
                         "type": "string",
                         "required": true,
                         "default": "",
-                        "title": "Confirm Message",
+                        "title": "Подтвердить сообщение",
                         "inputType": "Text",
                         "validators": ["required"],
-                        "help": "This text appears as the body of the dialog confirming the learner's intent to change languages.  Note: the warning message should indicate that any progress will be lost when the language is switched."
+                        "help": "Этот текст появляется в теле диалогового окна, подтверждающего намерение учащегося сменить язык. Примечание: предупреждающее сообщение должно указывать, что любой прогресс будет потерян при переключении языка."
                       },
                       "_buttons": {
                         "type": "object",
                         "required": true,
-                        "title": "Prompt Buttons",
+                        "title": "Кнопки подсказки",
                         "properties": {
                           "yes": {
                             "type": "string",
                             "required": true,
-                            "default": "Yes",
-                            "title": "Confirm",
+                            "default": "Да",
+                            "title": "Подтвердить",
                             "inputType": "Text",
                             "validators": ["required"],
-                            "help": "Button text to confirm language change."
+                            "help": "Текст кнопки для подтверждения смены языка."
                           },
                           "no": {
                             "type": "string",
                             "required": true,
-                            "default": "No",
-                            "title": "Cancel",
+                            "default": "Нет",
+                            "title": "Отмена",
                             "inputType": "Text",
                             "validators": ["required"],
-                            "help": "Button text to cancel language change."
+                            "help": "Текст кнопки для отмены смены языка."
                           }
                         }
                       }

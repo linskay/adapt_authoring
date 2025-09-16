@@ -15,8 +15,8 @@
           "properties": {
             "_messages": {
               "type": "object",
-              "title": "Error messages",
-              "description": "Optional object that can be used to amend/translate the error messages shown by the spoor extension",
+              "title": "Сообщения об ошибках",
+              "description": "Необязательный объект, который можно использовать для изменения/перевода сообщений об ошибках, отображаемых расширением spoor",
               "default": {},
               "_backboneForms": {
                 "type": "CodeEditor",

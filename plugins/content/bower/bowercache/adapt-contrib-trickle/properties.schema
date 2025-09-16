@@ -7,7 +7,7 @@
     "incompleteContent": {
       "type": "string",
       "required": true,
-      "default": "There is incomplete content above. You must complete this before you can proceed through the course.",
+      "default": "Выше есть незавершенный контент. Вы должны завершить его, прежде чем сможете продолжить курс.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -24,35 +24,35 @@
             "_trickle": {
               "type": "object",
               "required": false,
-              "legend": "Trickle",
+              "legend": "Постепенная подача",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is Enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Trickle extension is enabled or disabled globally."
+                  "help": "Контролирует, включено или отключено расширение Постепенная подача глобально."
                 },
                 "_logState": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Log state",
+                  "title": "Состояние журнала",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Trickle extension logs its state to the browser console."
+                  "help": "Контролирует, регистрирует ли расширение Постепенная подача свое состояние в консоли браузера."
                 },
                 "_completionAttribute": {
                   "type": "string",
                   "required": false,
                   "enum": ["_isInteractionComplete", "_isComplete"],
                   "default": "_isComplete",
-                  "title": "Completion Attribute",
+                  "title": "Атрибут завершения",
                   "inputType": {"type": "Select", "options":["_isInteractionComplete", "_isComplete"]},
                   "validators": [],
-                  "help": "Set which attribute is used to determine completion"
+                  "help": "Установите, какой атрибут используется для определения завершения"
                 }
               }
             }
@@ -70,19 +70,19 @@
             "_trickle": {
               "type": "object",
               "required": false,
-              "legend": "Trickle",
+              "legend": "Постепенная подача",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": false,
-                  "title": "Enable Trickle",
+                  "title": "Включить постепенную подачу",
                   "inputType": "Checkbox",
                   "validators": []
                 },
                 "_autoScroll": {
                   "type": "boolean",
                   "required": false,
-                  "title": "Scroll Automatically",
+                  "title": "Прокручивать автоматически",
                   "inputType": "Checkbox",
                   "validators": []
                 },
@@ -90,47 +90,47 @@
                   "type": "number",
                   "required": true,
                   "default": 500,
-                  "title": "Scroll Duration",
+                  "title": "Продолжительность прокрутки",
                   "inputType": "Number",
                   "validators": ["required", "number"],
-                  "help": "Duration of the scroll animation in milliseconds"
+                  "help": "Продолжительность анимации прокрутки в миллисекундах"
                 },
                 "_onChildren": {
                   "type": "boolean",
                   "required": false,
-                  "title": "Enable on Child Blocks",
+                  "title": "Включить на дочерних блоках",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Set to false on the article to use trickle at article level"
+                  "help": "Установите значение false для статьи, чтобы использовать постепенную подачу на уровне статьи"
                 },
                 "_scrollTo": {
                   "type": "string",
                   "required": false,
                   "default": "@block +1",
-                  "title": "Scroll To",
+                  "title": "Прокрутить до",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Set how trickle scrolls"
+                  "help": "Установите, как прокручивается постепенная подача"
                 },
                 "_completionAttribute": {
                   "type": "string",
                   "required": false,
                   "enum": ["_isInteractionComplete", "_isComplete"],
                   "default": "_isComplete",
-                  "title": "Completion Attribute",
+                  "title": "Атрибут завершения",
                   "inputType": {"type": "Select", "options":["_isInteractionComplete", "_isComplete"]},
                   "validators": [],
-                  "help": "Set which attribute is used to determine completion"
+                  "help": "Установите, какой атрибут используется для определения завершения"
                 },
                 "_button": {
                   "type": "object",
                   "required": false,
-                  "title": "Button Attributes",
+                  "title": "Атрибуты кнопки",
                   "properties": {
                     "_isEnabled": {
                       "type": "boolean",
                       "required": false,
-                      "title": "Enabled",
+                      "title": "Включено",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -139,26 +139,26 @@
                       "required": false,
                       "enum": ["hidden", "visible", "disabled"],
                       "default": "hidden",
-                      "title": "Initial Visibility",
+                      "title": "Начальная видимость",
                       "inputType": {"type": "Select", "options":["hidden", "visible", "disabled"]},
                       "validators": ["required"],
-                      "help": "Set button visibility before completion"
+                      "help": "Установить видимость кнопки до завершения"
                     },
                     "_styleAfterClick": {
                       "type": "string",
                       "required": false,
                       "enum": ["hidden", "visible", "disabled"],
                       "default": "hidden",
-                      "title": "Final Visibility",
+                      "title": "Конечная видимость",
                       "inputType": {"type": "Select", "options":["hidden", "visible", "disabled"]},
                       "validators": ["required"],
-                      "help": "Set button visibility after completion"
+                      "help": "Установить видимость кнопки после завершения"
                     },
                     "_isFullWidth": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Full Width",
+                      "title": "Полная ширина",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -166,25 +166,25 @@
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Hide on Scroll",
+                      "title": "Скрывать при прокрутке",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "Hides the button when it scrolls from view; not recommended for use in courses that need to be screenreader compatible."
+                      "help": "Скрывает кнопку, когда она прокручивается из вида; не рекомендуется для использования в курсах, которые должны быть совместимы с программами чтения с экрана."
                     },
                     "_showEndOfPage": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Show end-of-page button",
+                      "title": "Показывать кнопку в конце страницы",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "When set to `false`, hides any end-of-page button."
+                      "help": "Если установлено значение `false`, скрывает любую кнопку в конце страницы."
                     },
                     "_className": {
                       "type": "string",
                       "required": false,
                       "default": "",
-                      "title": "Custom Classes",
+                      "title": "Пользовательские классы",
                       "inputType": "Text",
                       "validators": []
                     },
@@ -192,16 +192,16 @@
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Enable button icon",
+                      "title": "Включить иконку кнопки",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "Displays an icon alongside, or in place of, the Trickle button text. Default icon is a small downwards arrow"
+                      "help": "Отображает значок рядом с текстом кнопки Постепенная подача или вместо него. Значок по умолчанию - маленькая стрелка вниз"
                     },
                     "text": {
                       "type": "string",
                       "required": false,
-                      "default": "Continue",
-                      "title": "Button Text",
+                      "default": "Продолжить",
+                      "title": "Текст кнопки",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
@@ -209,8 +209,8 @@
                     "ariaLabel": {
                       "type": "string",
                       "required": false,
-                      "default": "Continue",
-                      "title": "Button Aria Label",
+                      "default": "Продолжить",
+                      "title": "Метка ARIA кнопки",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
@@ -219,67 +219,67 @@
                       "type": "string",
                       "required": false,
                       "default": "",
-                      "title": "Button Text when disabled",
+                      "title": "Текст кнопки в отключенном состоянии",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true,
-                      "help": "This text can be shown while the button is disabled"
+                      "help": "Этот текст может отображаться, когда кнопка отключена"
                     },
                     "disabledAriaLabel": {
                       "type": "string",
                       "required": false,
                       "default": "",
-                      "title": "Button Aria Label when disabled",
+                      "title": "Метка ARIA кнопки в отключенном состоянии",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true,
-                      "help": "The aria label when 'Button Text when disabled' is set"
+                      "help": "Метка aria, когда установлен «Текст кнопки в отключенном состоянии»"
                     },
                     "startText": {
                       "type": "string",
                       "required": false,
-                      "default": "Begin",
-                      "title": "First Button Text",
+                      "default": "Начать",
+                      "title": "Текст первой кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "startAriaLabel": {
                       "type": "string",
                       "required": false,
-                      "default": "Begin",
-                      "title": "First Button Aria Label",
+                      "default": "Начать",
+                      "title": "Метка ARIA первой кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "finalText": {
                       "type": "string",
                       "required": false,
-                      "default": "Finish",
-                      "title": "Final Button Text",
+                      "default": "Завершить",
+                      "title": "Текст последней кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "finalAriaLabel": {
                       "type": "string",
                       "required": false,
-                      "default": "Finish",
-                      "title": "Final Button Aria Label",
+                      "default": "Завершить",
+                      "title": "Метка ARIA последней кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "_component": {
                       "type": "string",
                       "required": false,
                       "default": "trickle-button",
-                      "title": "Trickle Plugin",
+                      "title": "Плагин постепенной подачи",
                       "inputType": "Text",
                       "validators": []
                     }
@@ -288,13 +288,13 @@
                 "_stepLocking": {
                   "type": "object",
                   "required": false,
-                  "title": "Step Locking Attributes",
+                  "title": "Атрибуты блокировки шага",
                   "properties": {
                     "_isEnabled": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Enabled",
+                      "title": "Включено",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -302,7 +302,7 @@
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Completion Required",
+                      "title": "Требуется завершение",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -310,7 +310,7 @@
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Locked On Revisit",
+                      "title": "Заблокировано при повторном посещении",
                       "inputType": "Checkbox",
                       "validators": []
                     }
@@ -326,13 +326,13 @@
             "_trickle": {
               "type": "object",
               "required": false,
-              "legend": "Trickle",
+              "legend": "Постепенная подача",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": false,
                   "default": false,
-                  "title": "Enable Trickle",
+                  "title": "Включить постепенную подачу",
                   "inputType": "Checkbox",
                   "validators": []
                 },
@@ -340,13 +340,13 @@
                   "type": "boolean",
                   "required": false,
                   "default": false,
-                  "title": "Inherit settings from parent article",
+                  "title": "Наследовать настройки из родительской статьи",
                   "inputType": "Checkbox"
                 },
                 "_autoScroll": {
                   "type": "boolean",
                   "required": false,
-                  "title": "Scroll Automatically",
+                  "title": "Прокручивать автоматически",
                   "inputType": "Checkbox",
                   "validators": []
                 },
@@ -354,40 +354,40 @@
                   "type": "number",
                   "required": true,
                   "default": 500,
-                  "title": "Scroll Duration",
+                  "title": "Продолжительность прокрутки",
                   "inputType": "Number",
                   "validators": ["required", "number"],
-                  "help": "Duration of the scroll animation in milliseconds"
+                  "help": "Продолжительность анимации прокрутки в миллисекундах"
                 },
                 "_scrollTo": {
                   "type": "string",
                   "required": false,
                   "default": "@block +1",
-                  "title": "Scroll To",
+                  "title": "Прокрутить до",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Set how trickle scrolls"
+                  "help": "Установите, как прокручивается постепенная подача"
                 },
                 "_completionAttribute": {
                   "type": "string",
                   "required": false,
                   "enum": ["_isInteractionComplete", "_isComplete"],
                   "default": "_isComplete",
-                  "title": "Completion Attribute",
+                  "title": "Атрибут завершения",
                   "inputType": {"type": "Select", "options":["_isInteractionComplete", "_isComplete"]},
                   "validators": [],
-                  "help": "Set which attribute is used to determine completion"
+                  "help": "Установите, какой атрибут используется для определения завершения"
                 },
                 "_button": {
                   "type": "object",
                   "required": false,
-                  "title": "Button Attributes",
+                  "title": "Атрибуты кнопки",
                   "properties": {
                     "_isEnabled": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Enabled",
+                      "title": "Включено",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -396,24 +396,24 @@
                       "required": false,
                       "enum": ["hidden", "visible", "disabled"],
                       "default": "hidden",
-                      "title": "Initial Visibility",
+                      "title": "Начальная видимость",
                       "inputType": {"type": "Select", "options":["hidden", "visible", "disabled"]},
-                      "help": "Set button visibility before completion"
+                      "help": "Установить видимость кнопки до завершения"
                     },
                     "_styleAfterClick": {
                       "type": "string",
                       "required": false,
                       "enum": ["hidden", "visible", "disabled"],
                       "default": "hidden",
-                      "title": "Final Visibility",
+                      "title": "Конечная видимость",
                       "inputType": {"type": "Select", "options":["hidden", "visible", "disabled"]},
-                      "help": "Set button visibility after completion"
+                      "help": "Установить видимость кнопки после завершения"
                     },
                     "_isFullWidth": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Full Width",
+                      "title": "Полная ширина",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -421,25 +421,25 @@
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Hide on Scroll",
+                      "title": "Скрывать при прокрутке",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "Hides the button when it scrolls from view; not recommended for use in courses that need to be screenreader compatible."
+                      "help": "Скрывает кнопку, когда она прокручивается из вида; не рекомендуется для использования в курсах, которые должны быть совместимы с программами чтения с экрана."
                     },
                     "_showEndOfPage": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Show end-of-page button",
+                      "title": "Показывать кнопку в конце страницы",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "When set to `false`, hides this button only if it appears at the end of a page."
+                      "help": "Если установлено значение `false`, скрывает эту кнопку только в том случае, если она появляется в конце страницы."
                     },
                     "_className": {
                       "type": "string",
                       "required": false,
                       "default": "",
-                      "title": "Custom Classes",
+                      "title": "Пользовательские классы",
                       "inputType": "Text",
                       "validators": []
                     },
@@ -447,16 +447,16 @@
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Enable button icon",
+                      "title": "Включить иконку кнопки",
                       "inputType": "Checkbox",
                       "validators": [],
-                      "help": "Displays an icon alongside, or in place of, the Trickle button text. Default icon is a small downwards arrow"
+                      "help": "Отображает значок рядом с текстом кнопки Постепенная подача или вместо него. Значок по умолчанию - маленькая стрелка вниз"
                     },
                     "text": {
                       "type": "string",
                       "required": false,
-                      "default": "Continue",
-                      "title": "Button Text",
+                      "default": "Продолжить",
+                      "title": "Текст кнопки",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
@@ -464,8 +464,8 @@
                     "ariaLabel": {
                       "type": "string",
                       "required": false,
-                      "default": "Continue",
-                      "title": "Button Aria Label",
+                      "default": "Продолжить",
+                      "title": "Метка ARIA кнопки",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
@@ -474,67 +474,67 @@
                       "type": "string",
                       "required": false,
                       "default": "",
-                      "title": "Button Text when disabled",
+                      "title": "Текст кнопки в отключенном состоянии",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true,
-                      "help": "This text can be shown while the button is disabled"
+                      "help": "Этот текст может отображаться, когда кнопка отключена"
                     },
                     "disabledAriaLabel": {
                       "type": "string",
                       "required": false,
-                      "default": "Continue",
-                      "title": "Button Aria Label when disabled",
+                      "default": "Продолжить",
+                      "title": "Метка ARIA кнопки в отключенном состоянии",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true,
-                      "help": "The aria label when 'Button Text when disabled' is set"
+                      "help": "Метка aria, когда установлен «Текст кнопки в отключенном состоянии»"
                     },
                     "startText": {
                       "type": "string",
                       "required": false,
-                      "default": "Begin",
-                      "title": "First Button Text",
+                      "default": "Начать",
+                      "title": "Текст первой кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "startAriaLabel": {
                       "type": "string",
                       "required": false,
-                      "default": "Begin",
-                      "title": "First Button Aria Label",
+                      "default": "Начать",
+                      "title": "Метка ARIA первой кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "finalText": {
                       "type": "string",
                       "required": false,
-                      "default": "Finish",
-                      "title": "Final Button Text",
+                      "default": "Завершить",
+                      "title": "Текст последней кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "finalAriaLabel": {
                       "type": "string",
                       "required": false,
-                      "default": "Finish",
-                      "title": "Final Button Aria Label",
+                      "default": "Завершить",
+                      "title": "Метка ARIA последней кнопки",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Only on articles when 'Enable on Child Blocks' set to true",
+                      "help": "Только для статей, когда для 'Включить на дочерних блоках' установлено значение true",
                       "translatable": true
                     },
                     "_component": {
                       "type": "string",
                       "required": false,
                       "default": "trickle-button",
-                      "title": "Trickle Plugin",
+                      "title": "Плагин постепенной подачи",
                       "inputType": "Text",
                       "validators": []
                     }
@@ -543,13 +543,13 @@
                 "_stepLocking": {
                   "type": "object",
                   "required": false,
-                  "title": "Step Locking Attributes",
+                  "title": "Атрибуты блокировки шага",
                   "properties": {
                     "_isEnabled": {
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Enabled",
+                      "title": "Включено",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -557,7 +557,7 @@
                       "type": "boolean",
                       "required": false,
                       "default": true,
-                      "title": "Completion Required",
+                      "title": "Требуется завершение",
                       "inputType": "Checkbox",
                       "validators": []
                     },
@@ -565,7 +565,7 @@
                       "type": "boolean",
                       "required": false,
                       "default": false,
-                      "title": "Locked On Revisit",
+                      "title": "Заблокировано при повторном посещении",
                       "inputType": "Checkbox",
                       "validators": []
                     }

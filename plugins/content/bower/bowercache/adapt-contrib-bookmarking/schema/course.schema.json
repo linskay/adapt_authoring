@@ -18,21 +18,21 @@
               "properties": {
                 "_bookmarking": {
                   "type": "object",
-                  "title": "Bookmarking",
+                  "title": "Закладки",
                   "default": {},
                   "properties": {
                     "resumeButtonText": {
                       "type": "string",
-                      "title": "Resume button text",
-                      "default": "Resume",
+                      "title": "Текст кнопки возобновления",
+                      "default": "Возобновить",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "resumeButtonAriaLabel": {
                       "type": "string",
-                      "title": "Resume ARIA label",
-                      "default": "Navigate to your furthest point of progress.",
+                      "title": "Метка ARIA для возобновления",
+                      "default": "Перейдите к самой дальней точке вашего прогресса.",
                       "_adapt": {
                         "translatable": true
                       }
@@ -45,7 +45,7 @@
         },
         "_bookmarking": {
           "type": "object",
-          "title": "Bookmarking",
+          "title": "Закладки",
           "default": {},
           "required": [
             "_level",
@@ -54,14 +54,14 @@
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Bookmarking",
-              "description": "Controls whether the Bookmarking extension is enabled or disabled",
+              "title": "Включить закладки",
+              "description": "Контролирует, включено или отключено расширение закладок",
               "default": true
             },
             "_level": {
               "type": "string",
-              "title": "Level",
-              "description": "Allows you to set whether Bookmarking is done at page, block or component level",
+              "title": "Уровень",
+              "description": "Позволяет установить, будет ли создание закладок выполняться на уровне страницы, блока или компонента",
               "default": "component",
               "enum": [
                 "page",
@@ -72,8 +72,8 @@
             },
             "_location": {
               "type": "string",
-              "title": "Location",
-              "description": "Allows you to set whether Bookmarking takes learners back to their last previously visited location or your furthest incomplete location. The furthest option will pair best in a course with linear progression.",
+              "title": "Местоположение",
+              "description": "Позволяет установить, будут ли закладки возвращать учащихся к их последнему посещенному месту или к самому дальнему незавершенному месту. Опция 'самый дальний' лучше всего подходит для курса с линейным прохождением.",
               "default": "previous",
               "enum": [
                 "previous",
@@ -83,49 +83,49 @@
             },
             "_showPrompt": {
               "type": "boolean",
-              "title": "Enable prompt",
-              "description": "Controls whether the Bookmarking prompt is enabled or disabled. If not enabled, the user will be returned to their bookmarked position automatically",
+              "title": "Включить подсказку",
+              "description": "Контролирует, включена или отключена подсказка для закладок. Если не включено, пользователь будет автоматически возвращен на свою позицию с закладкой",
               "default": true
             },
             "_autoRestore": {
               "type": "boolean",
-              "title": "Auto restore",
-              "description": "Controls whether the Bookmarking will automatically restore if the prompt is disabled. If not enabled, the user will be not be automatically returned to their bookmarked position.",
+              "title": "Автоматическое восстановление",
+              "description": "Контролирует, будут ли закладки автоматически восстанавливаться, если подсказка отключена. Если не включено, пользователь не будет автоматически возвращен на свою позицию с закладкой.",
               "default": true
             },
             "title": {
               "type": "string",
-              "title": "Prompt title",
-              "default": "Bookmarking",
+              "title": "Заголовок подсказки",
+              "default": "Закладки",
               "_adapt": {
                 "translatable": true
               }
             },
             "body": {
               "type": "string",
-              "title": "Prompt body",
-              "default": "Would you like to continue where you left off?",
+              "title": "Основной текст подсказки",
+              "default": "Хотите продолжить с того места, где остановились?",
               "_adapt": {
                 "translatable": true
               }
             },
             "_buttons": {
               "type": "object",
-              "title": "Prompt buttons",
+              "title": "Кнопки подсказки",
               "default": {},
               "properties": {
                 "yes": {
                   "type": "string",
-                  "title": "Confirm button text",
-                  "default": "Yes",
+                  "title": "Текст кнопки подтверждения",
+                  "default": "Да",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "no": {
                   "type": "string",
-                  "title": "Cancel button text",
-                  "default": "No",
+                  "title": "Текст кнопки отмены",
+                  "default": "Нет",
                   "_adapt": {
                     "translatable": true
                   }

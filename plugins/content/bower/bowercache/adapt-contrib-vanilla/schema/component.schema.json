@@ -21,7 +21,7 @@
                 "_title": {
                   "type": "string",
                   "title": "Выравнивание заголовка",
-                  "description": "Set the alignment of the component title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "description": "Установите выравнивание заголовка компонента. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -34,7 +34,7 @@
                 "_body": {
                   "type": "string",
                   "title": "Выравнивание основного текста",
-                  "description": "Set the alignment of the component body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "description": "Установите выравнивание основного текста компонента. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -47,7 +47,7 @@
                 "_instruction": {
                   "type": "string",
                   "title": "Выравнивание инструкции",
-                  "description": "Set the alignment of the component instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "description": "Установите выравнивание инструкции компонента. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",

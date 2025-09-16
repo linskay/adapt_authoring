@@ -10,7 +10,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Поддерживаемый макет",
           "default": "both",
           "enum": [
             "full-width",
@@ -23,7 +23,7 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
+          "title": "Инструкция",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -31,14 +31,14 @@
         },
         "_isVisibleBeforeCompletion": {
           "type": "boolean",
-          "title": "Show before assessment completion",
-          "description": "Controls whether this component will be visible or hidden prior to the assessment having been completed",
+          "title": "Показывать до завершения оценки",
+          "description": "Определяет, будет ли этот компонент видимым или скрытым до завершения оценки",
           "default": true
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criterion",
-          "description": "Set to 'pass' to have the component mark as completed only if the learner passed the associated assessment",
+          "title": "Критерий завершения",
+          "description": "Установите значение 'pass', чтобы компонент помечался как завершенный, только если учащийся прошел соответствующую оценку",
           "default": "inview",
           "enum": [
             "inview",
@@ -48,8 +48,8 @@
         },
         "_resetType": {
           "type": "string",
-          "title": "Reset type",
-          "description": "Set to 'inherit' to use the same reset type as the assessment. Set to 'hard' to have the component's completion reset when the assessment is reset, set to 'soft' if you don't want completion to be reset",
+          "title": "Тип сброса",
+          "description": "Установите значение 'inherit', чтобы использовать тот же тип сброса, что и в оценке. Установите значение 'hard', чтобы завершение компонента сбрасывалось при сбросе оценки, установите значение 'soft', если вы не хотите, чтобы завершение сбрасывалось",
           "default": "inherit",
           "enum": [
             "inherit",
@@ -60,27 +60,27 @@
         },
         "_assessmentId": {
           "type": "string",
-          "title": "Linked assessment ID",
-          "description": "This is the unique name of the assessment for which results should be displayed. If you only have one assessment, you can leave this blank (the article's assessment ID must also be blank).",
+          "title": "ID связанной оценки",
+          "description": "Это уникальное имя оценки, результаты которой должны отображаться. Если у вас только одна оценка, вы можете оставить это поле пустым (ID оценки статьи также должен быть пустым).",
           "default": ""
         },
         "_retry": {
           "type": "object",
-          "title": "Retry",
+          "title": "Повторить",
           "default": {},
           "properties": {
             "button": {
               "type": "string",
-              "title": "Retry button text",
-              "default": "Retry Assessment",
+              "title": "Текст кнопки повтора",
+              "default": "Повторить оценку",
               "_adapt": {
                 "translatable": true
               }
             },
             "feedback": {
               "type": "string",
-              "title": "Retry feedback",
-              "description": "This text is displayed only when more attempts remain. You can use the following variables: {{attemptsSpent}}, {{attempts}}, {{attemptsLeft}}, {{score}}, {{scoreAsPercent}} and {{maxScore}}",
+              "title": "Обратная связь при повторе",
+              "description": "Этот текст отображается только тогда, когда осталось больше попыток. Вы можете использовать следующие переменные: {{attemptsSpent}}, {{attempts}}, {{attemptsLeft}}, {{score}}, {{scoreAsPercent}} и {{maxScore}}",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -89,17 +89,17 @@
             },
             "_routeToAssessment": {
               "type": "boolean",
-              "title": "Redirect to assessment on retry",
-              "description": "When enabled, this will take the user back to the assessment when the \"Retry Assessment\" button is clicked",
+              "title": "Перенаправить на оценку при повторе",
+              "description": "Если включено, это вернет пользователя к оценке при нажатии кнопки «Повторить оценку»",
               "default": false
             }
           }
         },
         "_completionBody": {
           "type": "string",
-          "title": "Default feedback",
-          "description": "This text overwrites the standard body attribute upon completion of the assessment. It may make use of the following variables: {{attemptsSpent}}, {{attempts}}, {{attemptsLeft}}, {{score}}, {{scoreAsPercent}} and {{maxScore}}. {{{feedback}}}, representing the feedback assigned to the appropriate band, is also allowed",
-          "default": "This component you're reading is a results component.<br>You have finished the assessment.<br>You scored {{score}} out of {{maxScore}}. {{{feedback}}}",
+          "title": "Обратная связь по умолчанию",
+          "description": "Этот текст перезаписывает стандартный атрибут body после завершения оценки. Он может использовать следующие переменные: {{attemptsSpent}}, {{attempts}}, {{attemptsLeft}}, {{score}}, {{scoreAsPercent}} и {{maxScore}}. Также разрешено {{{feedback}}}, представляющее обратную связь, назначенную соответствующему диапазону",
+          "default": "Этот компонент, который вы читаете, является компонентом результатов.<br>Вы завершили оценку.<br>Вы набрали {{score}} из {{maxScore}}. {{{feedback}}}",
           "_adapt": {
             "translatable": true
           },
@@ -107,20 +107,20 @@
         },
         "_bands": {
           "type": "array",
-          "title": "Feedback bands",
+          "title": "Диапазоны обратной связи",
           "items": {
             "type": "object",
             "properties": {
               "_score": {
                 "type": "number",
-                "title": "Minimum score",
-                "description": "Enter a value representing the raw score or percentage for the start of the range",
+                "title": "Минимальный балл",
+                "description": "Введите значение, представляющее необработанную оценку или процент для начала диапазона",
                 "default": 0
               },
               "feedback": {
                 "type": "string",
-                "title": "Feedback",
-                "description": "This text will be displayed to the learner when the learner's score falls within this band's range",
+                "title": "Обратная связь",
+                "description": "Этот текст будет отображаться учащемуся, когда его оценка попадет в этот диапазон",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -129,8 +129,8 @@
               },
               "feedbackNotFinal": {
                 "type": "string",
-                "title": "Feedback (not final attempt)",
-                "description": "This optional text will be displayed to the learner when the learner's score falls within this band's range and when the learner still has attempts remaining.",
+                "title": "Обратная связь (не последняя попытка)",
+                "description": "Этот необязательный текст будет отображаться учащемуся, когда его оценка попадет в этот диапазон и у него еще останутся попытки.",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -139,14 +139,14 @@
               },
               "_allowRetry": {
                 "type": "boolean",
-                "title": "Allow retry",
-                "description": "Determines whether the learner will be allowed to re-attempt the assessment. If not set, the learner will not be allowed to retry the assessment regardless of any remaining attempts",
+                "title": "Разрешить повтор",
+                "description": "Определяет, будет ли учащемуся разрешено повторно пройти оценку. Если не установлено, учащемуся не будет разрешено повторно пройти оценку независимо от оставшихся попыток",
                 "default": true
               },
               "_classes": {
                 "type": "string",
-                "title": "Custom article classes",
-                "description": "Classes to be applied to the containing article. Allows for custom styling based on the band the learner's score falls into",
+                "title": "Пользовательские классы статьи",
+                "description": "Классы, применяемые к содержащей статье. Позволяет настраивать стиль в зависимости от диапазона, в который попадает оценка учащегося",
                 "default": ""
               }
             }

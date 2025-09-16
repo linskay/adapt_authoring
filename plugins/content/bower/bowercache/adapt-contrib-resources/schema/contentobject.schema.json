@@ -10,24 +10,24 @@
       "properties": {
         "_resources": {
           "type": "object",
-          "title": "Resources",
+          "title": "Ресурсы",
           "default": {},
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Add resource links to the drawer",
-              "description": "Controls whether the Resources extension is enabled or disabled",
+              "title": "Добавить ссылки на ресурсы в ящик",
+              "description": "Определяет, включено или отключено расширение 'Ресурсы'.",
               "default": true
             },
             "_resourcesItems": {
               "type": "array",
-              "title": "Items",
+              "title": "Элементы",
               "items": {
                 "type": "object",
                 "properties": {
                   "_type": {
                     "type": "string",
-                    "title": "Type",
+                    "title": "Тип",
                     "enum": [
                       "document",
                       "media",
@@ -37,21 +37,21 @@
                   },
                   "_forceDownload": {
                     "type": "boolean",
-                    "title": "Force download",
-                    "description": "Forces the resource to be downloaded rather than opened in the browser. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL",
+                    "title": "Принудительная загрузка",
+                    "description": "Принудительно загружает ресурс, а не открывает его в браузере. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе.",
                     "default": false
                   },
                   "title": {
                     "type": "string",
-                    "title": "Title",
+                    "title": "Заголовок",
                     "_adapt": {
                       "translatable": true
                     }
                   },
                   "filename": {
                     "type": "string",
-                    "title": "Filename",
-                    "description": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to",
+                    "title": "Имя файла",
+                    "description": "Используется для установки имени загружаемого файла, отличного от имени исходного файла. Поддерживается только в браузерах, которые поддерживают атрибут 'download', и для ресурсов, которые являются частью содержимого курса/размещены на том же URL-адресе. Принудительно загружает файл независимо от того, что установлено для 'Принудительной загрузки'.",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -59,7 +59,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "title": "Description",
+                    "title": "Описание",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -67,7 +67,7 @@
                   },
                   "_link": {
                     "type": "string",
-                    "title": "Source",
+                    "title": "Источник",
                     "_backboneForms": "Asset"
                   }
                 }

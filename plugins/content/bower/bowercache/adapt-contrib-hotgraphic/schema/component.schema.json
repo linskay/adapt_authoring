@@ -10,7 +10,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Поддерживаемый макет",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -23,16 +23,16 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Select the icons to find out more.",
+          "title": "Инструкция",
+          "default": "Выберите значки, чтобы узнать больше.",
           "_adapt": {
             "translatable": true
           }
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the items - or just having viewed the component",
+          "title": "Критерии завершения",
+          "description": "Завершение зависит от того, просмотрел ли учащийся все элементы или только просмотрел компонент",
           "default": "allItems",
           "enum": [
             "inview",
@@ -42,13 +42,13 @@
         },
         "_graphic": {
           "type": "object",
-          "title": "Main graphic",
+          "title": "Основная графика",
           "default": {},
           "properties": {
             "src": {
               "type": "string",
-              "title": "Source",
-              "description": "This is the image that appears behind the pins",
+              "title": "Источник",
+              "description": "Это изображение, которое появляется за значками",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "image"
@@ -56,8 +56,8 @@
             },
             "alt": {
               "type": "string",
-              "title": "Alternative text",
-              "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+              "title": "Альтернативный текст",
+              "description": "Описание изображения; требуется, когда оно имеет значение, которое должно быть передано учащемуся. Для 'декоративных' изображений оставьте это поле пустым",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -65,8 +65,8 @@
             },
             "attribution": {
               "type": "string",
-              "title": "Attribution",
-              "description": "Text to be displayed as an attribution",
+              "title": "Атрибуция",
+              "description": "Текст, который будет отображаться как атрибуция",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -76,8 +76,8 @@
         },
         "mobileBody": {
           "type": "string",
-          "title": "Mobile body",
-          "description": "This body text is displayed on mobile devices when this component turns into a Narrative",
+          "title": "Основной текст для мобильных устройств",
+          "description": "Этот основной текст отображается на мобильных устройствах, когда этот компонент превращается в Повествование",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -86,9 +86,9 @@
         },
         "mobileInstruction": {
           "type": "string",
-          "title": "Mobile instruction",
-          "description": "This instruction text is displayed on mobile devices when this component turns into a Narrative",
-          "default": "Select the plus icon followed by the next arrow to find out more.",
+          "title": "Инструкция для мобильных устройств",
+          "description": "Этот текст инструкции отображается на мобильных устройствах, когда этот компонент превращается в Повествование",
+          "default": "Выберите значок плюса, а затем стрелку 'далее', чтобы узнать больше.",
           "_adapt": {
             "translatable": true
           },
@@ -96,67 +96,67 @@
         },
         "_hidePagination": {
           "type": "boolean",
-          "title": "Hide pagination",
-          "description": "If enabled, the progress indicator and previous and next links will not be shown on the popup toolbar",
+          "title": "Скрыть нумерацию страниц",
+          "description": "Если включено, индикатор выполнения и ссылки 'назад' и 'далее' не будут отображаться на панели инструментов всплывающего окна",
           "default": false
         },
         "_canCycleThroughPagination": {
           "type": "boolean",
-          "title": "Loop items",
-          "description": "If enabled, the popup navigation buttons will cycle continuously through the popup items (i.e. clicking next whilst on the last item will cause the first item to be shown)",
+          "title": "Зациклить элементы",
+          "description": "Если включено, кнопки навигации всплывающего окна будут непрерывно циклически переключать элементы всплывающего окна (т. е. нажатие кнопки 'далее' на последнем элементе приведет к отображению первого элемента)",
           "default": false
         },
         "_isNarrativeOnMobile": {
           "type": "boolean",
-          "title": "Replace with Narrative component on mobile",
-          "description": "If disabled, the Hotgraphic will render a scaled down 'desktop' version (pins over image / tiles) of the component in 'mobile' view instead of being replaced by a Narrative interaction",
+          "title": "Заменить компонентом Повествование на мобильных устройствах",
+          "description": "Если отключено, Hotgraphic будет отображать уменьшенную 'настольную' версию (значки поверх изображения / плитки) компонента в 'мобильном' представлении вместо замены взаимодействием Повествование",
           "default": true
         },
         "_isMobileTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image on mobile device",
-          "description": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button. Only applies when the Hot Graphic is configured to render as a Narrative on mobile",
+          "title": "Переместить текстовую область под изображение на мобильном устройстве",
+          "description": "Если включено, на мобильных устройствах текстовая область опускается под изображение, а не находится за кнопкой слогана. Применяется только тогда, когда Hot Graphic настроен для отображения в виде Повествования на мобильных устройствах",
           "default": false
         },
         "_isStackedOnMobile": {
           "type": "boolean",
-          "title": "Stack images and text on mobile",
-          "description": "If enabled, on mobile, text and images will be stacked vertically. No interaction will be required to view all items as the user will simply scroll down. Only applies when the Hot Graphic is configured to render as a Narrative on mobile",
+          "title": "Расположить изображения и текст стопкой на мобильных устройствах",
+          "description": "Если включено, на мобильных устройствах текст и изображения будут расположены вертикально. Для просмотра всех элементов не потребуется никакого взаимодействия, так как пользователь будет просто прокручивать вниз. Применяется только тогда, когда Hot Graphic настроен для отображения в виде Повествования на мобильных устройствах",
           "default": false
         },
         "_useNumberedPins": {
           "type": "boolean",
-          "title": "Use numbered pins",
-          "description": "If enabled, the pin icons will be replaced with the item number. Useful if you want pins to be visited in a set order or show steps in a process",
+          "title": "Использовать нумерованные значки",
+          "description": "Если включено, значки будут заменены номером элемента. Полезно, если вы хотите, чтобы значки посещались в определенном порядке или показывали шаги в процессе",
           "default": false
         },
         "_useGraphicsAsPins": {
           "type": "boolean",
-          "title": "Use grid layout",
-          "description": "If enabled, the main graphic will be hidden and pins will be displayed as images which can be positioned using classes",
+          "title": "Использовать сеточный макет",
+          "description": "Если включено, основная графика будет скрыта, а значки будут отображаться как изображения, которые можно позиционировать с помощью классов",
           "default": false
         },
         "_hasStaticTooltips": {
           "type": "boolean",
-          "title": "Use static tooltips",
-          "description": "If enabled, tooltips (if themselves enabled) will always be shown rather than only on hover.",
+          "title": "Использовать статические подсказки",
+          "description": "Если включено, подсказки (если они сами включены) будут отображаться всегда, а не только при наведении курсора.",
           "default": false
         },
         "_isRound": {
           "type": "boolean",
-          "title": "Use circular popup item images",
-          "description": "If enabled, a 50% border radius will be applied to the items pop up images",
+          "title": "Использовать круглые изображения элементов всплывающего окна",
+          "description": "Если включено, к изображениям элементов всплывающего окна будет применен радиус границы 50%",
           "default": false
         },
         "_pinOffsetOrigin": {
           "type": "boolean",
-          "title": "Offset pin origin point",
-          "description": "If set to `true`, the pins origin point will be changed from `top left` to `center`. This option will enable the pin to remain stationary when viewing responsively. The default is `false`.",
+          "title": "Сместить начальную точку значка",
+          "description": "Если установлено значение `true`, начальная точка значков будет изменена с `верхнего левого` на `центр`. Эта опция позволит значку оставаться неподвижным при адаптивном просмотре. По умолчанию `false`.",
           "default": false
         },
         "_items": {
           "type": "array",
-          "title": "Items",
+          "title": "Элементы",
           "items": {
             "type": "object",
             "default": {},
@@ -166,8 +166,8 @@
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
-                "description": "Title displayed in the popup",
+                "title": "Заголовок",
+                "description": "Заголовок, отображаемый во всплывающем окне",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -175,8 +175,8 @@
               },
               "body": {
                 "type": "string",
-                "title": "Body",
-                "description": "Body text displayed in the popup",
+                "title": "Основной текст",
+                "description": "Основной текст, отображаемый во всплывающем окне",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -185,8 +185,8 @@
               },
               "strapline": {
                 "type": "string",
-                "title": "Strapline",
-                "description": "Strapline - displayed on mobile version only",
+                "title": "Слоган",
+                "description": "Слоган - отображается только в мобильной версии",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -194,8 +194,8 @@
               },
               "_imageAlignment": {
                 "type": "string",
-                "title": "Image alignment",
-                "description": "Defines the alignment of the item image in the pop up. Left: Image aligned to the left of the text area. Top: Image aligned above the text area. Right: Image aligned to the right of the text area. Bottom: Image aligned below the text area.The default alignment is `right`.",
+                "title": "Выравнивание изображения",
+                "description": "Определяет выравнивание изображения элемента во всплывающем окне. Слева: изображение выровнено по левому краю текстовой области. Сверху: изображение выровнено над текстовой областью. Справа: изображение выровнено по правому краю текстовой области. Снизу: изображение выровнено под текстовой областью. Выравнивание по умолчанию — `справа`.",
                 "default": "right",
                 "enum": [
                   "left",
@@ -207,7 +207,7 @@
               },
               "_graphic": {
                 "type": "object",
-                "title": "Graphic",
+                "title": "Графика",
                 "default": {},
                 "required": [
                   "src"
@@ -215,8 +215,8 @@
                 "properties": {
                   "src": {
                     "type": "string",
-                    "title": "Source",
-                    "description": "Image to be displayed in a popup when this item is selected",
+                    "title": "Источник",
+                    "description": "Изображение, которое будет отображаться во всплывающем окне при выборе этого элемента",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -224,8 +224,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Альтернативный текст",
+                    "description": "Описание изображения; требуется, когда оно имеет значение, которое должно быть передано учащемуся. Для 'декоративных' изображений оставьте это поле пустым",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -233,8 +233,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution for the popup image",
+                    "title": "Атрибуция",
+                    "description": "Текст, который будет отображаться как атрибуция для изображения всплывающего окна",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -242,21 +242,21 @@
                   },
                   "_classes": {
                     "type": "string",
-                    "title": "Pin custom classes",
-                    "description": "Allows you to specify custom CSS classes to be applied to the hotgraphic pin or, alternatively, to the hotspot tile when _useGraphicsAsPins is set to true",
+                    "title": "Пользовательские классы значка",
+                    "description": "Позволяет указать пользовательские классы CSS, которые будут применяться к значку hotgraphic или, альтернативно, к плитке горячей точки, когда _useGraphicsAsPins имеет значение true",
                     "default": ""
                   }
                 }
               },
               "_pin": {
                 "type": "object",
-                "title": "Pin",
+                "title": "Значок",
                 "default": {},
                 "properties": {
                   "src": {
                     "type": "string",
-                    "title": "Pin image (default)",
-                    "description": "This is the pin image. Leave blank to use the default icon.",
+                    "title": "Изображение значка (по умолчанию)",
+                    "description": "Это изображение значка. Оставьте поле пустым, чтобы использовать значок по умолчанию.",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -264,8 +264,8 @@
                   },
                   "srcHover": {
                     "type": "string",
-                    "title": "Pin image (hover)",
-                    "description": "This is the pin image hover state (optional).",
+                    "title": "Изображение значка (при наведении)",
+                    "description": "Это состояние изображения значка при наведении (необязательно).",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -273,8 +273,8 @@
                   },
                   "srcVisited": {
                     "type": "string",
-                    "title": "Pin image (visited)",
-                    "description": "This is the pin image visited state (optional).",
+                    "title": "Изображение значка (посещено)",
+                    "description": "Это состояние изображения значка после посещения (необязательно).",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -282,8 +282,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Альтернативный текст",
+                    "description": "Описание изображения; требуется, когда оно имеет значение, которое должно быть передано учащемуся. Для 'декоративных' изображений оставьте это поле пустым",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -293,42 +293,42 @@
               },
               "_classes": {
                 "type": "string",
-                "title": "Popup item custom classes",
-                "description": "Allows you to specify custom CSS classes to be applied to the popup item. 'hide-desktop-image' hides the pop up image in desktop view. 'hide-popup-image' hides the pop up image for all screen sizes.",
+                "title": "Пользовательские классы элемента всплывающего окна",
+                "description": "Позволяет указать пользовательские классы CSS, которые будут применяться к элементу всплывающего окна. 'hide-desktop-image' скрывает изображение всплывающего окна в настольном представлении. 'hide-popup-image' скрывает изображение всплывающего окна для всех размеров экрана.",
                 "default": ""
               },
               "_left": {
                 "type": "number",
-                "title": "Pin horizontal position (%)",
+                "title": "Горизонтальное положение значка (%)",
                 "default": 0
               },
               "_top": {
                 "type": "number",
-                "title": "Pin vertical position (%)",
+                "title": "Вертикальное положение значка (%)",
                 "default": 0
               },
               "_tooltip": {
                 "type": "object",
-                "title": "Tooltip",
+                "title": "Подсказка",
                 "properties": {
                   "_isEnabled": {
                     "type": "boolean",
                     "default": false,
-                    "title": "Is enabled?",
-                    "description": "If enabled, a tooltip will be displayed on hover over this item. If 'Use static tooltips' is enabled, then tooltips will always be shown."
+                    "title": "Включено?",
+                    "description": "Если включено, при наведении курсора на этот элемент будет отображаться подсказка. Если включена опция 'Использовать статические подсказки', подсказки будут отображаться всегда."
                   },
                   "text": {
                     "type": "string",
                     "default": "{{ariaLabel}}",
-                    "title": "Tooltip text",
-                    "description": "The tooltip text to display for this item",
+                    "title": "Текст подсказки",
+                    "description": "Текст подсказки для отображения для этого элемента",
                     "translatable": true
                   },
                   "_position": {
                     "type": "string",
-                    "title": "Tooltip position",
+                    "title": "Положение подсказки",
                     "default": "bottom",
-                    "description": "The tooltip position in relation to the pin. Defaults to 'bottom'",
+                    "description": "Положение подсказки относительно значка. По умолчанию 'снизу'",
                     "enum": [
                       "top",
                       "top right",
@@ -346,8 +346,8 @@
                   "_classes": {
                     "type": "string",
                     "default": "",
-                    "title": "Tooltip classes",
-                    "description": "Allows you to specify custom CSS classes to be applied to the tooltip.",
+                    "title": "Классы подсказки",
+                    "description": "Позволяет указать пользовательские классы CSS, которые будут применяться к подсказке.",
                     "translatable": false
                   }
                 }

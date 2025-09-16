@@ -18,29 +18,29 @@
               "properties": {
                 "_slider": {
                   "type": "object",
-                  "title": "Slider",
+                  "title": "Слайдер",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Slider. Respond to the question by selecting a value on the scale and then submit.",
+                      "title": "Область ARIA",
+                      "default": "Слайдер. Ответьте на вопрос, выбрав значение на шкале, а затем нажмите «Отправить».",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "labelStart": {
                       "type": "string",
-                      "title": "Scale start ARIA label",
-                      "default": "Start of the scale",
+                      "title": "Метка ARIA начала шкалы",
+                      "default": "Начало шкалы",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "labelEnd": {
                       "type": "string",
-                      "title": "Scale end ARIA label",
-                      "default": "End of the scale",
+                      "title": "Метка ARIA конца шкалы",
+                      "default": "Конец шкалы",
                       "_adapt": {
                         "translatable": true
                       }

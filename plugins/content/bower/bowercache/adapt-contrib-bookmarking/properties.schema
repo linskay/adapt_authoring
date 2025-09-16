@@ -7,8 +7,8 @@
     "resumeButtonText": {
       "type": "string",
       "required": true,
-      "title": "Resume button text",
-      "default": "Resume",
+      "title": "Текст кнопки возобновления",
+      "default": "Возобновить",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -16,8 +16,8 @@
     "resumeButtonAriaLabel": {
       "type": "string",
       "required": true,
-      "title": "Resume ARIA label",
-      "default": "Navigate to your furthest point of progress.",
+      "title": "Метка ARIA для возобновления",
+      "default": "Перейдите к самой дальней точке вашего прогресса.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -37,16 +37,16 @@
             "_bookmarking": {
               "type": "object",
               "required": false,
-              "legend": "Bookmarking",
+              "legend": "Закладки",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Bookmarking extension is enabled or disabled."
+                  "help": "Контролирует, включено или отключено расширение закладок."
                 },
                 "_level": {
                   "type": "string",
@@ -57,7 +57,7 @@
                     "component"
                   ],
                   "default": "component",
-                  "title": "Level",
+                  "title": "Уровень",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -67,7 +67,7 @@
                     ]
                   },
                   "validators": ["required"],
-                  "help": "Allows you to set whether Bookmarking is done at page, block or component level."
+                  "help": "Позволяет установить, будет ли создание закладок выполняться на уровне страницы, блока или компонента."
                 },
                 "_location": {
                   "type": "string",
@@ -77,7 +77,7 @@
                     "furthest"
                   ],
                   "default": "previous",
-                  "title": "Location",
+                  "title": "Местоположение",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -86,51 +86,51 @@
                     ]
                   },
                   "validators": ["required"],
-                  "help": "Allows you to set whether Bookmarking takes learners back to their last previously visited location or your furthest incomplete location. The furthest option will pair best in a course with linear progression."
+                  "help": "Позволяет установить, будут ли закладки возвращать учащихся к их последнему посещенному месту или к самому дальнему незавершенному месту. Опция 'самый дальний' лучше всего подходит для курса с линейным прохождением."
                 },
                 "_showPrompt": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show prompt",
+                  "title": "Показывать подсказку",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Bookmarking prompt is enabled or disabled. If not enabled, the user will be returned to their bookmarked position automatically."
+                  "help": "Контролирует, включена или отключена подсказка для закладок. Если не включено, пользователь будет автоматически возвращен на свою позицию с закладкой."
                 },
                 "_autoRestore": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Auto restore",
+                  "title": "Автоматическое восстановление",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Bookmarking will automatically restore if the prompt is disabled. If not enabled, the user will be not be automatically returned to their bookmarked position."
+                  "help": "Контролирует, будут ли закладки автоматически восстанавливаться, если подсказка отключена. Если не включено, пользователь не будет автоматически возвращен на свою позицию с закладкой."
                 },
                 "title": {
                   "type": "string",
-                  "default": "Bookmarking",
+                  "default": "Закладки",
                   "required": true,
-                  "title": "Prompt Title",
+                  "title": "Заголовок подсказки",
                   "inputType": "Text",
                   "validators": [],
                   "translatable": true
                 },
                 "body": {
                   "type": "string",
-                  "default": "Would you like to continue where you left off?",
+                  "default": "Хотите продолжить с того места, где остановились?",
                   "required": false,
-                  "title": "Prompt Message",
+                  "title": "Сообщение подсказки",
                   "inputType": "Text",
                   "validators": [],
                   "translatable": true
                 },
                 "_buttons": {
                   "type": "object",
-                  "title": "Prompt Buttons",
+                  "title": "Кнопки подсказки",
                   "properties": {
                     "yes": {
                       "type": "string",
-                      "default": "Yes",
+                      "default": "Да",
                       "title": "",
                       "inputType": "Text",
                       "validators": [],
@@ -138,7 +138,7 @@
                     },
                     "no": {
                       "type": "string",
-                      "default": "No",
+                      "default": "Нет",
                       "title": "",
                       "inputType": "Text",
                       "validators": [],
@@ -156,16 +156,16 @@
             "_bookmarking": {
               "type": "object",
               "required": false,
-              "legend": "Bookmarking",
+              "legend": "Закладки",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Включено",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether Bookmarking is enabled or disabled for this page of the course."
+                  "help": "Контролирует, включены или отключены закладки для этой страницы курса."
                 },
                 "_level": {
                   "type": "string",
@@ -177,7 +177,7 @@
                     "component"
                   ],
                   "default": "inherit",
-                  "title": "Level",
+                  "title": "Уровень",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -188,7 +188,7 @@
                     ]
                   },
                   "validators": ["required"],
-                  "help": "Whether you want to inherit the 'Level' setting from Project settings or override it for this page of the course."
+                  "help": "Хотите ли вы унаследовать настройку 'Уровень' из настроек проекта или переопределить ее для этой страницы курса."
                 }
               }
             }

@@ -161,102 +161,102 @@
         "title": "UI элементов контента (действие, не контент)",
         "properties": {
           "item-ui-color": {
-            "title": "Item UI colour",
+            "title": "Цвет интерфейса элемента",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the selectable areas in components that don't contain course content."
+            "help": "Определяет выбираемые области в компонентах, которые не содержат контент курса."
           },
           "item-ui-color-inverted": {
-            "title": "Item UI colour - inverted",
+            "title": "Цвет интерфейса элемента - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the item UI text / icon colour. Should be a colour that provides good contrast against the item UI colour."
+            "help": "Определяет цвет текста/иконки интерфейса элемента. Должен быть цветом, который обеспечивает хороший контраст с цветом интерфейса элемента."
           },
           "item-ui-color-hover": {
-            "title": "Item UI colour - hover",
+            "title": "Цвет интерфейса элемента - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": ""
           },
           "item-ui-color-inverted-hover": {
-            "title": "Item UI colour - inverted hover",
+            "title": "Цвет интерфейса элемента - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the item UI text / icon colour when hovered over. Should be a colour that provides good contrast against the item UI hover colour."
+            "help": "Определяет цвет текста/иконки интерфейса элемента при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом интерфейса элемента при наведении."
           },
           "item-ui-color-focus": {
-            "title": "Item UI colour - focus",
+            "title": "Цвет интерфейса элемента - при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": ""
           },
           "item-ui-color-inverted-focus": {
-            "title": "Item UI colour - inverted focus",
+            "title": "Цвет интерфейса элемента - инвертированный при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the item UI text / icon colour when focused. Should be a colour that provides good contrast against the item UI focus colour."
+            "help": "Определяет цвет текста/иконки интерфейса элемента при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом интерфейса элемента при фокусе."
           },
           "item-ui-color-selected": {
-            "title": "Item UI colour - selected",
+            "title": "Цвет интерфейса элемента - выбранный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": ""
           },
           "item-ui-color-inverted-selected": {
-            "title": "Item UI colour - inverted selected",
+            "title": "Цвет интерфейса элемента - инвертированный выбранный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the item UI text / icon colour when selected. Should be a colour that provides good contrast against the item UI selected colour."
+            "help": "Определяет цвет текста/иконки интерфейса элемента при выборе. Должен быть цветом, который обеспечивает хороший контраст с цветом выбранного интерфейса элемента."
           },
           "item-ui-color-visited": {
-            "title": "Item UI colour - visited",
+            "title": "Цвет интерфейса элемента - посещенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": ""
           },
           "item-ui-color-inverted-visited": {
-            "title": "Item UI colour - inverted visited",
+            "title": "Цвет интерфейса элемента - инвертированный посещенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the item UI text / icon colour when visited. Should be a colour that provides good contrast against the item UI visited colour."
+            "help": "Определяет цвет текста/иконки интерфейса элемента при посещении. Должен быть цветом, который обеспечивает хороший контраст с цветом посещенного интерфейса элемента."
           },
           "item-ui-color-locked": {
-            "title": "Item UI colour - locked",
+            "title": "Цвет интерфейса элемента - заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": ""
           },
           "item-ui-color-inverted-locked": {
-            "title": "Item UI colour - inverted locked",
+            "title": "Цвет интерфейса элемента - инвертированный заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the item UI text / icon colour when locked. Should be a colour that provides good contrast against the item UI locked colour."
+            "help": "Определяет цвет текста/иконки интерфейса элемента при блокировке. Должен быть цветом, который обеспечивает хороший контраст с цветом заблокированного интерфейса элемента."
           },
           "item-ui-color-disabled": {
-            "title": "Item UI colour - disabled",
+            "title": "Цвет интерфейса элемента - отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": ""
           },
           "item-ui-color-inverted-disabled": {
-            "title": "Item UI colour - inverted disabled",
+            "title": "Цвет интерфейса элемента - инвертированный отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the item UI text / icon colour when disabled. Should be a colour that provides good contrast against the item UI disabled colour."
+            "help": "Определяет цвет текста/иконки интерфейса элемента при отключении. Должен быть цветом, который обеспечивает хороший контраст с цветом отключенного интерфейса элемента."
           }
         }
       },
@@ -381,18 +381,18 @@
         "title": "Глобальный UI",
         "properties": {
           "ui-color": {
-            "title": "UI colour",
+            "title": "Цвет интерфейса",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Определяет глобальную цветовую схему UI для навигации, уведомлений и боковой панели."
+            "help": "Определяет глобальную цветовую схему пользовательского интерфейса для навигации, уведомлений и боковой панели."
           },
           "ui-color-inverted": {
-            "title": "UI colour - inverted",
+            "title": "Цвет интерфейса - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Определяет глобальный цвет текста/иконки UI. Должен быть цветом, который обеспечивает хороший контраст с глобальным цветом UI."
+            "help": "Определяет глобальный цвет текста/иконки пользовательского интерфейса. Должен быть цветом, который обеспечивает хороший контраст с глобальным цветом пользовательского интерфейса."
           }
         }
       },
@@ -403,28 +403,28 @@
         "title": "Состояния валидации",
         "properties": {
           "validation-success": {
-            "title": "Validation success colour",
+            "title": "Цвет успешной проверки",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": "Определяет цвет успешной отметки вопроса."
           },
           "validation-success-inverted": {
-            "title": "Validation success colour - inverted",
+            "title": "Цвет успешной проверки - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": "Определяет цвет текста/иконки успешной отметки вопроса. Должен быть цветом, который обеспечивает хороший контраст с цветом успешной отметки вопроса."
           },
           "validation-error": {
-            "title": "Validation error colour",
+            "title": "Цвет ошибки проверки",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": "Определяет цвет ошибочной отметки вопроса."
           },
           "validation-error-inverted": {
-            "title": "Validation error colour - inverted",
+            "title": "Цвет ошибки проверки - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
@@ -439,21 +439,21 @@
         "title": "Прогресс",
         "properties": {
           "progress": {
-            "title": "Progress fill colour",
+            "title": "Цвет заполнения прогресса",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": "Определяет глобальный цвет заполнения полосы прогресса."
           },
           "progress-inverted": {
-            "title": "Progress background colour",
+            "title": "Цвет фона прогресса",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
             "help": "Определяет глобальный цвет фона заполнения прогресса."
           },
           "progress-border": {
-            "title": "Progress border colour",
+            "title": "Цвет рамки прогресса",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
@@ -468,125 +468,125 @@
         "title": "Меню",
         "properties": {
           "menu-header-background-color": {
-            "title": "Menu header background colour",
+            "title": "Цвет фона заголовка меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-header-title-color": {
-            "title": "Menu header title colour",
+            "title": "Цвет заголовка меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-header-subtitle-color": {
-            "title": "Menu header subtitle colour",
+            "title": "Цвет подзаголовка меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-header-body-color": {
-            "title": "Menu header body colour",
+            "title": "Цвет основного текста заголовка меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-header-instruction-color": {
-            "title": "Menu header instruction colour",
+            "title": "Цвет инструкции заголовка меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item": {
-            "title": "Menu item colour",
+            "title": "Цвет элемента меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item-inverted": {
-            "title": "Menu item colour - inverted",
+            "title": "Цвет элемента меню - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the menu item text colour. Should be a colour that provides good contrast against the menu item colour."
+            "help": "Определяет цвет текста элемента меню. Должен быть цветом, который обеспечивает хороший контраст с цветом элемента меню."
           },
           "menu-item-border-color": {
-            "title": "Menu item border colour",
+            "title": "Цвет рамки элемента меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item-progress": {
-            "title": "Menu item progress fill colour",
+            "title": "Цвет заполнения прогресса элемента меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the menu-item-specific progress width fill override colour."
+            "help": "Определяет цвет переопределения заполнения ширины прогресса для конкретного элемента меню."
           },
           "menu-item-progress-inverted": {
-            "title": "Menu item progress background colour",
+            "title": "Цвет фона прогресса элемента меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the menu-item-specific progress fill background override colour."
+            "help": "Определяет цвет переопределения фона заполнения прогресса для конкретного элемента меню."
           },
           "menu-item-progress-border": {
-            "title": "Menu item progress border colour",
+            "title": "Цвет рамки прогресса элемента меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item-btn-color": {
-            "title": "Menu item button background colour",
+            "title": "Цвет фона кнопки элемента меню",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item-btn-color-inverted": {
-            "title": "Menu item button background colour - inverted",
+            "title": "Цвет фона кнопки элемента меню - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the menu item button text colour. Should be a colour that provides good contrast against the menu item button colour."
+            "help": "Определяет цвет текста кнопки элемента меню. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки элемента меню."
           },
           "menu-item-btn-color-hover": {
-            "title": "Menu item button background colour - hover",
+            "title": "Цвет фона кнопки элемента меню - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item-btn-color-inverted-hover": {
-            "title": "Menu item button background colour - inverted hover",
+            "title": "Цвет фона кнопки элемента меню - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the menu item button text colour when hovered over. Should be a colour that provides good contrast against the menu item button hover colour."
+            "help": "Определяет цвет текста кнопки элемента меню при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки элемента меню при наведении."
           },
           "menu-item-btn-color-focus": {
-            "title": "Menu item button background colour - focus",
+            "title": "Цвет фона кнопки элемента меню - при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item-btn-color-inverted-focus": {
-            "title": "Menu item button background colour - inverted focus",
+            "title": "Цвет фона кнопки элемента меню - инвертированный при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the menu item button text colour when focused. Should be a colour that provides good contrast against the menu item button focus colour."
+            "help": "Определяет цвет текста кнопки элемента меню при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки элемента меню при фокусе."
           },
           "menu-item-btn-color-locked": {
-            "title": "Menu item button background colour - locked",
+            "title": "Цвет фона кнопки элемента меню - заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "menu-item-btn-color-inverted-locked": {
-            "title": "Menu item button background colour - inverted locked",
+            "title": "Цвет фона кнопки элемента меню - инвертированный заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the menu item button text colour when locked. Should be a colour that provides good contrast against the menu item button locked colour."
+            "help": "Определяет цвет текста кнопки элемента меню при блокировке. Должен быть цветом, который обеспечивает хороший контраст с цветом заблокированной кнопки элемента меню."
           }
         }
       },
@@ -597,119 +597,119 @@
         "title": "Панель навигации",
         "properties": {
           "nav": {
-            "title": "Navigation background colour",
+            "title": "Цвет фона навигации",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "nav-inverted": {
-            "title": "Navigation background colour - inverted",
+            "title": "Цвет фона навигации - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the general navigation inverted colour. Should be a colour that provides good contrast against the navigation colour."
+            "help": "Определяет общий инвертированный цвет навигации. Должен быть цветом, который обеспечивает хороший контраст с цветом навигации."
           },
           "nav-icon": {
-            "title": "Navigation button background colour",
+            "title": "Цвет фона кнопки навигации",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "nav-icon-inverted": {
-            "title": "Navigation button background colour - inverted",
+            "title": "Цвет фона кнопки навигации - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation button text / icon colour. Should be a colour that provides good contrast against the navigation button colour."
+            "help": "Определяет цвет текста/иконки кнопки навигации. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки навигации."
           },
           "nav-icon-hover": {
-            "title": "Navigation button background colour - hover",
+            "title": "Цвет фона кнопки навигации - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "nav-icon-inverted-hover": {
-            "title": "Navigation button background colour - inverted hover",
+            "title": "Цвет фона кнопки навигации - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation button text / icon colour when hovered over. Should be a colour that provides good contrast against the navigation button hover colour."
+            "help": "Определяет цвет текста/иконки кнопки навигации при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки навигации при наведении."
           },
           "nav-icon-focus": {
-            "title": "Navigation button background colour - focus",
+            "title": "Цвет фона кнопки навигации - при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "nav-icon-inverted-focus": {
-            "title": "Navigation button background colour - inverted focus",
+            "title": "Цвет фона кнопки навигации - инвертированный при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation button text / icon colour when focused. Should be a colour that provides good contrast against the navigation button focus colour."
+            "help": "Определяет цвет текста/иконки кнопки навигации при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки навигации при фокусе."
           },
           "nav-icon-locked": {
-            "title": "Navigation button background colour - locked",
+            "title": "Цвет фона кнопки навигации - заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "nav-icon-inverted-locked": {
-            "title": "Navigation button background colour - inverted locked",
+            "title": "Цвет фона кнопки навигации - инвертированный заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation button text / icon colour when locked. Should be a colour that provides good contrast against the navigation button locked colour."
+            "help": "Определяет цвет текста/иконки кнопки навигации при блокировке. Должен быть цветом, который обеспечивает хороший контраст с цветом заблокированной кнопки навигации."
           },
           "nav-icon-disabled": {
-            "title": "Navigation button background colour - disabled",
+            "title": "Цвет фона кнопки навигации - отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "nav-icon-inverted-disabled": {
-            "title": "Navigation button background colour - inverted disabled",
+            "title": "Цвет фона кнопки навигации - инвертированный отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation button text / icon colour when disabled. Should be a colour that provides good contrast against the navigation button disabled colour."
+            "help": "Определяет цвет текста/иконки кнопки навигации при отключении. Должен быть цветом, который обеспечивает хороший контраст с цветом отключенной кнопки навигации."
           },
           "nav-progress": {
-            "title": "Navigation progress fill color",
+            "title": "Цвет заполнения прогресса навигации",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation-specific progress width fill override colour."
+            "help": "Определяет цвет переопределения заполнения ширины прогресса для конкретной навигации."
           },
           "nav-progress-inverted": {
-            "title": "Navigation progress background color - inverted",
+            "title": "Цвет фона прогресса навигации - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation-specific progress fill background override colour."
+            "help": "Определяет цвет переопределения фона заполнения прогресса для конкретной навигации."
           },
           "nav-progress-border": {
-            "title": "Navigation progress border colour",
+            "title": "Цвет рамки прогресса навигации",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "nav-progress-hover": {
-            "title": "Navigation progress fill color - hover",
+            "title": "Цвет заполнения прогресса навигации - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation-specific progress width fill override colour when hovered over."
+            "help": "Определяет цвет переопределения заполнения ширины прогресса для конкретной навигации при наведении."
           },
           "nav-progress-inverted-hover": {
-            "title": "Navigation progress background color - inverted hover",
+            "title": "Цвет фона прогресса навигации - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the navigation-specific progress fill background override colour when hovered over."
+            "help": "Определяет цвет переопределения фона заполнения прогресса для конкретной навигации при наведении."
           },
           "nav-progress-border-hover": {
-            "title": "Navigation progress border colour - hover",
+            "title": "Цвет рамки прогресса навигации - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
@@ -723,159 +723,159 @@
         "title": "Уведомления (всплывающие)",
         "properties": {
           "notify": {
-            "title": "Notify background colour",
+            "title": "Цвет фона уведомления",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-inverted": {
-            "title": "Notify background colour - inverted",
+            "title": "Цвет фона уведомления - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify text colour. Should be a colour that provides good contrast against the notify colour."
+            "help": "Определяет цвет текста уведомления. Должен быть цветом, который обеспечивает хороший контраст с цветом уведомления."
           },
           "notify-link": {
-            "title": "Notify link font colour",
+            "title": "Цвет шрифта ссылки в уведомлении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-link-hover": {
-            "title": "Notify link font colour - hover",
+            "title": "Цвет шрифта ссылки в уведомлении - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-icon": {
-            "title": "Notify icon button background colour",
+            "title": "Цвет фона кнопки с иконкой в уведомлении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-icon-inverted": {
-            "title": "Notify icon button background colour - inverted",
+            "title": "Цвет фона кнопки с иконкой в уведомлении - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify icon inverse colour. Should be a colour that provides good contrast against the notify icon colour."
+            "help": "Определяет инвертированный цвет иконки уведомления. Должен быть цветом, который обеспечивает хороший контраст с цветом иконки уведомления."
           },
           "notify-icon-hover": {
-            "title": "Notify icon button background colour - hover",
+            "title": "Цвет фона кнопки с иконкой в уведомлении - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-icon-inverted-hover": {
-            "title": "Notify icon button background colour - inverted hover",
+            "title": "Цвет фона кнопки с иконкой в уведомлении - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify icon colour when hovered over. Should be a colour that provides good contrast against the notify icon hover colour."
+            "help": "Определяет цвет иконки уведомления при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом иконки уведомления при наведении."
           },
           "notify-icon-focus": {
-            "title": "Notify icon button background colour - focus",
+            "title": "Цвет фона кнопки с иконкой в уведомлении - при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-icon-inverted-focus": {
-            "title": "Notify icon button background colour - inverted focus",
+            "title": "Цвет фона кнопки с иконкой в уведомлении - инвертированный при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify icon colour when focused. Should be a colour that provides good contrast against the notify icon focus colour."
+            "help": "Определяет цвет иконки уведомления при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом иконки уведомления при фокусе."
           },
           "notify-icon-disabled": {
-            "title": "Notify icon button background colour - disabled",
+            "title": "Цвет фона кнопки с иконкой в уведомлении - отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-icon-inverted-disabled": {
-            "title": "Notify icon button background colour - inverted disabled",
+            "title": "Цвет фона кнопки с иконкой в уведомлении - инвертированный отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify icon colour when disabled. Should be a colour that provides good contrast against the notify icon disabled colour."
+            "help": "Определяет цвет иконки уведомления при отключении. Должен быть цветом, который обеспечивает хороший контраст с цветом отключенной иконки уведомления."
           },
           "notify-btn": {
-            "title": "Notify button background colour",
+            "title": "Цвет фона кнопки уведомления",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-btn-inverted": {
-            "title": "Notify button background colour - inverted",
+            "title": "Цвет фона кнопки уведомления - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify button text / icon colour. Should be a colour that provides good contrast against the notify button colour."
+            "help": "Определяет цвет текста/иконки кнопки уведомления. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки уведомления."
           },
           "notify-btn-hover": {
-            "title": "Notify button background colour - hover",
+            "title": "Цвет фона кнопки уведомления - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-btn-inverted-hover": {
-            "title": "Notify button background colour - inverted hover",
+            "title": "Цвет фона кнопки уведомления - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify button text / icon colour when hovered over. Should be a colour that provides good contrast against the notify button hover colour."
+            "help": "Определяет цвет текста/иконки кнопки уведомления при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки уведомления при наведении."
           },
           "notify-btn-focus": {
-            "title": "Notify button background colour - focus",
+            "title": "Цвет фона кнопки уведомления - при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-btn-inverted-focus": {
-            "title": "Notify button background colour - inverted focus",
+            "title": "Цвет фона кнопки уведомления - инвертированный при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify button text / icon colour when focused. Should be a colour that provides good contrast against the notify button focus colour."
+            "help": "Определяет цвет текста/иконки кнопки уведомления при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки уведомления при фокусе."
           },
           "notify-btn-selected": {
-            "title": "Notify button background colour - selected",
+            "title": "Цвет фона кнопки уведомления - выбранный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-btn-inverted-selected": {
-            "title": "Notify button background colour - inverted selected",
+            "title": "Цвет фона кнопки уведомления - инвертированный выбранный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify button text / icon colour when selected. Should be a colour that provides good contrast against the notify button selected colour."
+            "help": "Определяет цвет текста/иконки кнопки уведомления при выборе. Должен быть цветом, который обеспечивает хороший контраст с цветом выбранной кнопки уведомления."
           },
           "notify-btn-locked": {
-            "title": "Notify button background colour - locked",
+            "title": "Цвет фона кнопки уведомления - заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-btn-inverted-locked": {
-            "title": "Notify button background colour - inverted locked",
+            "title": "Цвет фона кнопки уведомления - инвертированный заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify button text / icon colour when locked. Should be a colour that provides good contrast against the notify button locked colour."
+            "help": "Определяет цвет текста/иконки кнопки уведомления при блокировке. Должен быть цветом, который обеспечивает хороший контраст с цветом заблокированной кнопки уведомления."
           },
           "notify-btn-disabled": {
-            "title": "Notify button background colour - disabled",
+            "title": "Цвет фона кнопки уведомления - отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "notify-btn-inverted-disabled": {
-            "title": "Notify button background colour - inverted disabled",
+            "title": "Цвет фона кнопки уведомления - инвертированный отключенный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the notify button text / icon colour when disabled. Should be a colour that provides good contrast against the notify button disabled colour."
+            "help": "Определяет цвет текста/иконки кнопки уведомления при отключении. Должен быть цветом, который обеспечивает хороший контраст с цветом отключенной кнопки уведомления."
           }
         }
       },
@@ -886,175 +886,175 @@
         "title": "Боковая панель",
         "properties": {
           "drawer": {
-            "title": "Drawer background colour",
+            "title": "Цвет фона боковой панели",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-inverted": {
-            "title": "Drawer background colour - inverted",
+            "title": "Цвет фона боковой панели - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer text colour. Should be a colour that provides good contrast against the Drawer colour."
+            "help": "Определяет цвет текста боковой панели. Должен быть цветом, который обеспечивает хороший контраст с цветом боковой панели."
           },
           "drawer-link": {
-            "title": "Drawer link font colour",
+            "title": "Цвет шрифта ссылки в боковой панели",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-link-hover": {
-            "title": "Drawer link font colour - hover",
+            "title": "Цвет шрифта ссылки в боковой панели - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-icon": {
-            "title": "Drawer icon button background colour",
+            "title": "Цвет фона кнопки с иконкой в боковой панели",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-icon-inverted": {
-            "title": "Drawer icon button background colour - inverted",
+            "title": "Цвет фона кнопки с иконкой в боковой панели - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer icon button inverse colour. Should be a colour that provides good contrast against the drawer icon button colour."
+            "help": "Определяет инвертированный цвет кнопки с иконкой в боковой панели. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки с иконкой в боковой панели."
           },
           "drawer-icon-hover": {
-            "title": "Drawer icon button background colour - hover",
+            "title": "Цвет фона кнопки с иконкой в боковой панели - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-icon-inverted-hover": {
-            "title": "Drawer icon button background colour - inverted hover",
+            "title": "Цвет фона кнопки с иконкой в боковой панели - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer icon button inverse colour when hovered over. Should be a colour that provides good contrast against the drawer icon button hover colour."
+            "help": "Определяет инвертированный цвет кнопки с иконкой в боковой панели при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки с иконкой в боковой панели при наведении."
           },
           "drawer-icon-focus": {
-            "title": "Drawer icon button background colour - focus",
+            "title": "Цвет фона кнопки с иконкой в боковой панели - при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-icon-inverted-focus": {
-            "title": "Drawer icon button background colour - inverted focus",
+            "title": "Цвет фона кнопки с иконкой в боковой панели - инвертированный при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer icon button inverse colour when focused. Should be a colour that provides good contrast against the drawer icon button focus colour."
+            "help": "Определяет инвертированный цвет кнопки с иконкой в боковой панели при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки с иконкой в боковой панели при фокусе."
           },
           "drawer-item": {
-            "title": "Drawer item background colour",
+            "title": "Цвет фона элемента боковой панели",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-item-inverted": {
-            "title": "Drawer item background colour - inverted",
+            "title": "Цвет фона элемента боковой панели - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer item text / icon colour. Should be a colour that provides good contrast against the drawer item colour."
+            "help": "Определяет цвет текста/иконки элемента боковой панели. Должен быть цветом, который обеспечивает хороший контраст с цветом элемента боковой панели."
           },
           "drawer-item-hover": {
-            "title": "Drawer item background colour - hover",
+            "title": "Цвет фона элемента боковой панели - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-item-inverted-hover": {
-            "title": "Drawer item background colour - inverted hover",
+            "title": "Цвет фона элемента боковой панели - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer item text / icon colour when hovered over. Should be a colour that provides good contrast against the drawer item hover colour."
+            "help": "Определяет цвет текста/иконки элемента боковой панели при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом элемента боковой панели при наведении."
           },
           "drawer-item-focus": {
-            "title": "Drawer item background colour - focus",
+            "title": "Цвет фона элемента боковой панели - при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-item-inverted-focus": {
-            "title": "Drawer item background colour - inverted focus",
+            "title": "Цвет фона элемента боковой панели - инвертированный при фокусе",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer item text / icon colour when focused. Should be a colour that provides good contrast against the drawer item focus colour."
+            "help": "Определяет цвет текста/иконки элемента боковой панели при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом элемента боковой панели при фокусе."
           },
           "drawer-item-selected": {
-            "title": "Drawer item background colour - selected",
+            "title": "Цвет фона элемента боковой панели - выбранный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-item-inverted-selected": {
-            "title": "Drawer item background colour - inverted selected",
+            "title": "Цвет фона элемента боковой панели - инвертированный выбранный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer item text / icon colour when selected. Should be a colour that provides good contrast against the drawer item selected colour."
+            "help": "Определяет цвет текста/иконки элемента боковой панели при выборе. Должен быть цветом, который обеспечивает хороший контраст с цветом выбранного элемента боковой панели."
           },
           "drawer-item-locked": {
-            "title": "Drawer item background colour - locked",
+            "title": "Цвет фона элемента боковой панели - заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "drawer-item-inverted-locked": {
-            "title": "Drawer item background colour - inverted locked",
+            "title": "Цвет фона элемента боковой панели - инвертированный заблокированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer item text / icon colour when locked. Should be a colour that provides good contrast against the drawer item locked colour."
+            "help": "Определяет цвет текста/иконки элемента боковой панели при блокировке. Должен быть цветом, который обеспечивает хороший контраст с цветом заблокированного элемента боковой панели."
           },
           "drawer-progress": {
-            "title": "Drawer progress fill colour",
+            "title": "Цвет заполнения прогресса в боковой панели",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer-specific progress width fill override colour."
+            "help": "Определяет цвет переопределения заполнения ширины прогресса для боковой панели."
           },
           "drawer-progress-inverted": {
-            "title": "Drawer progress background colour",
+            "title": "Цвет фона прогресса в боковой панели",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer-specific progress fill background override colour."
+            "help": "Определяет цвет переопределения фона заполнения прогресса для боковой панели."
           },
           "drawer-progress-border": {
-            "title": "Drawer progress border colour",
+            "title": "Цвет рамки прогресса в боковой панели",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer-specific border override colour that appears around the progress fill bar."
+            "help": "Определяет цвет переопределения рамки, который появляется вокруг полосы заполнения прогресса в боковой панели."
           },
           "drawer-progress-hover": {
-            "title": "Drawer progress colour - hover",
+            "title": "Цвет прогресса в боковой панели - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer-specific progress width fill override colour when hovered over."
+            "help": "Определяет цвет переопределения заполнения ширины прогресса для боковой панели при наведении."
           },
           "drawer-progress-inverted-hover": {
-            "title": "Drawer progress colour - inverted hover",
+            "title": "Цвет прогресса в боковой панели - инвертированный при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer-specific progress fill background override colour when hovered over."
+            "help": "Определяет цвет переопределения фона заполнения прогресса для боковой панели при наведении."
           },
           "drawer-progress-border-hover": {
-            "title": "Drawer progress border colour - hover",
+            "title": "Цвет рамки прогресса в боковой панели - при наведении",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the drawer-specific border override colour that appears around the progress fill bar when hovered over."
+            "help": "Определяет цвет переопределения рамки, который появляется вокруг полосы заполнения прогресса в боковой панели при наведении."
           }
         }
       },
@@ -1065,44 +1065,44 @@
         "title": "Разное",
         "properties": {
           "background": {
-            "title": "Background colour",
+            "title": "Цвет фона",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Sets the generic Background colour. "
+            "help": "Устанавливает общий цвет фона."
           },
           "background-inverted": {
-            "title": "Background colour - inverted",
+            "title": "Цвет фона - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the background text / icon colour. Should be a colour that provides good contrast against the background colour."
+            "help": "Определяет цвет текста/иконки фона. Должен быть цветом, который обеспечивает хороший контраст с цветом фона."
           },
           "shadow": {
-            "title": "Shadow background colour (loading / popup background)",
+            "title": "Цвет фона тени (фон загрузки / всплывающего окна)",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "shadow-inverted": {
-            "title": "Shadow background colour - inverted",
+            "title": "Цвет фона тени - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the shadow text / icon colour. Should be a colour that provides good contrast against the shadow colour."
+            "help": "Определяет цвет текста/иконки тени. Должен быть цветом, который обеспечивает хороший контраст с цветом тени."
           },
           "loading": {
-            "title": "Loading animation background colour",
+            "title": "Цвет фона анимации загрузки",
             "type": "string",
             "inputType": "ColourPicker",
             "default": ""
           },
           "loading-inverted": {
-            "title": "Loading animation colour - inverted",
+            "title": "Цвет анимации загрузки - инвертированный",
             "type": "string",
             "inputType": "ColourPicker",
             "default": "",
-            "help": "Defines the loading animation bar colour. Should be a colour that provides good contrast against the loading colour."
+            "help": "Определяет цвет полосы анимации загрузки. Должен быть цветом, который обеспечивает хороший контраст с цветом загрузки."
           }
         }
       }
@@ -1133,7 +1133,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Select a favicon to improve user experience and enforce brand consistency. This will be displayed in places like your browser's address bar, page tabs and bookmarks menu. Usually, a favicon is 16 x 16 pixels in size and stored in the GIF, PNG, or ICO file format."
+                      "help": "Выберите favicon для улучшения пользовательского опыта и обеспечения согласованности бренда. Он будет отображаться в таких местах, как адресная строка вашего браузера, вкладки страниц и меню закладок. Обычно favicon имеет размер 16 x 16 пикселей и хранится в формате GIF, PNG или ICO."
                     }
                   }
                 }
@@ -1151,7 +1151,7 @@
                 "_backgroundImage": {
                   "type": "object",
                   "required": false,
-                  "legend": "Page background image",
+                  "legend": "Фоновое изображение страницы",
                   "properties": {
                     "_xlarge": {
                       "type": "string",
@@ -1159,7 +1159,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Extra large background image, e.g. hd laptop/desktop computers"
+                      "help": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd"
                     },
                     "_large": {
                       "type": "string",
@@ -1167,7 +1167,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Large background image, e.g. laptop/desktop computers"
+                      "help": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров"
                     },
                     "_medium": {
                       "type": "string",
@@ -1175,7 +1175,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Medium background image, e.g. tablet devices"
+                      "help": "Среднее фоновое изображение, например, для планшетных устройств"
                     },
                     "_small": {
                       "type": "string",
@@ -1183,45 +1183,45 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Small background image, e.g. mobile / cellphones"
+                      "help": "Маленькое фоновое изображение, например, для мобильных телефонов"
                     }
                   }
                 },
                 "_backgroundStyles": {
                   "type": "object",
                   "required": false,
-                  "legend": "Page background image styles",
+                  "legend": "Стили фонового изображения страницы",
                   "properties": {
                     "_backgroundRepeat": {
                       "type": "string",
                       "required": false,
                       "default": "no-repeat",
                       "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                      "title": "Set if/how the background image repeats",
-                      "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                      "title": "Установить, повторяется ли/как повторяется фоновое изображение",
+                      "help": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали."
                     },
                     "_backgroundSize": {
                       "type": "string",
                       "required": false,
                       "default": "cover",
                       "inputType": {"type":"Select", "options":["auto","cover","contain","100% 100%"]},
-                      "title": "Set the size of the background image",
-                      "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container."
+                      "title": "Установить размер фонового изображения",
+                      "help": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно. 100% 100%: изменить размер фонового изображения, чтобы он соответствовал размерам контейнера."
                     },
                     "_backgroundPosition": {
                       "type": "string",
                       "required": false,
                       "default": "center top",
                       "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
-                      "title": "Set the position of the background image",
-                      "help": "The first value is the horizontal position and the second value is the vertical."
+                      "title": "Установить положение фонового изображения",
+                      "help": "Первое значение — это горизонтальное положение, а второе — вертикальное."
                     }
                   }
                 },
                 "_responsiveClasses": {
                   "type": "object",
                   "required": false,
-                  "legend": "Responsive classes",
+                  "legend": "Адаптивные классы",
                   "properties": {
                     "_xlarge": {
                       "type": "string",
@@ -1229,7 +1229,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Extra large CSS class, e.g. hd laptop/desktop computers"
+                      "help": "Очень большой класс CSS, например, для ноутбуков/настольных компьютеров hd"
                     },
                     "_large": {
                       "type": "string",
@@ -1237,7 +1237,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Large CSS class, e.g. laptop/desktop computers"
+                      "help": "Большой класс CSS, например, для ноутбуков/настольных компьютеров"
                     },
                     "_medium": {
                       "type": "string",
@@ -1245,7 +1245,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Medium CSS class, e.g. tablet devices"
+                      "help": "Средний класс CSS, например, для планшетных устройств"
                     },
                     "_small": {
                       "type": "string",
@@ -1253,7 +1253,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Small CSS class, e.g. mobile / cellphones"
+                      "help": "Маленький класс CSS, например, для мобильных телефонов"
                     }
                   }
                 },
@@ -1264,38 +1264,38 @@
                     "_textAlignment": {
                       "type": "object",
                       "required": false,
-                      "legend": "Text alignment",
+                      "legend": "Выравнивание текста",
                       "properties": {
                         "_title": {
                           "type": "string",
                           "required": false,
                           "default": "",
                           "inputType": {"type":"Select", "options":["","left","center","right"]},
-                          "title": "Title alignment",
-                          "help": "Set the alignment of the page title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                          "title": "Выравнивание заголовка",
+                          "help": "Установите выравнивание заголовка страницы. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                         },
                         "_body": {
                           "type": "string",
                           "required": false,
                           "default": "",
                           "inputType": {"type":"Select", "options":["","left","center","right"]},
-                          "title": "Body alignment",
-                          "help": "Set the alignment of the page body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                          "title": "Выравнивание основного текста",
+                          "help": "Установите выравнивание основного текста страницы. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                         },
                         "_instruction": {
                           "type": "string",
                           "required": false,
                           "default": "",
                           "inputType": {"type":"Select", "options":["","left","center","right"]},
-                          "title": "Instruction alignment",
-                          "help": "Set the alignment of the page instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                          "title": "Выравнивание инструкции",
+                          "help": "Установите выравнивание инструкции страницы. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                         }
                       }
                     },
                     "_backgroundImage": {
                       "type": "object",
                       "required": false,
-                      "legend": "Page header background image",
+                      "legend": "Фоновое изображение заголовка страницы",
                       "properties": {
                         "_xlarge": {
                           "type": "string",
@@ -1303,7 +1303,7 @@
                           "default": "",
                           "inputType": "Asset:image",
                           "validators": [],
-                          "help": "Extra large background image, e.g. hd laptop/desktop computers"
+                          "help": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd"
                         },
                         "_large": {
                           "type": "string",
@@ -1311,7 +1311,7 @@
                           "default": "",
                           "inputType": "Asset:image",
                           "validators": [],
-                          "help": "Large background image, e.g. laptop/desktop computers"
+                          "help": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров"
                         },
                         "_medium": {
                           "type": "string",
@@ -1319,7 +1319,7 @@
                           "default": "",
                           "inputType": "Asset:image",
                           "validators": [],
-                          "help": "Medium background image, e.g. tablet devices"
+                          "help": "Среднее фоновое изображение, например, для планшетных устройств"
                         },
                         "_small": {
                           "type": "string",
@@ -1327,45 +1327,45 @@
                           "default": "",
                           "inputType": "Asset:image",
                           "validators": [],
-                          "help": "Small background image, e.g. mobile / cellphones"
+                          "help": "Маленькое фоновое изображение, например, для мобильных телефонов"
                         }
                       }
                     },
                     "_backgroundStyles": {
                       "type": "object",
                       "required": false,
-                      "legend": "Page header background image styles",
+                      "legend": "Стили фонового изображения заголовка страницы",
                       "properties": {
                         "_backgroundRepeat": {
                           "type": "string",
                           "required": false,
                           "default": "no-repeat",
                           "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                          "title": "Set if/how the background image repeats",
-                          "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                          "title": "Установить, повторяется ли/как повторяется фоновое изображение",
+                          "help": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали."
                         },
                         "_backgroundSize": {
                           "type": "string",
                           "required": false,
                           "default": "cover",
                           "inputType": {"type":"Select", "options":["auto","cover","contain","100% 100%"]},
-                          "title": "Set the size of the background image",
-                          "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container."
+                          "title": "Установить размер фонового изображения",
+                          "help": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно. 100% 100%: изменить размер фонового изображения, чтобы он соответствовал размерам контейнера."
                         },
                         "_backgroundPosition": {
                           "type": "string",
                           "required": false,
                           "default": "center top",
                           "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
-                          "title": "Set the position of the background image",
-                          "help": "The first value is the horizontal position and the second value is the vertical."
+                          "title": "Установить положение фонового изображения",
+                          "help": "Первое значение — это горизонтальное положение, а второе — вертикальное."
                         }
                       }
                     },
                     "_minimumHeights": {
                       "type": "object",
                       "required": false,
-                      "legend": "Page header minimum height",
+                      "legend": "Минимальная высота заголовка страницы",
                       "properties": {
                         "_xlarge": {
                           "type": "number",
@@ -1373,7 +1373,7 @@
                           "default": "",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "Minimum height should only be used in instances where the page header height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. hd laptop/desktop computers"
+                          "help": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка страницы должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для ноутбуков/настольных компьютеров hd"
                         },
                         "_large": {
                           "type": "number",
@@ -1381,7 +1381,7 @@
                           "default": "",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "Minimum height should only be used in instances where the page header height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. laptop/desktop computers"
+                          "help": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка страницы должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для ноутбуков/настольных компьютеров"
                         },
                         "_medium": {
                           "type": "number",
@@ -1389,7 +1389,7 @@
                           "default": "",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "Minimum height should only be used in instances where the page header height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. tablet devices"
+                          "help": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка страницы должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для планшетных устройств"
                         },
                         "_small": {
                           "type": "number",
@@ -1397,7 +1397,7 @@
                           "default": "",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "Minimum height should only be used in instances where the page header height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. mobile / cellphones"
+                          "help": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка страницы должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для мобильных телефонов"
                         }
                       }
                     }
@@ -1417,38 +1417,38 @@
                 "_textAlignment": {
                   "type": "object",
                   "required": false,
-                  "legend": "Text alignment",
+                  "legend": "Выравнивание текста",
                   "properties": {
                     "_title": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Title alignment",
-                      "help": "Set the alignment of the article title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание заголовка",
+                      "help": "Установите выравнивание заголовка статьи. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     },
                     "_body": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Body alignment",
-                      "help": "Set the alignment of the article body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание основного текста",
+                      "help": "Установите выравнивание основного текста статьи. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     },
                     "_instruction": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Instruction alignment",
-                      "help": "Set the alignment of the article instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание инструкции",
+                      "help": "Установите выравнивание инструкции статьи. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     }
                   }
                 },
                 "_backgroundImage": {
                   "type": "object",
                   "required": false,
-                  "legend": "Article background image",
+                  "legend": "Фоновое изображение статьи",
                   "properties": {
                     "_xlarge": {
                       "type": "string",
@@ -1456,7 +1456,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Extra large background image, e.g. hd laptop/desktop computers"
+                      "help": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd"
                     },
                     "_large": {
                       "type": "string",
@@ -1464,7 +1464,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Large background image, e.g. laptop/desktop computers"
+                      "help": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров"
                     },
                     "_medium": {
                       "type": "string",
@@ -1472,7 +1472,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Medium background image, e.g. tablet devices"
+                      "help": "Среднее фоновое изображение, например, для планшетных устройств"
                     },
                     "_small": {
                       "type": "string",
@@ -1480,45 +1480,45 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Small background image, e.g. mobile / cellphones"
+                      "help": "Маленькое фоновое изображение, например, для мобильных телефонов"
                     }
                   }
                 },
                 "_backgroundStyles": {
                   "type": "object",
                   "required": false,
-                  "legend": "Article background image styles",
+                  "legend": "Стили фонового изображения статьи",
                   "properties": {
                     "_backgroundRepeat": {
                       "type": "string",
                       "required": false,
                       "default": "no-repeat",
                       "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                      "title": "Set if/how the background image repeats",
-                      "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                      "title": "Установить, повторяется ли/как повторяется фоновое изображение",
+                      "help": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали."
                     },
                     "_backgroundSize": {
                       "type": "string",
                       "required": false,
                       "default": "cover",
                       "inputType": {"type":"Select", "options":["auto","cover","contain","100% 100%"]},
-                      "title": "Set the size of the background image",
-                      "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container."
+                      "title": "Установить размер фонового изображения",
+                      "help": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно. 100% 100%: изменить размер фонового изображения, чтобы он соответствовал размерам контейнера."
                     },
                     "_backgroundPosition": {
                       "type": "string",
                       "required": false,
                       "default": "center top",
                       "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
-                      "title": "Set the position of the background image",
-                      "help": "The first value is the horizontal position and the second value is the vertical."
+                      "title": "Установить положение фонового изображения",
+                      "help": "Первое значение — это горизонтальное положение, а второе — вертикальное."
                     }
                   }
                 },
                 "_responsiveClasses": {
                   "type": "object",
                   "required": false,
-                  "legend": "Responsive classes",
+                  "legend": "Адаптивные классы",
                   "properties": {
                     "_xlarge": {
                       "type": "string",
@@ -1526,7 +1526,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Extra large CSS class, e.g. hd laptop/desktop computers"
+                      "help": "Очень большой класс CSS, например, для ноутбуков/настольных компьютеров hd"
                     },
                     "_large": {
                       "type": "string",
@@ -1534,7 +1534,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Large CSS class, e.g. laptop/desktop computers"
+                      "help": "Большой класс CSS, например, для ноутбуков/настольных компьютеров"
                     },
                     "_medium": {
                       "type": "string",
@@ -1542,7 +1542,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Medium CSS class, e.g. tablet devices"
+                      "help": "Средний класс CSS, например, для планшетных устройств"
                     },
                     "_small": {
                       "type": "string",
@@ -1550,7 +1550,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Small CSS class, e.g. mobile / cellphones"
+                      "help": "Маленький класс CSS, например, для мобильных телефонов"
                     }
                   }
                 }
@@ -1568,38 +1568,38 @@
                 "_textAlignment": {
                   "type": "object",
                   "required": false,
-                  "legend": "Text alignment",
+                  "legend": "Выравнивание текста",
                   "properties": {
                     "_title": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Title alignment",
-                      "help": "Set the alignment of the block title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание заголовка",
+                      "help": "Установите выравнивание заголовка блока. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     },
                     "_body": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Body alignment",
-                      "help": "Set the alignment of the block body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание основного текста",
+                      "help": "Установите выравнивание основного текста блока. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     },
                     "_instruction": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Instruction alignment",
-                      "help": "Set the alignment of the block instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание инструкции",
+                      "help": "Установите выравнивание инструкции блока. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     }
                   }
                 },
                 "_backgroundImage": {
                   "type": "object",
                   "required": false,
-                  "legend": "Block background image",
+                  "legend": "Фоновое изображение блока",
                   "properties": {
                     "_xlarge": {
                       "type": "string",
@@ -1607,7 +1607,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Extra large background image, e.g. hd laptop/desktop computers"
+                      "help": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd"
                     },
                     "_large": {
                       "type": "string",
@@ -1615,7 +1615,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Large background image, e.g. laptop/desktop computers"
+                      "help": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров"
                     },
                     "_medium": {
                       "type": "string",
@@ -1623,7 +1623,7 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Medium background image, e.g. tablet devices"
+                      "help": "Среднее фоновое изображение, например, для планшетных устройств"
                     },
                     "_small": {
                       "type": "string",
@@ -1631,45 +1631,45 @@
                       "default": "",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Small background image, e.g. mobile / cellphones"
+                      "help": "Маленькое фоновое изображение, например, для мобильных телефонов"
                     }
                   }
                 },
                 "_backgroundStyles": {
                   "type": "object",
                   "required": false,
-                  "legend": "Block background image styles",
+                  "legend": "Стили фонового изображения блока",
                   "properties": {
                     "_backgroundRepeat": {
                       "type": "string",
                       "required": false,
                       "default": "no-repeat",
                       "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                      "title": "Set if/how the background image repeats",
-                      "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                      "title": "Установить, повторяется ли/как повторяется фоновое изображение",
+                      "help": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали."
                     },
                     "_backgroundSize": {
                       "type": "string",
                       "required": false,
                       "default": "cover",
                       "inputType": {"type":"Select", "options":["auto","cover","contain","100% 100%"]},
-                      "title": "Set the size of the background image",
-                      "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container."
+                      "title": "Установить размер фонового изображения",
+                      "help": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно. 100% 100%: изменить размер фонового изображения, чтобы он соответствовал размерам контейнера."
                     },
                     "_backgroundPosition": {
                       "type": "string",
                       "required": false,
                       "default": "center top",
                       "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
-                      "title": "Set the position of the background image",
-                      "help": "The first value is the horizontal position and the second value is the vertical."
+                      "title": "Установить положение фонового изображения",
+                      "help": "Первое значение — это горизонтальное положение, а второе — вертикальное."
                     }
                   }
                 },
                 "_minimumHeights": {
                   "type": "object",
                   "required": false,
-                  "legend": "Block minimum height",
+                  "legend": "Минимальная высота блока",
                   "properties": {
                     "_xlarge": {
                       "type": "number",
@@ -1677,7 +1677,7 @@
                       "default": "",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. hd laptop/desktop computers"
+                      "help": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для ноутбуков/настольных компьютеров hd"
                     },
                     "_large": {
                       "type": "number",
@@ -1685,7 +1685,7 @@
                       "default": "",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. laptop/desktop computers"
+                      "help": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для ноутбуков/настольных компьютеров"
                     },
                     "_medium": {
                       "type": "number",
@@ -1693,7 +1693,7 @@
                       "default": "",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. tablet devices"
+                      "help": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для планшетных устройств"
                     },
                     "_small": {
                       "type": "number",
@@ -1701,14 +1701,14 @@
                       "default": "",
                       "inputType": "Number",
                       "validators": ["number"],
-                      "help": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. mobile / cellphones"
+                      "help": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для мобильных телефонов"
                     }
                   }
                 },
                 "_responsiveClasses": {
                   "type": "object",
                   "required": false,
-                  "legend": "Responsive classes",
+                  "legend": "Адаптивные классы",
                   "properties": {
                     "_xlarge": {
                       "type": "string",
@@ -1716,7 +1716,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Extra large CSS class, e.g. hd laptop/desktop computers"
+                      "help": "Очень большой класс CSS, например, для ноутбуков/настольных компьютеров hd"
                     },
                     "_large": {
                       "type": "string",
@@ -1724,7 +1724,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Large CSS class, e.g. laptop/desktop computers"
+                      "help": "Большой класс CSS, например, для ноутбуков/настольных компьютеров"
                     },
                     "_medium": {
                       "type": "string",
@@ -1732,7 +1732,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Medium CSS class, e.g. tablet devices"
+                      "help": "Средний класс CSS, например, для планшетных устройств"
                     },
                     "_small": {
                       "type": "string",
@@ -1740,7 +1740,7 @@
                       "default": "",
                       "inputType": "Text",
                       "validators": [],
-                      "help": "Small CSS class, e.g. mobile / cellphones"
+                      "help": "Маленький класс CSS, например, для мобильных телефонов"
                     }
                   }
                 },
@@ -1748,42 +1748,42 @@
                   "type": "boolean",
                   "required": false,
                   "default": false,
-                  "title": "Divider block?",
+                  "title": "Разделительный блок?",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "If enabled, applies a divider class to the block"
+                  "help": "Если включено, применяет класс разделителя к блоку"
                 },
                 "_paddingTop": {
                   "type": "string",
                   "required": false,
                   "default": "standard",
                   "inputType": {"type":"Select", "options":["double","standard","half","remove"]},
-                  "title": "Spacing top",
-                  "help": "Changes the value of the blocks top spacing. Double: Doubles the blocks top spacing. Standard: Retains the standard blocks top spacing. Half: Halves the blocks top spacing. Remove: Removes the blocks top spacing. The default value is `standard`."
+                  "title": "Отступ сверху",
+                  "help": "Изменяет значение верхнего отступа блоков. Двойной: удваивает верхний отступ блоков. Стандартный: сохраняет стандартный верхний отступ блоков. Половинный: уменьшает верхний отступ блоков вдвое. Убрать: убирает верхний отступ блоков. Значение по умолчанию — `стандартный`."
                 },
                 "_paddingBottom": {
                   "type": "string",
                   "required": false,
                   "default": "standard",
                   "inputType": {"type":"Select", "options":["double","standard","half","remove"]},
-                  "title": "Spacing bottom",
-                  "help": "Changes the value of the blocks bottom spacing. Double: Doubles the blocks bottom spacing. Standard: Retains the standard blocks bottom spacing. Half: Halves the blocks bottom spacing. Remove: Removes the blocks bottom spacing. The default value is `standard`."
+                  "title": "Отступ снизу",
+                  "help": "Изменяет значение нижнего отступа блоков. Двойной: удваивает нижний отступ блоков. Стандартный: сохраняет стандартный нижний отступ блоков. Половинный: уменьшает нижний отступ блоков вдвое. Убрать: убирает нижний отступ блоков. Значение по умолчанию — `стандартный`."
                 },
                 "_componentVerticalAlignment": {
                   "type": "string",
                   "required": false,
                   "default": "top",
                   "inputType": {"type":"Select", "options":["top","center","bottom"]},
-                  "title": "Set the vertical alignment of the child component(s)",
-                  "help": "Defines the vertical alignment of the child component(s) in relation to the block. Top: Aligns descendents to the top of the block. Center: Aligns descendents to the center of the block. Bottom: Aligns descendents to the bottom of the block. The default alignment is `top`."
+                  "title": "Установить вертикальное выравнивание дочернего(их) компонента(ов)",
+                  "help": "Определяет вертикальное выравнивание дочернего(их) компонента(ов) по отношению к блоку. Сверху: выравнивает потомков по верхнему краю блока. По центру: выравнивает потомков по центру блока. Снизу: выравнивает потомков по нижнему краю блока. Выравнивание по умолчанию — `сверху`."
                 },
                 "_componentHorizontalAlignment": {
                   "type": "string",
                   "required": false,
                   "default": "left",
                   "inputType": {"type":"Select", "options":["left","center","right"]},
-                  "title": "Set the horizontal alignment of the child component(s)",
-                  "help": "Defines the horizontal alignment of the child component(s) in relation to the block. The default alignment is `left`."
+                  "title": "Установить горизонтальное выравнивание дочернего(их) компонента(ов)",
+                  "help": "Определяет горизонтальное выравнивание дочернего(их) компонента(ов) по отношению к блоку. Выравнивание по умолчанию — `слева`."
                 }
               }
             }
@@ -1799,31 +1799,31 @@
                 "_textAlignment": {
                   "type": "object",
                   "required": false,
-                  "legend": "Text alignment",
+                  "legend": "Выравнивание текста",
                   "properties": {
                     "_title": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Title alignment",
-                      "help": "Set the alignment of the component title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание заголовка",
+                      "help": "Установите выравнивание заголовка компонента. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     },
                     "_body": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Body alignment",
-                      "help": "Set the alignment of the component body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание основного текста",
+                      "help": "Установите выравнивание основного текста компонента. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     },
                     "_instruction": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["","left","center","right"]},
-                      "title": "Instruction alignment",
-                      "help": "Set the alignment of the component instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction."
+                      "title": "Выравнивание инструкции",
+                      "help": "Установите выравнивание инструкции компонента. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы."
                     }
                   }
                 }

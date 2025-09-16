@@ -18,36 +18,36 @@
               "properties": {
                 "_languagePicker": {
                   "type": "object",
-                  "title": "Language Picker",
+                  "title": "Выбор языка",
                   "default": {},
                   "properties": {
                     "languageSelector": {
                       "type": "string",
-                      "title": "Language selector",
-                      "default": "Language selector",
+                      "title": "Выбор языка",
+                      "default": "Выбор языка",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "_navOrder": {
                       "type": "number",
-                      "title": "Navigation bar order",
-                      "description": "Determines the order in which the button is displayed in the navigation bar. Negative numbers (e.g. -100) are left-aligned. Positive numbers (e.g. 100) are right-aligned.",
+                      "title": "Порядок навигационной панели",
+                      "description": "Определяет порядок, в котором кнопка отображается на панели навигации. Отрицательные числа (например, -100) выравниваются по левому краю. Положительные числа (например, 100) выравниваются по правому краю.",
                       "default": 0
                     },
                     "_navTooltip": {
                       "type": "object",
-                      "title": "Navigation tooltip",
+                      "title": "Подсказка навигации",
                       "properties": {
                         "_isEnabled": {
                           "type": "boolean",
-                          "title": "Enable tooltip for navigation button",
+                          "title": "Включить подсказку для кнопки навигации",
                           "default": true
                         },
                         "text": {
                           "type": "string",
                           "title": "",
-                          "default": "Select course language",
+                          "default": "Выберите язык курса",
                           "_adapt": {
                             "translatable": true
                           }
@@ -56,15 +56,15 @@
                     },
                     "_showLabel": {
                       "type": "boolean",
-                      "title": "Enable navigation button label",
-                      "description": "Determines whether a label is shown on the navigation bar button.",
+                      "title": "Включить метку кнопки навигации",
+                      "description": "Определяет, отображается ли метка на кнопке навигационной панели.",
                       "default": true
                     },
                     "navigationBarLabel": {
                       "type": "string",
-                      "title": "Navigation button label",
-                      "description": "The tooltip text to display on hover.",
-                      "default": "Select course language",
+                      "title": "Метка кнопки навигационной панели",
+                      "description": "Текст подсказки, отображаемый при наведении.",
+                      "default": "Выберите язык курса",
                       "_adapt": {
                         "translatable": true
                       }
@@ -72,8 +72,8 @@
                     "_drawerPosition": {
                       "type": "string",
                       "default": "auto",
-                      "title": "Drawer position",
-                      "description": "Determines the starting position of the drawer to open.",
+                      "title": "Положение ящика",
+                      "description": "Определяет начальное положение ящика для открытия.",
                       "enum": [
                         "auto",
                         "left",
@@ -82,17 +82,17 @@
                     },
                     "_navTooltip": {
                       "type": "object",
-                      "title": "Navigation tooltip",
+                      "title": "Подсказка навигации",
                       "properties": {
                         "_isEnabled": {
                           "type": "boolean",
-                          "title": "Enable tooltip for language picker button",
+                          "title": "Включить подсказку для кнопки выбора языка",
                           "default": true
                         },
                         "text": {
                           "type": "string",
-                          "title": "Tooltip text",
-                          "default": "Language selector",
+                          "title": "Текст подсказки",
+                          "default": "Выбор языка",
                           "_adapt": {
                             "translatable": true
                           }

@@ -11,55 +11,55 @@
       "properties": {
         "font-color": {
           "type": "string",
-          "title": "Цвет шрифта",
-          "description": "Глобальный цвет шрифта основного текста.",
+          "title": "Font colour",
+          "description": "Global body font colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "font-color-inverted": {
           "type": "string",
-          "title": "Цвет шрифта - инвертированный",
-          "description": "Глобальный инвертированный цвет шрифта основного текста. Либо осветленная, либо затемненная альтернатива цвету шрифта.",
+          "title": "Font colour - inverted",
+          "description": "Global body font colour inverted. Either a lightened / darkened alternative to Font colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "link": {
           "type": "string",
-          "title": "Цвет шрифта ссылки",
+          "title": "Link font colour",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "link-inverted": {
           "type": "string",
-          "title": "Цвет шрифта ссылки - инвертированный",
-          "description": "Глобальный инвертированный цвет шрифта ссылки. Либо осветленная, либо затемненная альтернатива цвету ссылки.",
+          "title": "Link font colour - inverted",
+          "description": "Global link font colour inverted. Either a lightened / darkened alternative to Link colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "link-hover": {
           "type": "string",
-          "title": "Цвет шрифта ссылки - при наведении",
+          "title": "Link font colour - hover",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "link-inverted-hover": {
           "type": "string",
-          "title": "Цвет шрифта ссылки - инвертированный при наведении",
-          "description": "Глобальный инвертированный цвет шрифта ссылки при наведении. Либо осветленная, либо затемненная альтернатива цвету ссылки при наведении.",
+          "title": "Link font colour - inverted hover",
+          "description": "Global link font colour when hovered over inverted. Either a lightened / darkened alternative to Link hover colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "heading-color": {
           "type": "string",
-          "title": "Цвет заголовка",
-          "description": "Глобальный цвет заголовка",
+          "title": "Heading colour",
+          "description": "Global title colour",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "heading-color-inverted": {
           "type": "string",
-          "title": "Цвет заголовка - инвертированный",
-          "description": "Глобальный инвертированный цвет заголовка. Либо осветленная, либо затемненная альтернатива цвету заголовка.",
+          "title": "Heading colour - inverted",
+          "description": "Global title colour inverted. Either a lightened / darkened alternative to Title colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         }
@@ -73,80 +73,80 @@
       "properties": {
         "item-color": {
           "type": "string",
-          "title": "Цвет элемента",
-          "description": "Определяет выбираемые области или точки интереса в компонентах.",
+          "title": "Item colour",
+          "description": "Defines the selectable areas or points of interest in components.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-inverted": {
           "type": "string",
-          "title": "Цвет элемента - инвертированный",
-          "description": "Определяет цвет текста/иконки элемента. Должен быть цветом, который обеспечивает хороший контраст с цветом элемента.",
+          "title": "Item colour - inverted",
+          "description": "Defines the item text / icon colour. Should be a colour that provides good contrast against the item colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-hover": {
           "type": "string",
-          "title": "Цвет элемента - при наведении",
+          "title": "Item colour - hover",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-inverted-hover": {
           "type": "string",
-          "title": "Цвет элемента - инвертированный при наведении",
-          "description": "Определяет цвет текста/иконки элемента при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом элемента при наведении.",
+          "title": "Item colour - inverted hover",
+          "description": "Defines the item text / icon colour when hovered over. Should be a colour that provides good contrast against the item hover colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-focus": {
           "type": "string",
-          "title": "Цвет элемента - при фокусе",
+          "title": "Item colour - focus",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-inverted-focus": {
           "type": "string",
-          "title": "Цвет элемента - инвертированный при фокусе",
-          "description": "Определяет цвет текста/иконки элемента при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом элемента при фокусе.",
+          "title": "Item colour - inverted focus",
+          "description": "Defines the item text / icon colour when focused. Should be a colour that provides good contrast against the item focus colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-selected": {
           "type": "string",
-          "title": "Цвет элемента - выбранный",
+          "title": "Item colour - selected",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-inverted-selected": {
           "type": "string",
-          "title": "Цвет элемента - инвертированный выбранный",
-          "description": "Определяет цвет текста/иконки элемента при выборе. Должен быть цветом, который обеспечивает хороший контраст с цветом выбранного элемента.",
+          "title": "Item colour - inverted selected",
+          "description": "Defines the item text / icon colour when selected. Should be a colour that provides good contrast against the item selected colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "visited": {
           "type": "string",
-          "title": "Цвет элемента - посещенный",
+          "title": "Item colour - visited",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "visited-inverted": {
           "type": "string",
-          "title": "Цвет элемента - инвертированный посещенный",
-          "description": "Определяет цвет текста/иконки элемента при посещении. Должен быть цветом, который обеспечивает хороший контраст с цветом посещенного элемента.",
+          "title": "Item colour - inverted visited",
+          "description": "Defines the item text / icon colour when visited. Should be a colour that provides good contrast against the item visited colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-disabled": {
           "type": "string",
-          "title": "Цвет элемента - отключенный",
+          "title": "Item colour - disabled",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "item-color-inverted-disabled": {
           "type": "string",
-          "title": "Цвет элемента - инвертированный отключенный",
-          "description": "Определяет цвет текста/иконки элемента при отключении. Должен быть цветом, который обеспечивает хороший контраст с цветом отключенного элемента.",
+          "title": "Item colour - inverted disabled",
+          "description": "Defines the item text / icon colour when disabled. Should be a colour that provides good contrast against the item disabled colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         }
@@ -260,107 +260,107 @@
       "properties": {
         "btn-color": {
           "type": "string",
-          "title": "Цвет кнопки",
-          "description": "Определяет кнопки вопросов компонентов и навигационные элементы.",
+          "title": "Button colour",
+          "description": "Defines component question buttons and navigational elements.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-inverted": {
           "type": "string",
-          "title": "Цвет кнопки - инвертированный",
-          "description": "Определяет цвет текста/иконки кнопки. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки.",
+          "title": "Button colour - inverted",
+          "description": "Defines the button text / icon colour. Should be a colour that provides good contrast against the button colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-hover": {
           "type": "string",
-          "title": "Цвет кнопки - при наведении",
+          "title": "Button colour - hover",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-inverted-hover": {
           "type": "string",
-          "title": "Цвет кнопки - инвертированный при наведении",
-          "description": "Определяет цвет текста/иконки кнопки при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки при наведении.",
+          "title": "Button colour - inverted hover",
+          "description": "Defines the button text / icon colour when hovered over. Should be a colour that provides good contrast against the button hover colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-focus": {
           "type": "string",
-          "title": "Цвет кнопки - при фокусе",
+          "title": "Button colour - focus",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-inverted-focus": {
           "type": "string",
-          "title": "Цвет кнопки - инвертированный при фокусе",
-          "description": "Определяет цвет текста/иконки кнопки при фокусе. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки при фокусе.",
+          "title": "Button colour - inverted focus",
+          "description": "Defines the button text / icon colour when focused. Should be a colour that provides good contrast against the button focus colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-selected": {
           "type": "string",
-          "title": "Цвет кнопки - выбранный",
+          "title": "Button colour - selected",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-inverted-selected": {
           "type": "string",
-          "title": "Цвет кнопки - инвертированный выбранный",
-          "description": "Определяет цвет текста/иконки кнопки при выборе. Должен быть цветом, который обеспечивает хороший контраст с цветом выбранной кнопки.",
+          "title": "Button colour - inverted selected",
+          "description": "Defines the button text / icon colour when selected. Should be a colour that provides good contrast against the button selected colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-locked": {
           "type": "string",
-          "title": "Цвет кнопки - заблокированный",
+          "title": "Button colour - locked",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-color-inverted-locked": {
           "type": "string",
-          "title": "Цвет кнопки - инвертированный заблокированный",
-          "description": "Определяет цвет текста/иконки кнопки при блокировке. Должен быть цветом, который обеспечивает хороший контраст с цветом заблокированной кнопки.",
+          "title": "Button colour - inverted locked",
+          "description": "Defines the button text / icon colour when locked. Should be a colour that provides good contrast against the button locked colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "disabled": {
           "type": "string",
-          "title": "Цвет кнопки - отключенный",
+          "title": "Button colour - disabled",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "disabled-inverted": {
           "type": "string",
-          "title": "Цвет кнопки - инвертированный отключенный",
-          "description": "Определяет цвет текста/иконки кнопки при отключении. Должен быть цветом, который обеспечивает хороший контраст с цветом отключенной кнопки.",
+          "title": "Button colour - inverted disabled",
+          "description": "Defines the button text / icon colour when disabled. Should be a colour that provides good contrast against the button disabled colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-icon-color": {
           "type": "string",
-          "title": "Цвет иконки кнопки",
-          "description": "Определяет стандартизированный цвет фона кнопки с иконкой.",
+          "title": "Button icon colour",
+          "description": "Defines the standardised icon button background colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-icon-color-inverted": {
           "type": "string",
-          "title": "Цвет иконки кнопки - инвертированный",
-          "description": "Определяет цвет иконки кнопки. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки.",
+          "title": "Button icon colour - inverted",
+          "description": "Defines the button icon colour. Should be a colour that provides good contrast against the button colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-icon-color-hover": {
           "type": "string",
-          "title": "Цвет иконки кнопки - при наведении",
+          "title": "Button icon colour - hover",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "btn-icon-color-inverted-hover": {
           "type": "string",
-          "title": "Цвет иконки кнопки - инвертированный при наведении",
-          "description": "Определяет цвет иконки кнопки при наведении. Должен быть цветом, который обеспечивает хороший контраст с цветом кнопки при наведении.",
+          "title": "Button icon colour - inverted hover",
+          "description": "Defines the button icon colour when hovered over. Should be a colour that provides good contrast against the button hover colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         }
@@ -374,15 +374,15 @@
       "properties": {
         "ui-color": {
           "type": "string",
-          "title": "Цвет UI",
-          "description": "Определяет глобальную цветовую схему UI для навигации, уведомлений и боковой панели.",
+          "title": "UI colour",
+          "description": "Defines the global UI colour scheme for nav, notify, and drawer.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "ui-color-inverted": {
           "type": "string",
-          "title": "Цвет UI - инвертированный",
-          "description": "Определяет глобальный цвет текста/иконки UI. Должен быть цветом, который обеспечивает хороший контраст с глобальным цветом UI.",
+          "title": "UI colour - inverted",
+          "description": "Defines the global UI text / icon colour. Should be a colour that provides good contrast against the global UI colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         }
@@ -396,29 +396,29 @@
       "properties": {
         "validation-success": {
           "type": "string",
-          "title": "Цвет успешной валидации",
-          "description": "Определяет цвет успешной отметки вопроса.",
+          "title": "Validation success colour",
+          "description": "Defines the question marking success colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "validation-success-inverted": {
           "type": "string",
-          "title": "Цвет успешной валидации - инвертированный",
-          "description": "Определяет цвет текста/иконки успешной отметки вопроса. Должен быть цветом, который обеспечивает хороший контраст с цветом успешной отметки вопроса.",
+          "title": "Validation success colour - inverted",
+          "description": "Defines the question marking success text / icon colour. Should be a colour that provides good contrast against the question marking success colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "validation-error": {
           "type": "string",
-          "title": "Цвет ошибки валидации",
-          "description": "Определяет цвет ошибочной отметки вопроса.",
+          "title": "Validation error colour",
+          "description": "Defines the question marking error colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "validation-error-inverted": {
           "type": "string",
-          "title": "Цвет ошибки валидации - инвертированный",
-          "description": "Определяет цвет текста/иконки ошибочной отметки вопроса. Должен быть цветом, который обеспечивает хороший контраст с цветом ошибочной отметки вопроса.",
+          "title": "Validation error colour - inverted",
+          "description": "Defines the question marking error text / icon colour. Should be a colour that provides good contrast against the question marking error colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         }
@@ -432,22 +432,22 @@
       "properties": {
         "progress": {
           "type": "string",
-          "title": "Цвет заполнения прогресса",
-          "description": "Определяет глобальный цвет заполнения полосы прогресса.",
+          "title": "Progress fill colour",
+          "description": "Defines the global progress width fill colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "progress-inverted": {
           "type": "string",
-          "title": "Цвет фона прогресса",
-          "description": "Определяет глобальный цвет фона заполнения прогресса.",
+          "title": "Progress background colour",
+          "description": "Defines the global progress fill background colour.",
           "default": "",
           "_backboneForms": "ColourPicker"
         },
         "progress-border": {
           "type": "string",
-          "title": "Цвет границы прогресса",
-          "description": "Определяет глобальный цвет границы, который появляется вокруг полосы заполнения прогресса.",
+          "title": "Progress border colour",
+          "description": "Defines the global border colour that appears around the progress fill bar.",
           "default": "",
           "_backboneForms": "ColourPicker"
         }

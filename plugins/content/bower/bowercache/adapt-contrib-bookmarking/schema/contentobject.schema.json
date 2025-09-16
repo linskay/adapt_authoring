@@ -10,7 +10,7 @@
       "properties": {
         "_bookmarking": {
           "type": "object",
-          "title": "Bookmarking",
+          "title": "Закладки",
           "default": {},
           "required": [
             "_level"
@@ -18,14 +18,14 @@
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Bookmarking",
-              "description": "Controls whether Bookmarking is enabled or disabled for this page of the course",
+              "title": "Включить закладки",
+              "description": "Контролирует, включены или отключены закладки для этой страницы курса",
               "default": true
             },
             "_level": {
               "type": "string",
-              "title": "Level",
-              "description": "Whether you want to inherit the 'Level' setting from Project settings or override it for this page of the course",
+              "title": "Уровень",
+              "description": "Хотите ли вы унаследовать настройку 'Уровень' из настроек проекта или переопределить ее для этой страницы курса",
               "default": "inherit",
               "enum": [
                 "inherit",

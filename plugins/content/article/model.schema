@@ -7,7 +7,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "default": "New Article Title",
+      "default": "Новый заголовок статьи",
       "inputType": "Text",
       "validators": ["required"],
       "translatable": true
@@ -15,10 +15,10 @@
     "displayTitle": {
       "type": "string",
       "required": false,
-      "default": "New Article Title",
+      "default": "Новый заголовок статьи",
       "inputType": "DisplayTitle",
       "validators": [],
-      "help": "When viewing an article - this is the title that will be displayed on the page",
+      "help": "При просмотре статьи - это заголовок, который будет отображаться на странице",
       "translatable": true
     },
     "body": {

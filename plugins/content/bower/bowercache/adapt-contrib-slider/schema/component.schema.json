@@ -16,7 +16,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Поддерживаемый макет",
           "default": "both",
           "enum": [
             "full-width",
@@ -29,16 +29,16 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Drag the slider to make your choice and select Submit.",
+          "title": "Инструкция",
+          "default": "Перетащите ползунок, чтобы сделать свой выбор, и нажмите «Отправить».",
           "_adapt": {
             "translatable": true
           }
         },
         "ariaQuestion": {
           "type": "string",
-          "title": "ARIA question",
-          "description": "This will be read out by screen readers instead of reading the 'Display title', 'Body' & 'Instruction' fields when focusing on the options. To be clear and concise, ensure the text encompasses only the question associated.",
+          "title": "Вопрос ARIA",
+          "description": "Это будет зачитано программами чтения с экрана вместо чтения полей 'Заголовок', 'Тело' и 'Инструкция' при фокусировке на параметрах. Чтобы быть ясным и кратким, убедитесь, что текст охватывает только связанный вопрос.",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -46,8 +46,8 @@
         },
         "ariaScaleName": {
           "type": "string",
-          "title": "ARIA scale name",
-          "description": "This will be read out by screen readers when focusing on the scale input (slider handle). An appropriate name should give context to which the scale is a measurement of.",
+          "title": "Имя шкалы ARIA",
+          "description": "Это будет зачитано программами чтения с экрана при фокусировке на вводе шкалы (ручке ползунка). Соответствующее имя должно давать контекст того, что измеряет шкала.",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -55,52 +55,52 @@
         },
         "_attempts": {
           "type": "number",
-          "title": "Allowed attempts",
-          "description": "How many attempts the learner is allowed",
+          "title": "Допустимое количество попыток",
+          "description": "Сколько попыток разрешено учащемуся",
           "default": 1
         },
         "_canShowModelAnswer": {
           "type": "boolean",
-          "title": "Enable correct answer toggle",
-          "description": "Allow the user to view the 'model answer' if they answer the question incorrectly",
+          "title": "Включить переключатель правильного ответа",
+          "description": "Разрешить пользователю просматривать 'правильный ответ', если он ответит на вопрос неправильно",
           "default": true
         },
         "_canShowCorrectness": {
           "type": "boolean",
-          "title": "Enable to display correctness",
-          "description": "If enabled, this replaces the associated 'model answer' toggle button and displays correctness directly on the component",
+          "title": "Включить отображение правильности",
+          "description": "Если включено, это заменяет соответствующую кнопку-переключатель 'правильный ответ' и отображает правильность непосредственно на компоненте",
           "default": false
         },
         "_canShowFeedback": {
           "type": "boolean",
-          "title": "Enable feedback",
+          "title": "Включить обратную связь",
           "default": true
         },
         "_canShowMarking": {
           "type": "boolean",
-          "title": "Enable marking",
+          "title": "Включить оценку",
           "default": true
         },
         "_shouldDisplayAttempts": {
           "type": "boolean",
-          "title": "Show number of remaining attempts",
+          "title": "Показывать количество оставшихся попыток",
           "default": false
         },
         "_questionWeight": {
           "type": "number",
-          "title": "Question weight",
-          "description": "How much this question is worth",
+          "title": "Вес вопроса",
+          "description": "Насколько ценен этот вопрос",
           "default": 1
         },
         "_recordInteraction": {
           "type": "boolean",
-          "title": "Record interaction",
-          "description": "If disabled, recording the user's answer(s) to this question to cmi.interactions on the LMS will be disabled for this component only",
+          "title": "Записывать взаимодействие",
+          "description": "Если отключено, запись ответа(ов) пользователя на этот вопрос в cmi.interactions в LMS будет отключена только для этого компонента.",
           "default": true
         },
         "labelStart": {
           "type": "string",
-          "title": "Scale start label",
+          "title": "Метка начала шкалы",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -108,7 +108,7 @@
         },
         "labelEnd": {
           "type": "string",
-          "title": "Scale end label",
+          "title": "Метка конца шкалы",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -116,25 +116,25 @@
         },
         "_scaleStart": {
           "type": "number",
-          "title": "Scale start number",
+          "title": "Начальное число шкалы",
           "default": 1
         },
         "_scaleEnd": {
           "type": "number",
-          "title": "Scale end number",
+          "title": "Конечное число шкалы",
           "default": 10
         },
         "_scaleStep": {
           "type": "number",
-          "title": "Scale step",
-          "description": "The amount the scale should increment by",
+          "title": "Шаг шкалы",
+          "description": "На какую величину должна увеличиваться шкала",
           "default": 1,
           "exclusiveMinimum": 0
         },
         "scaleStepPrefix": {
           "type": "string",
-          "title": "Prefix to add to each slider step",
-          "description": "For instance, a '$' can be used as a prefix to indicate currency in dollars (ex. $100)",
+          "title": "Префикс для каждого шага ползунка",
+          "description": "Например, '$' можно использовать в качестве префикса для обозначения валюты в долларах (например, $100)",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -142,8 +142,8 @@
         },
         "scaleStepSuffix": {
           "type": "string",
-          "title": "Suffix to add to each slider step",
-          "description": "For instance, a 'V' can be used as a suffix to indicate voltage (ex. 4V)",
+          "title": "Суффикс для каждого шага ползунка",
+          "description": "Например, 'V' можно использовать в качестве суффикса для обозначения напряжения (например, 4V)",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -151,62 +151,62 @@
         },
         "_correctAnswer": {
           "type": "string",
-          "title": "Correct answer",
-          "description": "Correct answer on the scale",
+          "title": "Правильный ответ",
+          "description": "Правильный ответ на шкале",
           "default": ""
         },
         "_correctRange": {
           "type": "object",
-          "title": "Correct range",
+          "title": "Правильный диапазон",
           "default": {},
           "properties": {
             "_bottom": {
               "type": "number",
-              "title": "Minimum",
-              "description": "Correct bottom range answer on the scale -- ignored when 'Correct answer' is set",
+              "title": "Минимум",
+              "description": "Правильный нижний диапазон ответа на шкале -- игнорируется, когда установлен 'Правильный ответ'",
               "default": 0
             },
             "_top": {
               "type": "number",
-              "title": "Maximum",
-              "description": "Correct top range answer on the scale -- ignored when 'Correct answer' is set",
+              "title": "Максимум",
+              "description": "Правильный верхний диапазон ответа на шкале -- игнорируется, когда установлен 'Правильный ответ'",
               "default": 0
             }
           }
         },
         "_showScaleIndicator": {
           "type": "boolean",
-          "title": "Show position indicator",
-          "description": "Controls whether a position indicator on the scale should be shown or not",
+          "title": "Показывать индикатор положения",
+          "description": "Контролирует, должен ли отображаться индикатор положения на шкале",
           "default": true
         },
         "_showNumber": {
           "type": "boolean",
-          "title": "Show number on indicator",
-          "description": "Controls whether the position number on the indicator should be shown or not",
+          "title": "Показывать номер на индикаторе",
+          "description": "Контролирует, должен ли отображаться номер положения на индикаторе",
           "default": true
         },
         "_showScale": {
           "type": "boolean",
-          "title": "Show scale",
-          "description": "Controls whether to show the lines and numbers of the scale or not",
+          "title": "Показывать шкалу",
+          "description": "Контролирует, показывать ли линии и номера шкалы",
           "default": true
         },
         "_showScaleNumbers": {
           "type": "boolean",
-          "title": "Show scale numbers",
-          "description": "Controls whether the numbers on the scale should be shown or not",
+          "title": "Показывать номера на шкале",
+          "description": "Контролирует, должны ли отображаться номера на шкале",
           "default": true
         },
         "_feedback": {
           "type": "object",
-          "title": "Feedback",
+          "title": "Обратная связь",
           "default": {},
           "properties": {
             "title": {
               "type": "string",
-              "title": "Title",
-              "description": "Title text for the feedback",
+              "title": "Заголовок",
+              "description": "Текст заголовка для обратной связи",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -214,8 +214,8 @@
             },
             "altTitle": {
               "type": "string",
-              "title": "Alternative Feedback Title",
-              "description": "Text read out by screen readers if no visual title is included",
+              "title": "Альтернативный заголовок обратной связи",
+              "description": "Текст, зачитываемый программами чтения с экрана, если нет визуального заголовка",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -223,8 +223,8 @@
             },
             "correct": {
               "type": "string",
-              "title": "Correct feedback",
-              "description": "Correct answer feedback for this question",
+              "title": "Правильная обратная связь",
+              "description": "Обратная связь на правильный ответ на этот вопрос",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -233,13 +233,13 @@
             },
             "_incorrect": {
               "type": "object",
-              "title": "Incorrect",
+              "title": "Неправильно",
               "default": {},
               "properties": {
                 "final": {
                   "type": "string",
-                  "title": "Default incorrect feedback",
-                  "description": "Incorrect answer feedback for the final attempt",
+                  "title": "Обратная связь по умолчанию для неправильного ответа",
+                  "description": "Обратная связь на неправильный ответ для последней попытки",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -248,8 +248,8 @@
                 },
                 "notFinal": {
                   "type": "string",
-                  "title": "Retry feedback",
-                  "description": "Incorrect answer feedback for any attempt apart from the last attempt. If you leave this blank, the default incorrect feedback will be used instead",
+                  "title": "Обратная связь для повторной попытки",
+                  "description": "Обратная связь на неправильный ответ для любой попытки, кроме последней. Если вы оставите это поле пустым, будет использоваться обратная связь по умолчанию для неправильного ответа.",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -262,17 +262,17 @@
         },
         "_buttons": {
           "type": "object",
-          "title": "Button overrides",
+          "title": "Переопределение кнопок",
           "default": {},
           "properties": {
             "_submit": {
               "type": "object",
-              "title": "Submit",
+              "title": "Отправить",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Текст кнопки",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -280,7 +280,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Метка ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -290,12 +290,12 @@
             },
             "_reset": {
               "type": "object",
-              "title": "Reset",
+              "title": "Сброс",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Текст кнопки",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -303,7 +303,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Метка ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -313,12 +313,12 @@
             },
             "_showCorrectAnswer": {
               "type": "object",
-              "title": "Show correct answer",
+              "title": "Показать правильный ответ",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Текст кнопки",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -326,7 +326,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Метка ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -336,12 +336,12 @@
             },
             "_hideCorrectAnswer": {
               "type": "object",
-              "title": "Hide correct answer",
+              "title": "Скрыть правильный ответ",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Текст кнопки",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -349,7 +349,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Метка ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -359,12 +359,12 @@
             },
             "_showFeedback": {
               "type": "object",
-              "title": "Show feedback",
+              "title": "Показать обратную связь",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Текст кнопки",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -372,7 +372,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Метка ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -382,7 +382,7 @@
             },
             "remainingAttemptsText": {
               "type": "string",
-              "title": "Remaining attempts label",
+              "title": "Метка оставшихся попыток",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -390,7 +390,7 @@
             },
             "remainingAttemptText": {
               "type": "string",
-              "title": "Final attempt label",
+              "title": "Метка последней попытки",
               "default": "",
               "_adapt": {
                 "translatable": true

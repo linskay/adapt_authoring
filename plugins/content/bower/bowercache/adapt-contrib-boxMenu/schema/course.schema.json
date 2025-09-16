@@ -18,21 +18,21 @@
               "properties": {
                 "_boxMenu": {
                   "type": "object",
-                  "title": "Box Menu",
+                  "title": "Плиточное меню",
                   "default": {},
                   "properties": {
                     "itemCount": {
                       "type": "string",
-                      "title": "Item count label",
-                      "default": "Item {{_nthChild}} of {{_totalChild}}",
+                      "title": "Метка количества элементов",
+                      "default": "Элемент {{_nthChild}} из {{_totalChild}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "durationLabel": {
                       "type": "string",
-                      "title": "Duration label",
-                      "default": "Duration:",
+                      "title": "Метка продолжительности",
+                      "default": "Продолжительность:",
                       "_adapt": {
                         "translatable": true
                       }
@@ -45,18 +45,18 @@
         },
         "_boxMenu": {
           "type": "object",
-          "title": "Box Menu",
+          "title": "Плиточное меню",
           "default": {},
           "properties": {
             "_graphic": {
               "type": "object",
-              "title": "Menu logo image",
+              "title": "Логотип меню",
               "default": {},
               "properties": {
                 "_src": {
                   "type": "string",
-                  "title": "Source",
-                  "description": "This image will appear above the menu page title",
+                  "title": "Источник",
+                  "description": "Это изображение появится над заголовком страницы меню",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -64,8 +64,8 @@
                 },
                 "alt": {
                   "type": "string",
-                  "title": "Alternative text",
-                  "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                  "title": "Альтернативный текст",
+                  "description": "Описание изображения; требуется, когда оно имеет значение, которое необходимо донести до учащегося. Для «декоративных» изображений оставьте это поле пустым",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -75,13 +75,13 @@
             },
             "_backgroundImage": {
               "type": "object",
-              "title": "Background image",
+              "title": "Фоновое изображение",
               "default": {},
               "properties": {
                 "_xlarge": {
                   "type": "string",
-                  "title": "Extra large",
-                  "description": "Extra large background image, e.g. hd laptop/desktop computers",
+                  "title": "Очень большой",
+                  "description": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -89,8 +89,8 @@
                 },
                 "_large": {
                   "type": "string",
-                  "title": "Large",
-                  "description": "Large background image, e.g. laptop/desktop computers",
+                  "title": "Большой",
+                  "description": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -98,8 +98,8 @@
                 },
                 "_medium": {
                   "type": "string",
-                  "title": "Medium",
-                  "description": "Medium background image, e.g. tablet devices",
+                  "title": "Средний",
+                  "description": "Среднее фоновое изображение, например, для планшетных устройств",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -107,8 +107,8 @@
                 },
                 "_small": {
                   "type": "string",
-                  "title": "Small",
-                  "description": "Small background image, e.g. mobile / cellphones",
+                  "title": "Маленький",
+                  "description": "Маленькое фоновое изображение, например, для мобильных телефонов",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -118,13 +118,13 @@
             },
             "_backgroundStyles": {
               "type": "object",
-              "title": "Background image styles",
+              "title": "Стили фонового изображения",
               "default": {},
               "properties": {
                 "_backgroundRepeat": {
                   "type": "string",
-                  "title": "Repeat",
-                  "description": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically",
+                  "title": "Повторить",
+                  "description": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали.",
                   "default": "",
                   "enum": [
                     "",
@@ -137,8 +137,8 @@
                 },
                 "_backgroundSize": {
                   "type": "string",
-                  "title": "Size",
-                  "description": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible",
+                  "title": "Размер",
+                  "description": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно",
                   "default": "",
                   "enum": [
                     "",
@@ -150,8 +150,8 @@
                 },
                 "_backgroundPosition": {
                   "type": "string",
-                  "title": "Position",
-                  "description": "The first value is the horizontal position and the second value is the vertical",
+                  "title": "Положение",
+                  "description": "Первое значение — это горизонтальное положение, а второе — вертикальное.",
                   "default": "",
                   "enum": [
                     "",
@@ -171,18 +171,18 @@
             },
             "_menuHeader": {
               "type": "object",
-              "title": "Header",
+              "title": "Заголовок",
               "default": {},
               "properties": {
                 "_textAlignment": {
                   "type": "object",
-                  "title": "Text alignment",
+                  "title": "Выравнивание текста",
                   "default": {},
                   "properties": {
                     "_title": {
                       "type": "string",
-                      "title": "Title alignment",
-                      "description": "Set the alignment of the menu title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                      "title": "Выравнивание заголовка",
+                      "description": "Установите выравнивание заголовка меню. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                       "default": "",
                       "enum": [
                         "",
@@ -194,8 +194,8 @@
                     },
                     "_body": {
                       "type": "string",
-                      "title": "Body alignment",
-                      "description": "Set the alignment of the menu body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                      "title": "Выравнивание основного текста",
+                      "description": "Установите выравнивание основного текста меню. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                       "default": "",
                       "enum": [
                         "",
@@ -207,8 +207,8 @@
                     },
                     "_instruction": {
                       "type": "string",
-                      "title": "Instruction alignment",
-                      "description": "Set the alignment of the menu instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                      "title": "Выравнивание инструкции",
+                      "description": "Установите выравнивание инструкции меню. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                       "default": "",
                       "enum": [
                         "",
@@ -222,13 +222,13 @@
                 },
                 "_backgroundImage": {
                   "type": "object",
-                  "title": "Header background image",
+                  "title": "Фоновое изображение заголовка",
                   "default": {},
                   "properties": {
                     "_xlarge": {
                       "type": "string",
-                      "title": "Extra large",
-                      "description": "Extra large background image, e.g. hd laptop/desktop computers",
+                      "title": "Очень большой",
+                      "description": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd",
                       "_backboneForms": {
                         "type": "Asset",
                         "media": "image"
@@ -236,8 +236,8 @@
                     },
                     "_large": {
                       "type": "string",
-                      "title": "Large",
-                      "description": "Large background image, e.g. laptop/desktop computers",
+                      "title": "Большой",
+                      "description": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров",
                       "_backboneForms": {
                         "type": "Asset",
                         "media": "image"
@@ -245,8 +245,8 @@
                     },
                     "_medium": {
                       "type": "string",
-                      "title": "Medium",
-                      "description": "Medium background image, e.g. tablet devices",
+                      "title": "Средний",
+                      "description": "Среднее фоновое изображение, например, для планшетных устройств",
                       "_backboneForms": {
                         "type": "Asset",
                         "media": "image"
@@ -254,8 +254,8 @@
                     },
                     "_small": {
                       "type": "string",
-                      "title": "Small",
-                      "description": "Small background image, e.g. mobile / cellphones",
+                      "title": "Маленький",
+                      "description": "Маленькое фоновое изображение, например, для мобильных телефонов",
                       "_backboneForms": {
                         "type": "Asset",
                         "media": "image"
@@ -265,13 +265,13 @@
                 },
                 "_backgroundStyles": {
                   "type": "object",
-                  "title": "Header background image styles",
+                  "title": "Стили фонового изображения заголовка",
                   "default": {},
                   "properties": {
                     "_backgroundRepeat": {
                       "type": "string",
-                      "title": "Repeat",
-                      "description": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically",
+                      "title": "Повторить",
+                      "description": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали.",
                       "default": "",
                       "enum": [
                         "",
@@ -284,8 +284,8 @@
                     },
                     "_backgroundSize": {
                       "type": "string",
-                      "title": "Size",
-                      "description": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible",
+                      "title": "Размер",
+                      "description": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно",
                       "default": "",
                       "enum": [
                         "",
@@ -297,8 +297,8 @@
                     },
                     "_backgroundPosition": {
                       "type": "string",
-                      "title": "Position",
-                      "description": "The first value is the horizontal position and the second value is the vertical",
+                      "title": "Положение",
+                      "description": "Первое значение — это горизонтальное положение, а второе — вертикальное.",
                       "default": "",
                       "enum": [
                         "",
@@ -318,31 +318,31 @@
                 },
                 "_minimumHeights": {
                   "type": "object",
-                  "title": "Header minimum height",
+                  "title": "Минимальная высота заголовка",
                   "default": {},
                   "properties": {
                     "_xlarge": {
                       "type": "number",
-                      "title": "Extra Large",
-                      "description": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped",
+                      "title": "Очень большой",
+                      "description": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка меню должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения",
                       "default": 0
                     },
                     "_large": {
                       "type": "number",
-                      "title": "Large",
-                      "description": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped",
+                      "title": "Большой",
+                      "description": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка меню должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения",
                       "default": 0
                     },
                     "_medium": {
                       "type": "number",
-                      "title": "Medium",
-                      "description": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped",
+                      "title": "Средний",
+                      "description": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка меню должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения",
                       "default": 0
                     },
                     "_small": {
                       "type": "number",
-                      "title": "Small",
-                      "description": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped",
+                      "title": "Маленький",
+                      "description": "Минимальная высота должна использоваться только в тех случаях, когда высота заголовка меню должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения",
                       "default": 0
                     }
                   }

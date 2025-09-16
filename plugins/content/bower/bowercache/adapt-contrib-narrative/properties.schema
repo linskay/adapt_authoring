@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Slide show. Select the next button to progress.",
+      "default": "Слайд-шоу. Нажмите кнопку 'далее', чтобы продолжить.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,7 +15,7 @@
     "previous": {
       "type": "string",
       "required": true,
-      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Back to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Назад к {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (элемент {{itemNumber}} из {{totalItems}}){{/if}}",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -23,7 +23,7 @@
     "next": {
       "type": "string",
       "required": true,
-      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Forward to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Вперед к {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (элемент {{itemNumber}} из {{totalItems}}){{/if}}",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -31,9 +31,9 @@
     "titleDialog": {
       "type": "string",
       "required": true,
-      "title": "Dialog default title",
-      "description": "Default fallback title to use for dialog popups when not set on an item",
-      "default": "Item {{itemNumber}} of {{totalItems}}",
+      "title": "Заголовок диалогового окна по умолчанию",
+      "description": "Резервный заголовок по умолчанию для всплывающих диалоговых окон, если он не установлен для элемента",
+      "default": "Элемент {{itemNumber}} из {{totalItems}}",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -41,9 +41,9 @@
     "titleStrapline": {
       "type": "string",
       "required": true,
-      "title": "Strapline default title",
-      "description": "Default fallback title to use for strapline buttons when not set on an item",
-      "default": "Find out more",
+      "title": "Заголовок слогана по умолчанию",
+      "description": "Резервный заголовок по умолчанию для кнопок слогана, если он не установлен для элемента",
+      "default": "Узнать больше",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -60,75 +60,75 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Select the next and back arrows to find out more.",
+      "default": "Выберите стрелки 'вперед' и 'назад', чтобы узнать больше.",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Это текст инструкции",
       "translatable": true
     },
     "mobileInstruction": {
       "type": "string",
       "required": false,
-      "default": "Select the plus icon followed by the next arrow to find out more.",
-      "title": "Mobile Instruction",
+      "default": "Выберите значок «плюс», а затем стрелку «далее», чтобы узнать больше.",
+      "title": "Инструкция для мобильных устройств",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the mobile only instruction text",
+      "help": "Это текст инструкции только для мобильных устройств",
       "translatable": true
     },
     "_isTextBelowImage": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move text area below image",
+      "title": "Переместить текстовую область под изображение",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the text area drops below the image instead of being aside it"
+      "help": "Если включено, текстовая область опускается под изображение, а не располагается рядом с ним"
     },
     "_isMobileTextBelowImage": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move text area below image on mobile",
+      "title": "Переместить текстовую область под изображение на мобильном устройстве",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button"
+      "help": "Если включено, на мобильном устройстве текстовая область опускается под изображение, а не находится за кнопкой слогана"
     },
     "_isStackedOnMobile": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Stack images and text on mobile",
+      "title": "Расположить изображения и текст стопкой на мобильных устройствах",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, on mobile, text and images will be stacked vertically. No interaction will be required to view all items as the user will simply scroll down."
+      "help": "Если включено, на мобильных устройствах текст и изображения будут расположены вертикально. Для просмотра всех элементов не потребуется никакого взаимодействия, так как пользователь будет просто прокручивать вниз."
     },
     "_hasNavigationInTextArea": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move navigation to text area",
+      "title": "Переместить навигацию в текстовую область",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, all navigation elements will be moved to the text area"
+      "help": "Если включено, все элементы навигации будут перемещены в текстовую область"
     },
     "_setCompletionOn": {
       "type": "string",
       "required": true,
       "enum": ["inview", "allItems"],
       "default": "allItems",
-      "title": "Set completion on",
+      "title": "Установить завершение по",
       "inputType": {
         "type": "Select",
         "options": ["inview", "allItems"]
       },
       "validators": ["required"],
-      "help": "Whether completion is based on the learner having viewed all the narrative items - or just having viewed the component"
+      "help": "Завершение зависит от того, просмотрел ли учащийся все элементы повествования или только просмотрел компонент"
     },
     "_items": {
       "type": "array",
       "required": false,
-      "title": "Narrative items",
+      "title": "Элементы повествования",
       "items": {
         "type": "object",
         "required": false,
@@ -137,7 +137,7 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative display title",
+            "title": "Заголовок повествования",
             "inputType": "Text",
             "validators": [],
             "help": "",
@@ -147,7 +147,7 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative main text",
+            "title": "Основной текст повествования",
             "inputType": "TextArea",
             "validators": [],
             "help": "",
@@ -155,13 +155,13 @@
           },
           "_graphic": {
             "type": "object",
-            "title": "Narrative graphic",
+            "title": "Графика повествования",
             "properties": {
               "src": {
                 "type": "string",
                 "required": true,
                 "default": "",
-                "title": "Select Graphic",
+                "title": "Выбрать графику",
                 "inputType": "Asset:image",
                 "validators": ["required"],
                 "help": ""
@@ -170,10 +170,10 @@
                 "type": "string",
                 "required": false,
                 "default": "",
-                "title": "Alternative Text",
+                "title": "Альтернативный текст",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "Описание изображения; требуется, когда оно имеет значение, которое необходимо донести до учащегося. Для «декоративных» изображений оставьте это поле пустым.",
                 "translatable": true
               },
               "attribution": {
@@ -182,7 +182,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution",
+                "help": "Текст, который будет отображаться в качестве атрибуции",
                 "translatable": true
               }
             }
@@ -191,10 +191,10 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative strapline",
+            "title": "Слоган повествования",
             "inputType": "Text",
             "validators": [],
-            "help": "Optional if a succinct title is required for the strapline mobile layout. Leave empty to default to title text",
+            "help": "Необязательно, если для мобильного макета слогана требуется краткий заголовок. Оставьте пустым, чтобы по умолчанию использовать текст заголовка",
             "translatable": true
           }
         }

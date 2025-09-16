@@ -21,7 +21,7 @@
                 "_title": {
                   "type": "string",
                   "title": "Выравнивание заголовка",
-                  "description": "Set the alignment of the block title. Left: Aligns the title to the left of the container. Center: Aligns the title to the center of the container. Right: Aligns the title to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "description": "Установите выравнивание заголовка блока. Слева: выравнивает заголовок по левому краю контейнера. По центру: выравнивает заголовок по центру контейнера. Справа: выравнивает заголовок по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -34,7 +34,7 @@
                 "_body": {
                   "type": "string",
                   "title": "Выравнивание основного текста",
-                  "description": "Set the alignment of the block body. Left: Aligns the body to the left of the container. Center: Aligns the body to the center of the container. Right: Aligns the body to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "description": "Установите выравнивание основного текста блока. Слева: выравнивает основной текст по левому краю контейнера. По центру: выравнивает основной текст по центру контейнера. Справа: выравнивает основной текст по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -47,7 +47,7 @@
                 "_instruction": {
                   "type": "string",
                   "title": "Выравнивание инструкции",
-                  "description": "Set the alignment of the block instruction. Left: Aligns the instruction to the left of the container. Center: Aligns the instruction to the center of the container. Right: Aligns the instruction to the right of the container. The alignment automatically inverses for right-to-left languages. The default is `` which inherits the natural page direction.",
+                  "description": "Установите выравнивание инструкции блока. Слева: выравнивает инструкцию по левому краю контейнера. По центру: выравнивает инструкцию по центру контейнера. Справа: выравнивает инструкцию по правому краю контейнера. Выравнивание автоматически инвертируется для языков с письмом справа налево. По умолчанию — ``, которое наследует естественное направление страницы.",
                   "default": "",
                   "enum": [
                     "",
@@ -67,7 +67,7 @@
                 "_xlarge": {
                   "type": "string",
                   "title": "Очень большой",
-                  "description": "Extra large background image, e.g. hd laptop/desktop computers",
+                  "description": "Очень большое фоновое изображение, например, для ноутбуков/настольных компьютеров hd",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -76,7 +76,7 @@
                 "_large": {
                   "type": "string",
                   "title": "Большой",
-                  "description": "Large background image, e.g. laptop/desktop computers",
+                  "description": "Большое фоновое изображение, например, для ноутбуков/настольных компьютеров",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -85,7 +85,7 @@
                 "_medium": {
                   "type": "string",
                   "title": "Средний",
-                  "description": "Medium background image, e.g. tablet devices",
+                  "description": "Среднее фоновое изображение, например, для планшетных устройств",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -94,7 +94,7 @@
                 "_small": {
                   "type": "string",
                   "title": "Малый",
-                  "description": "Small background image, e.g. mobile / cellphones",
+                  "description": "Маленькое фоновое изображение, например, для мобильных телефонов",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -110,7 +110,7 @@
                 "_backgroundRepeat": {
                   "type": "string",
                   "title": "Повтор",
-                  "description": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically",
+                  "description": "Repeat-x: фоновое изображение повторяется только по горизонтали. Repeat-y: фоновое изображение повторяется только по вертикали",
                   "default": "no-repeat",
                   "enum": [
                     "repeat",
@@ -123,7 +123,7 @@
                 "_backgroundSize": {
                   "type": "string",
                   "title": "Размер",
-                  "description": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container",
+                  "description": "Auto: фоновое изображение отображается в исходном размере. Cover: изменить размер фонового изображения, чтобы оно покрывало весь контейнер, даже если для этого придется растянуть или обрезать изображение. Contain: изменить размер фонового изображения, чтобы убедиться, что изображение полностью видно. 100% 100%: изменить размер фонового изображения, чтобы он соответствовал размерам контейнера",
                   "default": "cover",
                   "enum": [
                     "auto",
@@ -136,7 +136,7 @@
                 "_backgroundPosition": {
                   "type": "string",
                   "title": "Позиция",
-                  "description": "The first value is the horizontal position and the second value is the vertical",
+                  "description": "Первое значение — это горизонтальное положение, а второе — вертикальное",
                   "default": "center top",
                   "enum": [
                     "left top",
@@ -161,25 +161,25 @@
                 "_xlarge": {
                   "type": "number",
                   "title": "Очень большой",
-                  "description": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. hd laptop/desktop computers",
+                  "description": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для ноутбуков/настольных компьютеров hd",
                   "default": 0
                 },
                 "_large": {
                   "type": "number",
                   "title": "Большой",
-                  "description": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped.For e.g. laptop/desktop computers",
+                  "description": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для ноутбуков/настольных компьютеров",
                   "default": 0
                 },
                 "_medium": {
                   "type": "number",
                   "title": "Средний",
-                  "description": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. tablet devices",
+                  "description": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для планшетных устройств",
                   "default": 0
                 },
                 "_small": {
                   "type": "number",
                   "title": "Малый",
-                  "description": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped. For e.g. mobile / cellphones",
+                  "description": "Минимальная высота должна использоваться только в тех случаях, когда высота блока должна быть больше содержимого, например, чтобы предотвратить обрезку фонового изображения. Например, для мобильных телефонов",
                   "default": 0
                 }
               }
@@ -192,39 +192,39 @@
                 "_xlarge": {
                   "type": "string",
                   "title": "Очень большой",
-                  "description": "Extra large CSS class, e.g. hd laptop/desktop computers",
+                  "description": "Очень большой класс CSS, например, для ноутбуков/настольных компьютеров hd",
                   "default": ""
                 },
                 "_large": {
                   "type": "string",
                   "title": "Большой",
-                  "description": "Large CSS class, e.g. laptop/desktop computers",
+                  "description": "Большой класс CSS, например, для ноутбуков/настольных компьютеров",
                   "default": ""
                 },
                 "_medium": {
                   "type": "string",
                   "title": "Средний",
-                  "description": "Medium CSS class, e.g. tablet devices",
+                  "description": "Средний класс CSS, например, для планшетных устройств",
                   "default": ""
                 },
                 "_small": {
                   "type": "string",
                   "title": "Малый",
-                  "description": "Small CSS class, e.g. mobile / cellphones",
+                  "description": "Маленький класс CSS, например, для мобильных телефонов",
                   "default": ""
                 }
               }
             },
             "_isDividerBlock": {
               "type": "boolean",
-              "title": "Установить этот блок как разделитель",
-              "description": "If enabled, applies a divider class to the block",
+              "title": "Разделительный блок?",
+              "description": "Если включено, применяет класс разделителя к блоку",
               "default": false
             },
             "_paddingTop": {
               "type": "string",
               "title": "Отступ сверху",
-              "description": "Changes the value of the blocks top spacing. Double: Doubles the blocks top spacing. Standard: Retains the standard blocks top spacing. Half: Halves the blocks top spacing. Remove: Removes the blocks top spacing. The default value is `standard`.",
+              "description": "Изменяет значение верхнего отступа блоков. Двойной: удваивает верхний отступ блоков. Стандартный: сохраняет стандартный верхний отступ блоков. Половинный: уменьшает верхний отступ блоков вдвое. Убрать: убирает верхний отступ блоков. Значение по умолчанию — `стандартный`.",
               "default": "standard",
               "enum": [
                 "double",
@@ -237,7 +237,7 @@
             "_paddingBottom": {
               "type": "string",
               "title": "Отступ снизу",
-              "description": "Changes the value of the blocks bottom spacing. Double: Doubles the blocks bottom spacing. Standard: Retains the standard blocks bottom spacing. Half: Halves the blocks bottom spacing. Remove: Removes the blocks bottom spacing. The default value is `standard`.",
+              "description": "Изменяет значение нижнего отступа блоков. Двойной: удваивает нижний отступ блоков. Стандартный: сохраняет стандартный нижний отступ блоков. Половинный: уменьшает нижний отступ блоков вдвое. Убрать: убирает нижний отступ блоков. Значение по умолчанию — `стандартный`.",
               "default": "standard",
               "enum": [
                 "double",
@@ -249,8 +249,8 @@
             },
             "_componentVerticalAlignment": {
               "type": "string",
-              "title": "Установить вертикальное выравнивание дочерних компонентов",
-              "description": "Defines the vertical alignment of the child component(s) in relation to the block. Top: Aligns descendents to the top of the block. Center: Aligns descendents to the center of the block. Bottom: Aligns descendents to the bottom of the block. The default alignment is `top`.",
+              "title": "Установить вертикальное выравнивание дочернего(их) компонента(ов)",
+              "description": "Определяет вертикальное выравнивание дочернего(их) компонента(ов) по отношению к блоку. Сверху: выравнивает потомков по верхнему краю блока. По центру: выравнивает потомков по центру блока. Снизу: выравнивает потомков по нижнему краю блока. Выравнивание по умолчанию — `сверху`.",
               "default": "top",
               "enum": [
                 "top",
@@ -261,8 +261,8 @@
             },
             "_componentHorizontalAlignment": {
               "type": "string",
-              "title": "Установить горизонтальное выравнивание дочерних компонентов",
-              "description": "Defines the horizontal alignment of the child component(s) in relation to the block. The default alignment is `left`.",
+              "title": "Установить горизонтальное выравнивание дочернего(их) компонента(ов)",
+              "description": "Определяет горизонтальное выравнивание дочернего(их) компонента(ов) по отношению к блоку. Выравнивание по умолчанию — `слева`.",
               "default": "left",
               "enum": [
                 "left",

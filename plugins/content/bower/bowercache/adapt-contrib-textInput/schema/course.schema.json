@@ -18,31 +18,31 @@
               "properties": {
                 "_textinput": {
                   "type": "object",
-                  "title": "Text Input",
+                  "title": "Текстовый ввод",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Text input. Type your answer and then submit.",
+                      "title": "Область ARIA",
+                      "default": "Текстовый ввод. Введите свой ответ и нажмите «Отправить».",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "correctAnswerPrefix": {
                       "type": "string",
-                      "title": "ARIA prefix for correct answer",
-                      "description": "If _canShowCorrectness is enabled, this text provides a prefix for the correct option displayed below the submitted input",
-                      "default": "The correct answer is",
+                      "title": "Префикс ARIA для правильного ответа",
+                      "description": "Если включено _canShowCorrectness, этот текст представляет собой префикс для правильного варианта, отображаемого под введенным текстом",
+                      "default": "Правильный ответ:",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "correctAnswersPrefix": {
                       "type": "string",
-                      "title": "ARIA prefix for correct answers",
-                      "description": "If _canShowCorrectness is enabled, this text provides a prefix for the comma separated list of correct options displayed below the submitted input",
-                      "default": "Accepted correct answers include",
+                      "title": "Префикс ARIA для правильных ответов",
+                      "description": "Если включено _canShowCorrectness, этот текст представляет собой префикс для списка правильных вариантов, разделенных запятыми, отображаемого под введенным текстом",
+                      "default": "Принимаются правильные ответы, включая",
                       "_adapt": {
                         "translatable": true
                       }

@@ -18,13 +18,13 @@
               "properties": {
                 "_trickle": {
                   "type": "object",
-                  "title": "Trickle",
+                  "title": "Постепенная подача",
                   "default": {},
                   "properties": {
                     "incompleteContent": {
                       "type": "string",
-                      "title": "Incomplete content",
-                      "default": "There is incomplete content above. You must complete this before you can proceed through the course.",
+                      "title": "Незавершенный контент",
+                      "default": "Выше есть незавершенный контент. Вы должны завершить его, прежде чем сможете продолжить курс.",
                       "_adapt": {
                         "translatable": true
                       }
