@@ -16,8 +16,15 @@ define(function(require){
       'click .add-article': 'addNewArticle',
       'click .page-edit-button': 'openContextMenu',
       'dblclick .page-detail': 'loadPageEdit',
-      'click .paste-cancel': 'onPasteCancel'
+      'click .paste-cancel': 'onPasteCancel',
+      'click .preview-page-button': 'previewPage'
     }),
+
+    previewPage: function(event) {
+      event.preventDefault();
+      var courseId = Origin.editor.data.course.get('_id');
+      window.open('preview/' + courseId, '_blank');
+    },
 
     preRender: function() {
       Origin.editor.blockCount = 0;

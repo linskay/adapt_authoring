@@ -1,6 +1,8 @@
 <div class="login-inner">
     <div class="login-logo"></div>
 
+    <h1 style="text-align: center; color: #fff; margin-bottom: 20px;">CourseLab</h1>
+
     <form class="login-form" autocomplete="off">
         <div class="login-title">{{t 'app.signin'}}</div>
         {{#if isAuthenticated}}
@@ -26,4 +28,8 @@
             {{/ifMailEnabled}}
         {{/if}}
     </form>
+
+    <div class="login-footer" style="text-align: center; color: #ccc; margin-top: 20px; font-size: 12px;">
+        основано на фреймворке Adapt - конструктора с открытым исходном кодом
+    </div>
 </div>

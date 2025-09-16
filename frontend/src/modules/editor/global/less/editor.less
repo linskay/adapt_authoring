@@ -17,11 +17,11 @@
     float: left;
     width: 90%;
     height: 100%;
-    background-color: lightgrey;
+    background-color: #555;
+    color: #fff;
   }
 
   .paste-zone {
-
     &.paste-zone-block,
     &.paste-zone-article {
       margin-bottom: 20px;
@@ -29,8 +29,9 @@
 
     &-inner {
       padding: 20px 30px;
-      border: 1px dashed lighten(@primary-color, 15%);
-      border-radius: 3px;
+      border: 2px dashed #666;
+      border-radius: 5px;
+      transition: all 0.3s ease;
     }
 
     &-component-left {
@@ -50,13 +51,14 @@
   }
 
   .paste-zone-available {
-    background-color: #d6f3f9;
-    border: 1px dashed #31b8cc;
+    background-color: #666;
+    border-color: #888;
   }
 
   .paste-zone-droppable {
     visibility: visible;
-    background-color: #beebf5;
+    background-color: #777;
+    border-color: #999;
     border-style: solid;
   }
 
