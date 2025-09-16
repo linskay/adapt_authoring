@@ -2,71 +2,186 @@
 @import 'fonts';
 @import 'sharedStyles';
 
+// ===== Переменные для единообразия =====
+@nav-height: 70px; // Увеличиваем высоту для солидности
+@nav-bg: #2d2d2d; // Современный темно-серый вместо чистого #333
+@nav-bg-scrolled: rgba(45, 45, 45, 0.95); // Фон при скролле с прозрачностью
+@nav-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+@nav-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+@nav-item-hover: lighten(@nav-bg, 12%);
+@nav-accent-color: #4d8eff; // Яркий акцентный цвет для ховеров и активного состояния
+
+// ===== Основные стили навигации =====
 .navigation {
-  position:fixed;
-  top:0px;
-  left:0px;
-  width:100%;
-  height:60px;
-  z-index:500;
-  background-color: #2aa3ce;
-  background-position: right;
-  border-bottom:1px solid rgba(0,0,0,0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: @nav-height;
+  z-index: 1000; // Увеличиваем z-index для надежности
+  background-color: @nav-bg;
+  box-shadow: @nav-shadow;
   font-size: 15px;
   font-family: @font-title;
+  color: #fff;
+  transition: @nav-transition;
+  backdrop-filter: blur(10px); // Эффект размытого стекла
+
+  // Эффект при скролле - меняем фон и тень
+  &.scrolled {
+    background-color: @nav-bg-scrolled;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    height: 60px; // Немного уменьшаем высоту при скролле
+  }
 }
 
+// Фон для блюр-эффекта (fallback для Safari)
 .navigation-bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  background:url("assets/top-bar-1080.jpg");
-  @media (min-width: 1920px) {
-    background:url("assets/top-bar-2560.jpg");
+  display: none;
+
+  // Можно раскомментировать для браузеров без поддержки backdrop-filter
+  /*
+  .navigation.scrolled & {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: @nav-bg-scrolled;
+    z-index: -1;
   }
+  */
 }
 
 .navigation-inner {
-    padding-top: 10px;
+  padding: 0 2rem; // Больше воздуха по бокам
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px; // Ограничиваем ширину на больших экранах
+  margin: 0 auto;
 }
 
-.navigation-item {
-  display:inline-block;
-  height:40px;
-  line-height:40px;
-  text-decoration:none;
-  margin:0px;
-  padding:0px 20px;
-  color:@navigation-text-color;
-  .navigation-left & {
-    float:left;
-  }
-}
-
+// ===== Левый блок =====
 .navigation-left {
-	float:left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
   .navigation-product-name {
     .no-select;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: -0.5px;
+    color: #fff;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: @nav-accent-color;
+    }
   }
 }
 
+// ===== Правый блок =====
 .navigation-right {
-  padding-right: 20px;
-	float:right;
-	text-align:right;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 0.5rem; // Современный способ отступов между элементами
 
   .navigation-user-logout {
-    padding: 0px 25px;
-  }
+    padding: 0 1.2rem;
+    position: relative;
 
-  a {
-    &:hover {
-    text-decoration: underline;
-      &.navigation-user-logout {
-        text-decoration: none;
-      }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: @nav-accent-color;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      width: 70%; // Анимация подчеркивания при наведении
     }
   }
+}
+
+// ===== Общие стили пунктов меню =====
+.navigation-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  padding: 0 1.2rem;
+  color: #fff;
+  transition: @nav-transition;
+  position: relative;
+  font-weight: 500;
+
+  // Эффект подсветки фона
+  &:hover {
+    background-color: @nav-item-hover;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  // Акцентная полоска для активного пункта
+  &.active {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: @nav-accent-color;
+    }
+  }
+}
+
+// ===== Адаптивность =====
+@media (max-width: 768px) {
+  .navigation {
+    height: 60px;
+  }
+
+  .navigation-inner {
+    padding: 0 1rem;
+  }
+
+  .navigation-item {
+    padding: 0 0.8rem;
+    font-size: 0.9em;
+  }
+
+  .navigation-right .navigation-user-logout {
+    padding: 0 0.8rem;
+  }
+
+  .navigation-left .navigation-product-name {
+    font-size: 1.2em;
+  }
+}
+
+// ===== Анимация появления =====
+@keyframes navSlideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navigation {
+  animation: navSlideDown 0.5s ease-out;
 }

@@ -1,20 +1,42 @@
 @import 'sharedStyles';
 
+// Variables for plugin management dark theme
+@plugin-management-bg: #2d2d2d;
+@plugin-management-content-bg: #3a3a3a;
+@plugin-management-border-color: rgba(255, 255, 255, 0.1);
+
+.pluginManagement-container {
+  background-color: @plugin-management-bg;
+  padding: 40px;
+  min-height: calc(100vh - 70px);
+}
+
 .pluginManagement {
   &-inner {
-    margin: 15px;
-    background-color: @white;
-    border: 1px solid #d6f2f9;
+    margin: 0;
+    background-color: @plugin-management-content-bg;
+    border: 1px solid @plugin-management-border-color;
+    border-radius: 8px;
+    padding: 30px;
+    color: #ccc;
   }
 }
 
 .pluginManagement-loading {
-    text-align:center;
-    padding:30px;
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
 }
 
 .pluginManagement-upload-plugin {
-  .form-container-style;
+  .form-container-style; // This mixin should be reviewed to ensure it matches the dark theme
+
+  h2 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
   .form-group {
     margin-bottom: 0;
     padding-bottom: 0;
