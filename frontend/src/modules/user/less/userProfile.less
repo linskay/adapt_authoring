@@ -1,43 +1,89 @@
 @import 'colours';
 
+// Variables for user profile dark theme
+@profile-bg: #2d2d2d;
+@profile-form-bg: #3a3a3a;
+@profile-border-color: rgba(255, 255, 255, 0.1);
+@profile-text-color: #ccc;
+@profile-title-color: #fff;
+@profile-input-bg: #555;
+@profile-input-border: #666;
+
+.user-profile-container {
+  background-color: @profile-bg;
+  padding: 40px;
+  min-height: calc(100vh - 70px); // Adjust for nav height
+  color: @profile-text-color;
+}
+
 .user-profile {
-    .error-text {
-        padding: 15px 30px;
-        background-color: @alert-color;
-        color: @white;
-    }
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: @profile-form-bg;
+  padding: 30px 40px;
+  border-radius: 8px;
+  border: 1px solid @profile-border-color;
 
-    .intro-text {
-        padding: 30px 30px 0 30px;
-    }
+  .display-title {
+    color: @profile-title-color;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
 
-    .error,
-    .success {
-        position: static;
-        top: auto;
-        left: auto;
-        font-size: inherit;
-        margin-left: 5px;
-    }
+  .intro-text {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
 
-    .editing-overlay-panel-content {
-        border-bottom: none;
-        .inner {
-            margin-bottom: 20px;
-
-            .alert {
-                background-color: transparent;
-                color: @alert-color;
-            }
-            .alert-info {
-                color: @warning-color;
-            }
-            .alert-success {
-                color: @secondary-color;
-            }
-            .feedback {
-                padding-bottom: 15px;
-            }
-        }
+  form {
+    .form-group {
+      margin-bottom: 20px;
     }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      height: 45px;
+      padding: 0 15px;
+      background-color: @profile-input-bg;
+      border: 1px solid @profile-input-border;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 1em;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: @primary-color;
+      }
+    }
+  }
+
+  .error-text,
+  .alert,
+  .alert-info,
+  .alert-success {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: @white;
+  }
+
+  .error-text, .alert {
+    background-color: @alert-color;
+  }
+  .alert-info {
+    background-color: @info-color;
+  }
+  .alert-success {
+    background-color: @success-color;
+  }
 }

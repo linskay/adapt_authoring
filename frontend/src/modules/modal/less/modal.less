@@ -1,95 +1,104 @@
 @import 'colours';
 
-// Modal styling
-// ==============
-
-// Modal
-// ======
-
-@modal-color:#E9F0FA;
-@modal-text-color: @white;
-
-@modal-icon-color: @white;
-@modal-icon-hover-color:darken(@modal-color, 30%);
-
-@modal-button-color: @white;
-@modal-button-hover-color:darken(@modal-color, 30%);
-@modal-button-text-color:#3eb4e4;
-@modal-button-text-hover-color: @white;
-
-@modal-popup-padding-top:10px;
-@modal-popup-padding-right:10px;
-@modal-popup-padding-bottom:10px;
-@modal-popup-padding-left:10px;
-
-@modal-popup-padding:@modal-popup-padding-top @modal-popup-padding-right @modal-popup-padding-bottom @modal-popup-padding-left;
+// New modal variables for dark theme
+@modal-bg: #3a3a3a;
+@modal-backdrop-bg: rgba(0, 0, 0, 0.7);
+@modal-border-color: rgba(255, 255, 255, 0.1);
+@modal-header-bg: lighten(@modal-bg, 5%);
+@modal-text-color: #ccc;
+@modal-title-color: #fff;
 
 .modal {
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:4000;
-    overflow-y: scroll;
-    .modal-popup {
-        background-color: @ui-content-color;
-        height: 100%;
-    }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4000;
+    overflow-y: auto;
+    background-color: @modal-backdrop-bg;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    i {
-        margin-right:4px;
+    .modal-popup {
+        background-color: @modal-bg;
+        color: @modal-text-color;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        border: 1px solid @modal-border-color;
+        width: 90%;
+        max-width: 800px; // Set a max-width for larger screens
+        overflow: hidden;
+        animation: modal-fade-in 0.4s ease-out;
     }
 
     .modal-popup-toolbar {
-        background-color: @tertiary-color;
-        text-align:right;
-        color: @white;
-        padding: 5px 10px;
+        background-color: @modal-header-bg;
+        text-align: right;
+        color: @modal-title-color;
+        padding: 15px 20px;
+        border-bottom: 1px solid @modal-border-color;
+
         button {
             color: @primary-color;
-            padding:0px 10px 0px 10px;
-            height:40px;
-            display:inline-block;
-            transition:background-color 0.3s;
+            padding: 8px 16px;
+            height: auto;
+            display: inline-block;
+            transition: all 0.3s ease;
+            background: transparent;
+            border: none;
+            font-size: 1em;
+
             i {
               color: @secondary-color;
+              margin-right: 5px;
             }
+
             &:hover {
-              // background-color: lighten(@adapt-tertiary-color, 10%);
               color: @white;
             }
             &:disabled {
-                color:#666;
+                color: #666;
+                cursor: not-allowed;
             }
         }
     }
 
     .modal-popup-title {
-        text-align:left;
-        float:left;
+        text-align: left;
+        float: left;
+        font-size: 1.4em;
+        font-weight: 600;
+
         &-inner {
-            padding:10px;
+            padding: 0;
         }
     }
 
     .modal-popup-body {
-        margin-top:10px;
-        color:#000;
-        &-inner {
-            padding:10px;
-        }
-    }
+        margin-top: 0;
+        color: @modal-text-color;
 
-    .modal-popup-icon-close {
-        color: @modal-icon-color;
-        .no-touch &:hover {
-            color:@modal-icon-hover-color;
+        &-inner {
+            padding: 25px;
         }
     }
 
     .modal-popup-content-inner {
-        overflow-y:auto;
+        max-height: 70vh;
+        overflow-y: auto;
     }
+}
 
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

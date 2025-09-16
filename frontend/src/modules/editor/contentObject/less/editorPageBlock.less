@@ -23,6 +23,29 @@
         .page-components {
             padding: 5px;
         }
+
+.block-drag-handle {
+  position: absolute;
+  top: 50%;
+  left: 45px;
+  transform: translateY(-50%);
+  cursor: move;
+  color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  font-size: 1.5em;
+  padding: 10px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.block-placeholder {
+  border: 2px dashed #888;
+  background-color: #555;
+  margin-bottom: 20px;
+}
     }
 
     &-edit-panel {

@@ -28,6 +28,7 @@ define(function(require){
         this.addBlockViews();
       }
       this.setupDragDrop();
+      this.setupBlockDragDrop();
       this.restoreCollapsedState();
 
       _.defer(_.bind(function(){
@@ -62,6 +63,28 @@ define(function(require){
         'contextMenu:article:delete': this.deleteArticlePrompt,
         'contextMenu:article:collapse': this.toggleCollapseArticle,
         'contextMenu:article:delete': this.deleteArticlePrompt
+      });
+    },
+
+    setupBlockDragDrop: function() {
+      var view = this;
+      this.$('.article-blocks').sortable({
+        axis: 'y',
+        handle: '.block-drag-handle',
+        items: '.block',
+        placeholder: 'block-placeholder',
+        start: function(event, ui) {
+          ui.placeholder.height(ui.item.height());
+        },
+        stop: function(event, ui) {
+          view.$('.article-blocks .block').each(function(i) {
+            var blockId = $(this).attr('data-id');
+            var blockView = Origin.editor.views[blockId];
+            if (blockView && blockView.model.get('_sortOrder') !== i + 1) {
+              blockView.model.save({ '_sortOrder': i + 1 }, { patch: true });
+            }
+          });
+        }
       });
     },
 
